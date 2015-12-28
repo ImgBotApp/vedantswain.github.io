@@ -16,3 +16,17 @@
 				}
 
 			}
+
+.app-feature img {
+		float: left;
+		margin-right: 10px;
+		height: 350px
+	}
+	.app-feature.content{
+		padding-right: 50px;
+    	padding-top: 20px;
+	}
+
+.project-img{
+	width: 100%;
+}
