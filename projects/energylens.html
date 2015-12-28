@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+		<title>EneryLens+ | Vedant Das Swain</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/mystyle.css" />
+		<link rel="stylesheet" href="../assets/css/jquery.bxslider.css"/>
+		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="#">Vedant Das Swain</a></h1>
+						<nav class="links">
+							<ul class="icons">
+								<li><a href="https://github.com/vedantswain" class="fa-github" target="_blank"><span class="label">Github</span></a></li>
+								<li><a href="https://www.linkedin.com/in/vedant-swain-5ab3588a" class="fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>Work</h3>
+											<p>Showcase of Projects</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>About</h3>
+											<p>A short history</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Contact</h3>
+											<p>Preferred channels</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+					</section>
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2>EneryLens+</h2>
+										<p>Understand smart home power consumption via ambient data</p>
+									</div>
+									<div class="meta">
+										<time class="published">Aug, 2014 - Jan, 2015</time>
+										<a class="author"><img src="../images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<footer>
+									<ul class="stats">
+										<li><a href="https://github.com/vedantswain/EnergyLens" class="icon fa-github" target="_blank">View project on Github</a></li>
+										<li><a href="https://play.google.com/store/apps/details?id=com.iiitd.muc.energylens&hl=en" class="icon fa-google" target="_blank">View on Google Play</a></li>
+										<li><a href="http://manaswis.github.io/energylensplus/" class="icon fa-globe" target="_blank">View project site</a></li>
+										<li>Team Size: 2</li>
+									</ul>
+								</footer>
+								<a class="image banner"><img src="../images/elens_cover.jpg" alt="" /></a>
+								<h2>Motivation</h2>
+								<p>Power is an expensive commodity and keeping it in check is the best way to prevent overuse. While homes have evolved to use smart meters that allow dwellers to view their consumption remotely, there still seems to room for great improvement in informing these individuals. Without the in-depth knowledge of how much energy is used by each appliance, it becomes a tedious hit-and-try process to figure out the actual culprits. Although the usual suspects may be turned off, only real data can urge one to confidently regulate personal energy consumption.</p>
+								<h2>Solution</h2>
+								<p>EnergyLens+ is a portable energy monitoring system for smart homes at IIIT-Delhi.
+It records various environmental data (including light, sound and connectivity) and couples it with information acquired by interacting with an inference engine on the central IIIT-Delhi server. This data is processed and represented to the you in the form of interactive and easy to understand charts and graphs.</p>
+								<p>This is an advanced version of <a href="http://dl.acm.org/citation.cfm?id=2602058">EnergyLens</a></p>
+								<h2>Features</h2>
+								<ul class="bxslider">
+  <li class="app-feature">
+  	<img src="../images/project_images/energylens/screen1.png"/>
+  	<div class="web-feature content">
+  		<h3>Monitor Energy Consumption and Wastage</h3>
+								<p>The tabular navigation of the app allows the user to view the hourly wastage and consumption of energy over the last 12 hours.</p>
+  	</div>
+  </li>
+  <li class="app-feature">
+  	<img src="../images/project_images/energylens/screen2.png"/>
+  	<div class="web-feature content">
+								<h3>Disaggregated Data for Each Appliance</h3>
+
+<p>The distribution of the energy between different appliances is shown in percentages. Such a split is very useful to a user trying to understand which appliances are the actual trouble makers.
+</p>
+
+  	</div>
+  </li>
+  <li class="app-feature">
+  	<img src="../images/project_images/energylens/screen3.png"/>
+  	<div class="web-feature content">
+  		<h3>Real-Time Energy Monitoring</h3>
+
+<p>Lets user view the power consumption of their home in real time. Sudden spikes and troughs in this graph will indicate the switching on/off of appliances. 
+</p>
+
+  	</div>
+  </li>
+  <li class="web-feature">
+  	<div class="web-feature content">
+  		<h3>Wastage Notifications</h3>
+
+<p>Users are notified of the name and location of an appliance which is not in use but continues to consume energy.</p>
+
+  </li>
+  </ul>
+
+								<h2>Working</h2>
+
+<h3>Ambient Data</h3>
+  	<p>The app keeps collecting and uploading data to a server from the phone. This data is from the lightmeter, accelerometer, magnetometer, wifi and audio. Based on what the server already knows about the signatures of particular appliances, the new data is analysed to infer which appliance is consuming or wasting energy.
+</p>
+
+<h3>Backend Server</h3>
+	<p>An inference engine in the cloud gauges the energy consumption and wastage of each appliance. This is based on learned patterns from the smart grid along with data sent via the phone on regular intervals. The smart grid data can help determine which appliance(s) are running. The ambient data from the phone can be used to learn which app is being used directly by the user.
+</p>
+
+<h3>Training Phase</h3>
+  	  	<p>The app is inbuilt with a training mode. Every appliance at the smarthome must used for training. During this sequence, the user manually annotates the appliance’s name and location. This is followed by data collection that is sent over to the server.
+	</p>
+	<p>
+The server uses this data along with other data from the smart grid the homes are connected to. These are considered as features that are input to a machine learning module</p>
+
+<h2>Future</h2>
+
+<h3>Wearable Tech</h3>
+
+<p>Since the system works on the basis of ambient data, wearable technology like smartwatches would be much more efficient at collecting accurate data than a phone. One reason for this is that a watch will remain on the user consistently throughout, whereas a phone can be left in different rooms.</p>
+
+							</article>
+
+					</div>
+
+				<!-- Sidebar -->
+					<section id="sidebar">
+
+						<!-- Intro -->
+<!-- 							<section id="intro">
+								<a href="#" class="logo"><img src="../images/logo.jpg" alt="" /></a>
+								<header>
+									<h2>F.O.C.U.S.</h2>
+									<p>Gauge the productivity of your phone use</p>
+								</header>
+							</section> -->
+
+						
+						<!-- Footer -->
+							<section id="footer">
+								<p class="copyright">&copy; Vedant Das Swain. Design Template: <a href="http://html5up.net">HTML5 UP</a></p>
+							</section>
+
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+			<script src="../assets/js/jquery.bxslider.min.js"></script>
+			<script src="../assets/js/my.js"></script>
+
+	</body>
+</html>
