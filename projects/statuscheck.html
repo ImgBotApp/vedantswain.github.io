@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+		<title>StatusCheck | Vedant Das Swain</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/mystyle.css" />
+		<link rel="stylesheet" href="../assets/css/jquery.bxslider.css"/>
+		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="#">Vedant Das Swain</a></h1>
+						<nav class="links">
+							<ul class="icons">
+								<li><a href="https://github.com/vedantswain" class="fa-github" target="_blank"><span class="label">Github</span></a></li>
+								<li><a href="https://www.linkedin.com/in/vedant-swain-5ab3588a" class="fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>Work</h3>
+											<p>Showcase of Projects</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>About</h3>
+											<p>A short history</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Contact</h3>
+											<p>Preferred channels</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+					</section>
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2>StatusCheck</h2>
+										<p>Predict a Reddit user's vulnerability to harassment</p>
+									</div>
+									<div class="meta">
+										<time class="published">May, 2015 - Jun, 2015</time>
+										<a class="author"><img src="../images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<footer>
+									<ul class="stats">
+										<li><a href="https://github.com/vedantswain/Status-Check" class="icon fa-github" target="_blank">View project on Github</a></li>
+										<li>Team Size: 5</li>
+									</ul>
+								</footer>
+								<a class="image banner"><img src="../images/scheck_cover.jpg" alt="" /></a>
+								<h2>Motivation</h2>
+								<p>Social media is often used as a channel to broadcast one’s views. Often these opinions are politically incorrect, harassing or strongly obscene. Many such posts often lead to larger problems. Sometimes users get arrested. At other times they might get targeted by others, leading them to take drastic measures.</p>
+								<h2>Solution</h2>
+								<p>Nudging users with information was already being explored. Drawing inspiration from <a href="http://precog.iiitd.edu.in/events/psosm2013/9psosm6-wang.pdf">this paper</a>, a new solution was conceived. While the paper mostly dealt with the privacy aspect of posts, the tool being discussed focusses on the security aspect.</p>
+								<p>In order to maintain the immersion provided by social media, this tool is packaged in the form of a browser extension that can provide vital information about a user’s post before it is published as a status.</p>
+								
+								<h2>Features</h2>
+								<ul class="bxslider">
+  <li class="web-feature">
+  	<img src="../images/project_images/statuscheck/screen1.jpg"/>
+  	<div class="web-feature content">
+  		<h3>Unobtrusive Injection</h3>
+								<p>The extension makes subtle changes at the interface level, so that the user doesn’t need to get readjusted. Unlike the traditional view, the “Post” button is now replaced by a “Check” button.</p>
+  	</div>
+  </li>
+  <li class="web-feature">
+  	<img src="../images/project_images/statuscheck/screen2.jpg"/>
+  	<div class="web-feature content">
+								<h3>Timer Module</h3>
+
+<p>Defers the publishing of a post by a fixed duration. Along with this a new countdown timer is initiated, during which a user may decide to cancel or edit their post. They might also skip the process entirely by pressing the “Post Now” button.
+</p>
+
+  	</div>
+  </li>
+  <li class="web-feature">
+  	<img src="../images/project_images/statuscheck/screen3.jpg"/>
+  	<div class="web-feature content">
+  		<h3>Sentiment Module</h3>
+
+<p>The polarity of the user’s status is analyses. Apart from the sentiment it provides some more information as well (objective/subjective, ironic/unironic) 
+
+</p>
+
+  	</div>
+  </li>
+  <li class="web-feature">
+  	<img src="../images/project_images/statuscheck/screen4.jpg"/>
+  	<div class="web-feature content">
+  		<h3>Similar Posts Module</h3>
+
+<p>Fetches up to 10 similar posts from Twitter’s public feed. Not only are the similar posts provided but they are also tagged with a general sentiment so that the user can learn about what other people are saying about the topics he/she is talking about.
+</p>
+
+  </li>
+
+  <li class="web-feature">
+  	<img src="../images/project_images/statuscheck/screen5.jpg"/>
+  	<div class="web-feature content">
+  		<h3>Danger Classification Module</h3>
+
+<p>Statuses are classified as dangerous or safe. A post is 
+termed dangerous, if it bares resemblance to previous posts that have gotten users arrested or fired or led to any other mishaps.</p>
+
+  </li>
+  </ul>
+
+								<h2>Backend Method</h2>
+
+<h3>Sentiment Module</h3>
+  	<p>The <i>MeaningCloud API</i> is used to performs topic extraction on the status and evaluates the sentiment around the extracted topics - This helps perform more targeted analysis of the status.
+The response from the MeaningCloud API provides us different metrics about the status. This is a polarity score, the value of which varies from -1 to 1. According this value a score tag, a simple letter grade is assigned.
+</p>
+<p>
+The grades provided are P(ositive), N(egative) and NEU(tral). The letter may also be succeeded by a “+” that indicates “strongly”, i.e. if the score tag is “N+”, then the analysed test is strongly negative.
+</p>
+
+<h3>Similar Posts Module</h3>
+  	  	<p>The <i>MeaningCloud API</i> is used to performs extracts keywords from the status - Specific keywords help in narrowing down the search query parameters.
+The response from are provided as keywords that are queried to the Twitter Search api to find similar posts.</p>
+
+<p>These posts are quickly assigned a polarity via the <i>TextBlob</i> module at the backend.</p>
+
+<h3>Danger Classification Module</h3>
+  	  	<p>
+  	  		A classifier was trained before hand with a mean accuracy tested is 84%. The training set consists of 90 posts that got into trouble (arrests, firing etc.) and 90 safe/generic posts.</p>
+
+<p>
+An SVM classifier is trained on the server using a custom feature set which comprises of vocabulary and polarity.
+Vocabulary included words flagged to be occurring more regularly in posts that get users into trouble. These are further classified into;
+<i>words that indicate wrong intent</i>: e.g. kill, shoot, bang, hate etc,
+<i>profane words</i>: e.g. sh*t, f**k, b**ch etc,
+<i>subject words</i>: e.g. god, boss, police, woman etc,
+<i>situational words</i>: e.g. die, blood, murder etc,
+and <i>polarising words</i>: e.g. black, nig**r etc.
+
+</p>
+
+<h2>Architecture</h2>
+
+<img class="project-img" src="../images/project_images/statuscheck/pic1.jpg">
+
+<h2>Future</h2>
+
+<h3>Nudges based on Network and Profile</h3>
+
+<p>Since the extension works on the front end without any need of user authentication, there was no relevance of who was the poster. However, with access to this network, many new informative nudges can be explored.</p>
+
+
+							</article>
+
+					</div>
+
+				<!-- Sidebar -->
+					<section id="sidebar">
+
+						<!-- Intro -->
+<!-- 							<section id="intro">
+								<a href="#" class="logo"><img src="../images/logo.jpg" alt="" /></a>
+								<header>
+									<h2>F.O.C.U.S.</h2>
+									<p>Gauge the productivity of your phone use</p>
+								</header>
+							</section> -->
+
+						
+						<!-- Footer -->
+							<section id="footer">
+								<p class="copyright">&copy; Vedant Das Swain. Design Template: <a href="http://html5up.net">HTML5 UP</a></p>
+							</section>
+
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+			<script src="../assets/js/jquery.bxslider.min.js"></script>
+			<script src="../assets/js/my.js"></script>
+
+	</body>
+</html>
