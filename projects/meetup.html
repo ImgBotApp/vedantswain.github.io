@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+		<title>Meetup | Vedant Das Swain</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/mystyle.css" />
+		<link rel="stylesheet" href="../assets/css/jquery.bxslider.css"/>
+		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="#">Vedant Das Swain</a></h1>
+						<nav class="links">
+							<ul class="icons">
+								<li><a href="https://github.com/vedantswain" class="fa-github" target="_blank"><span class="label">Github</span></a></li>
+								<li><a href="https://www.linkedin.com/in/vedant-swain-5ab3588a" class="fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>Work</h3>
+											<p>Showcase of Projects</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>About</h3>
+											<p>A short history</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Contact</h3>
+											<p>Preferred channels</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+					</section>
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2>Meetup</h2>
+										<p>Track attendee locations for your events</p>
+									</div>
+									<div class="meta">
+										<time class="published">Jan, 2015 - May, 2015</time>
+										<a class="author"><img src="../images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<footer>
+									<ul class="stats">
+										<li><a href="https://github.com/vedantswain/Meetup-Android" class="icon fa-github" target="_blank">View project on Github</a></li>
+										<li>Team Size: 5</li>
+									</ul>
+								</footer>
+								<a class="image banner"><img src="../images/meetup_cover.jpg" alt="" /></a>
+								<h2>Introduction</h2>
+								<img class="project-img" src="../images/project_images/meetup/pic1.jpg">
+								<p>The project aims at building up a distributed system where the nodes are mobile devices, interacting with the server. The system allows the user to set up a “meetup”, with a destination location and the time for the meetup. During the time when meetup is active, the system receives location update messages from the devices of the users involved in that particular meetup, and these location messages are sent to all the active nodes to display a their route on a map, while they arrive at the destination.</p>
+								
+								
+								<h2>Architecture</h2>
+								<img class="project-img" src="../images/project_images/meetup/pic2.jpg">
+								<h3>Server Side</h3>
+								<p>The server stores the user information and the meetup information. User information includes their profile, contacts and friends. </p>
+								<p>Meetup information is comprised of its details (time, location), attendees etc. Apart from which meetup information also includes the heartbeat function. This is used to take the location of a user and broadcast it to the other attendees.</p>
+
+								<h3>Client Side</h3>
+								<p>The user can also create a new meetup, by entering the details that include meetup name, meetup date and time. The user marks the destination location on a map, and chooses the contacts to be invited</p>
+								<p>Once, a meetup is active, the client sends a “HeartBeat” message to the server, indicating the device’s location after a timeout, and receives the location from all the active nodes, and displays their route on a map.</p>
+								
+								
+
+<h2>Challenges</h2>
+
+<h3>Distribution</h3>
+
+<p>Handling timestamps and synchronisation over multiple devices in different timezones. This leads to different patterns being shown to every attendee based on which heartbeats they've received correctly</p>
+
+
+							</article>
+
+					</div>
+
+				<!-- Sidebar -->
+					<section id="sidebar">
+
+						<!-- Intro -->
+<!-- 							<section id="intro">
+								<a href="#" class="logo"><img src="../images/logo.jpg" alt="" /></a>
+								<header>
+									<h2>F.O.C.U.S.</h2>
+									<p>Gauge the productivity of your phone use</p>
+								</header>
+							</section> -->
+
+						
+						<!-- Footer -->
+							<section id="footer">
+								<p class="copyright">&copy; Vedant Das Swain. Design Template: <a href="http://html5up.net">HTML5 UP</a></p>
+							</section>
+
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+			<script src="../assets/js/jquery.bxslider.min.js"></script>
+			<script src="../assets/js/my.js"></script>
+
+	</body>
+</html>
