@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+		<title>SnooKnows | Vedant Das Swain</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/mystyle.css" />
+		<link rel="stylesheet" href="../assets/css/jquery.bxslider.css"/>
+		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="#">Vedant Das Swain</a></h1>
+						<nav class="links">
+							<ul class="icons">
+								<li><a href="https://github.com/vedantswain" class="fa-github" target="_blank"><span class="label">Github</span></a></li>
+								<li><a href="https://www.linkedin.com/in/vedant-swain-5ab3588a" class="fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>Work</h3>
+											<p>Showcase of Projects</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>About</h3>
+											<p>A short history</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Contact</h3>
+											<p>Preferred channels</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+					</section>
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2>SnooKnows</h2>
+										<p>Predict a Reddit user's vulnerability to harassment</p>
+									</div>
+									<div class="meta">
+										<time class="published">Aug, 2015 - Dec, 2015</time>
+										<a class="author"><img src="../images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<footer>
+									<ul class="stats">
+										<li><a href="https://github.com/RishiBaijal/DHCS_project" class="icon fa-github" target="_blank">View project on Github</a></li>
+										<li>Team Size: 5</li>
+									</ul>
+								</footer>
+								<a class="image banner"><img src="../images/snoo_cover.jpg" alt="" /></a>
+								<h2>Motivation</h2>
+								<p>The privacy issues in social networks lead to the popularity of anonymous networks like Reddit, Whisper and Secret. But many incidents in the past suggest that this blanket of protection may just be a puff of smoke. Anonymity can still leave footprints that can be followed by predators. Since Reddit generates a large amount of textual data and has suitable APIs to work with, this social network and its users were chosen as the sample.</p>
+								<h2>Solution</h2>
+								<p>A web tool that pulls all the public data of a given Reddit user and analysis it. Natural Language Processing and Machine Learning techniques are applied to extract sensitive information from this bulk of data. Ultimately the user must be presented a classification of how sensitive their data is based on kind of features extracted. The sensitivity of any given feature is ascertained via surveys.</p>
+								<p>SnooKnows (named after Reddit’s mascot) is a simple web tool for Reddit users to quantify their vulnerability.</p>
+								<h2>Features</h2>
+								<ul class="bxslider">
+  <li class="web-feature">
+  	<img src="../images/project_images/snooknows/screen1.png"/>
+  	<div class="web-feature content">
+  		<h3>Dynamic Data Fetch</h3>
+								<p>Any reddit user can use this tool to understand their vulnerability. Due to latency issues, currently it fetches the top 100 comments by the user. However this can be extended to larger bulks as the processing stage becomes faster.</i></p>
+  	</div>
+  </li>
+  <li class="web-feature">
+  	<img src="../images/project_images/snooknows/screen2.png"/>
+  	<div class="web-feature content">
+								<h3>Vulnerability Score</h3>
+
+<p>The user is presented with a vulnerability score that was calculated based on the number of sensitive fields the tool could infer. A list of all these fields and the inferred value is also presented. Certain objective fields also have external links that a user can use to track back to the actual comment where that piece of information was revealed.
+This score was determined based on a prior study where respondents rated how vulnerable they feel on a scale of 1-10, if someone learns about one of the fields.
+</p>
+
+  	</div>
+  </li>
+  <li class="web-feature">
+  	<img src="../images/project_images/snooknows/screen3.png"/>
+  	<div class="web-feature content">
+  		<h3>Subreddit Distribution</h3>
+
+<p>Sources of all the inferences are comments. On Reddit, every comment belongs to a post that belongs to a subreddit. These subreddits are topics. A split showing where maximum information is revealed can urge the user to modify their activity on that subreddit.
+</p>
+
+  	</div>
+  </li>
+  <li class="web-feature">
+  	<img src="../images/project_images/snooknows/screen4.png"/>
+  	<div class="web-feature content">
+  		<h3>Most Vulnerable Combination</h3>
+
+<p>Once features have been extracted, the tool computes what are the possible combinations of features an attacker might learn. A prior study was used to have users rate which set of features at the hands of a predator would make them feel vulnerable. The percentage of each such combination is presented.
+The best way to understand this is, <i>“50% of people feel vulnerable only when their family members and location is known.”
+</i></p>
+
+  </li>
+  </ul>
+
+								<h2>Method</h2>
+
+<h3>Getting the Users</h3>
+  	<p>A survey to collect the Reddit handles within the institute was sent, to get the ground truth. However, the response was very low, due to which few hundreds of active Reddit handles were handpicked from various subreddits. Only content generators and creators were selected rather than simple spectators.
+</p>
+
+<h3>Obtaining Ground Truth</h3>
+	<img class="project-img" src="../images/project_images/snooknows/pic1.jpg"/>
+<p>Initial analysis of the collected user profiles was via their an online Reddit analytics tool called SnoopSnoo. The results were then sent to the said users as private messages and asked to fill a form to verify the accuracy and authenticity of the results. These results were then used as ground truth for SnooKnows.
+</p>
+
+<h3>User Data Analysis</h3>
+  	  	<img class="project-img" src="../images/project_images/snooknows/pic2.jpg"/>
+  	  	<p><i>img. </i>The accuracy of our extractions based on the ground truth.</p>
+<p>A third party Natural Language Processing API, known as TextRazor to analyse various features from their publicly available comments. The API extracts various things like Entities and Relationships from the given text which are then used to get attributes like things user <i>likes to discuss</i>, user’s <i>relationships</i> and <i>people in the family</i>. 
+The API also gives the broad list of topics based on the text based on a “contextual score”. </p>
+
+<h3>Data sensitivity analysis</h3>
+  	  	<img class="project-img" src="../images/project_images/snooknows/pic3.png"/>
+  	  	<p><i>img. </i> How vulnerable on a scale of 1-10 an average users feel if a predator learns of about one of the fields</p>
+
+<p>Another survey was floated to analyse what kind of data, if gathered about anonymous users, could be sensitive and thereby potentially used against them for harassment. This survey was sent to the students in the institute and to the Reddit community for results. These were then combined at the end, for analysis, and used to come up with a vulnerability score for a Reddit user.
+Based on the score they get, the potential of them being harassed on Reddit gets depicted too. We even provide users with links to the sensitive information they posted on Reddit.
+</p>
+
+<h2>Application Flow</h2>
+
+<img class="project-img" src="../images/project_images/snooknows/pic4.jpg">
+
+							<h2>Existing Alternative</h2>
+<p><a href="http://snoopsnoo.com/" target="_blank">SnoopSnoo</a> is a publicly accessible dashboard that shows many different analytics for Reddit users and guesses features similar to SnooKnows. However, this dashboard doesn’t aim to measure vulnerability of a user and simply extracts a lot of data.</p>
+
+<h2>Future</h2>
+
+<h3>Improvement of Vulnerability Score</h3>
+
+<p>Based on the studies, only the sensitivity of the field has been determined, but not of its value. The overall results indicate that sexuality is not a very sensitive feature. However, this may be biased because the sample size was comprised of heterosexual individuals.</p>
+
+<h3>User Authentication</h3>
+
+<p>Naturally, only a given Reddit user may be allowed to check their vulnerability.</p>
+
+<h3>Attack Tool</h3>
+
+<p>Currently this is a defence tool but its usefulness in offensive measures needs to be explored.</p>
+
+
+							</article>
+
+					</div>
+
+				<!-- Sidebar -->
+					<section id="sidebar">
+
+						<!-- Intro -->
+<!-- 							<section id="intro">
+								<a href="#" class="logo"><img src="../images/logo.jpg" alt="" /></a>
+								<header>
+									<h2>F.O.C.U.S.</h2>
+									<p>Gauge the productivity of your phone use</p>
+								</header>
+							</section> -->
+
+						
+						<!-- Footer -->
+							<section id="footer">
+								<p class="copyright">&copy; Vedant Das Swain. Design Template: <a href="http://html5up.net">HTML5 UP</a></p>
+							</section>
+
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+			<script src="../assets/js/jquery.bxslider.min.js"></script>
+			<script src="../assets/js/my.js"></script>
+
+	</body>
+</html>

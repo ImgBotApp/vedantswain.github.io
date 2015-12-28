@@ -27,6 +27,17 @@
     	padding-top: 20px;
 	}
 
+.web-feature img {
+		float: left;
+		margin-right: 10px;
+		width: 550px
+	}
+	.web-feature.content{
+		padding-right: 50px;
+    	padding-top: 20px;
+	}
+
 .project-img{
-	width: 100%;
+	max-width: 100%;
+	max-height: 400px;
 }
