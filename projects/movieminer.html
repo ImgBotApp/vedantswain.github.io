@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+		<title>MovieMiner | <p>Vedant Das Swain</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/mystyle.css" />
+		<link rel="stylesheet" href="../assets/css/jquery.bxslider.css"/>
+		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="#">Vedant Das Swain</a></h1>
+						<nav class="links">
+							<ul class="icons">
+								<li><a href="https://github.com/vedantswain" class="fa-github" target="_blank"><span class="label">Github</span></a></li>
+								<li><a href="https://www.linkedin.com/in/vedant-swain-5ab3588a" class="fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>Work</h3>
+											<p>Showcase of Projects</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>About</h3>
+											<p>A short history</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Contact</h3>
+											<p>Preferred channels</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+					</section>
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2>MovieMiner</h2>
+										<p>Discover new movies based on your Social Network</p>
+									</div>
+									<div class="meta">
+										<time class="published">Jan,2015 - Dec, 2015</time>
+										<a class="author"><img src="../images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<footer>
+									<ul class="stats">
+										<li><a href="https://github.com/vedantswain/MovieMiner" class="icon fa-github" target="_blank">View project on Github</a></li>
+										<li><a href="https://drive.google.com/file/d/0B80ovvizR6K3VGE3LV9jdWxBWTA/view?usp=sharing" class="icon fa-file-text" target="_blank">View report PDF</a></li>
+										<li>Team Size: 1</li>
+									</ul>
+								</footer>
+								<a class="image banner"><img src="../images/mminer_cover.jpg" alt="" /></a>
+								<h2>Motivation</h2>
+								<p>As of now audiences can discover new movies via certain methods, namely croudsourcing (ratings) or recommendation systems.</p>
+					<p>
+The shortcoming of most of these recommender systems as usable applications is that, it expects the user to do a lot of work (e.g. rating films or buying products) before actually giving accurate suggestions. 
+</p>
+								<h2>Solution</h2>
+								<p>The solution proposed tries to deal with the first problem by harnessing the data stored in the user’s social media activity. This discards the initial setup or the initial slow-down. Social media data can be useful to calculate the similarity between users
+As an engineering solution, tapping into the repositories of social network sites, our system has no need of creating its own archive from scratch.</p>
+<p>
+A mobile application as a client or an interface helps us further our goals of decreasing latency and increasing portability.Hence, the approach taken was to build a mobile based recommender app. 
+</p>
+
+								<h2>Features</h2>
+								<ul class="bxslider">
+  <li class="app-feature">
+  	<img src="../images/project_images/movieminer/screen1.jpg"/>
+  	<div class="app-feature content">
+  		<h3>Likes and Dislikes</h3>
+								<p>Fetching the movies liked by a user was easy to implement via fetching his or her liked movies from Facebook. However, Facebook has no user interface for users to express their dislike. Dislikes can be equally important in recommending a new movie to the user. </p>
+								<p>Thus in order to allow this interaction with a movie, a user is enabled to modify their relation with a movie. These alterations are recorded and used for tailoring better suggestions.</p>
+  	</div>
+  </li>
+  <li class="app-feature">
+  	<img src="../images/project_images/movieminer/screen2.jpg"/>
+  	<div class="app-feature content">
+								<h3>Genre Based Browsing</h3>
+
+<p>In order to provide users a method to browse movies beyond their own and those recommended to them this feature was implemented. A user can easily browse movies by selecting a genre. The user may interact with these movies in the forms of likes and dislikes as well, thus influencing future recommendations. </p>
+
+  	</div>
+  </li>
+  <li class="app-feature">
+  	<div class="app-feature content">
+  		<h3>Search</h3>
+
+<p>Although the browsing feature covers most of the user’s needs, the search feature is essential for two reasons. The first of these is, it makes finding a specific movie much easier. The second is, due to the crowd-sourced method of collecting movies, the list of movies that can be browsed is limited to the movies liked on Facebook by our users.</p>
+
+  	</div>
+  </li>
+  <li class="app-feature">
+  	<img src="../images/project_images/movieminer/screen3.jpg"/>
+  	<div class="app-feature content">
+  		<h3>Detailing</h3>
+
+<p>An additional screen was developed to allow users to examine movies more closely. This screen has more information about a selected movie and will help the user take a more informed decision. </p>
+
+  </li>
+</ul>
+
+<h2>Architecture</h2>
+<img class="project-img" src="../images/project_images/movieminer/pic1.jpg"/>
+<img class="project-img" src="../images/project_images/movieminer/pic2.jpg"/>
+								<h2>Challenges</h2>
+  	<h3>Cold Start</h3>
+<p>A very common hurdle of any recommender system is a simple paradox often termed as a cold-start problem or a chicken-egg problem.Accurate recommendations need more users. To get more users we need more accuracy.</p>
+					
+<p>This is a classic cyclic problem. To break free of this loop and solve the problem, MovieMiner initially shows the movies a user hasn’t liked or disliked.
+</p>
+	<h3>Noise</h3>
+<p>The method that used to populate the repositories with movies involve querying the movie page’s name to the OMDb API. However, in certain rare cases the Facebook page name of the	
+movie doesn’t match its IMDB title. The API uses Hamming distance against IMDB movie titles to find a match, instead of searching for the most trending among the search results. This leads to a major problem when the there exists an actual movie by the incorrect name of the page.</p>
+  	  	
+  	  	<h2>Existing Alternative</h2>
+<p><a href="https://movielens.org/" target="_blank">MovieLens</a>, developed by GroupLens, University of Minnesota is an accurate recommender system. However it requires the user to fill in preliminary data. It doesn't use standard genres and generalises by offering clubbed combinations together. Other setbacks are that it's neither mobile nor social.</p>
+
+<p>Although it is known for good quality recommendations after the first fifteen</p>
+
+<h2>Future</h2>
+
+<h3>Integration for other Mediums</h3>
+
+<p>Since the main source of user preferences is via Facebook, other user preferences such as books, songs and games can also be learnt. This way, the similarity between users can go beyond the boundaries of the movies domain.</p>
+
+							</article>
+
+					</div>
+
+				<!-- Sidebar -->
+					<section id="sidebar">
+
+						<!-- Intro -->
+<!-- 							<section id="intro">
+								<a href="#" class="logo"><img src="../images/logo.jpg" alt="" /></a>
+								<header>
+									<h2>F.O.C.U.S.</h2>
+									<p>Gauge the productivity of your phone use</p>
+								</header>
+							</section> -->
+
+						
+						<!-- Footer -->
+							<section id="footer">
+								<p class="copyright">&copy; Vedant Das Swain. Design Template: <a href="http://html5up.net">HTML5 UP</a></p>
+							</section>
+
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+			<script src="../assets/js/jquery.bxslider.min.js"></script>
+			<script src="../assets/js/my.js"></script>
+
+	</body>
+</html>
