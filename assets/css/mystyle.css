@@ -41,3 +41,20 @@
 	max-width: 100%;
 	max-height: 400px;
 }
+
+a.back-to-top {
+	display: none;
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	/*text-indent: -9999px;*/
+	position: fixed;
+	z-index: 999;
+	left: 50px;
+	bottom: 100px;
+	/*background: #27AE61 url("up-arrow.png") no-repeat center 43%;*/
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+	
