@@ -116,6 +116,8 @@ It records various environmental data (including light, sound and connectivity) 
 
 <p>The distribution of the energy between different appliances is shown in percentages. Such a split is very useful to a user trying to understand which appliances are the actual trouble makers.
 </p>
+<p>Moreover, each of the appliances can be clicked to go into a new screen with a greater in-depth analysis of that appliance.
+</p>
 
   	</div>
   </li>
@@ -134,7 +136,10 @@ It records various environmental data (including light, sound and connectivity) 
   		<h3>Wastage Notifications</h3>
 
 <p>Users are notified of the name and location of an appliance which is not in use but continues to consume energy.</p>
-
+		
+		<h3>Home Detection</h3>
+<p>When the user exits their home, i.e. is out of range from the WiFi Access Point they had initially registered, the app considers goes into an idle state. In this state apart from WiFi, all other data collecting background services are stopped and no data is stored. Data collection is resumed on reentering.
+		</p>
   </li>
   </ul>
 
@@ -153,6 +158,18 @@ It records various environmental data (including light, sound and connectivity) 
 	</p>
 	<p>
 The server uses this data along with other data from the smart grid the homes are connected to. These are considered as features that are input to a machine learning module</p>
+
+<h2>Reporting</h2>
+
+<h3>Usage Statistics</h3>
+<p>App usage stats were being recorded whenever the app is used. Recorded parameters are: which screens were used, for how long were they used and when were they used. Logging is done for all the screens.
+</p>
+
+<h3>Ground Truth Reporting</h3>
+<p>
+Users received hourly validation reports with some activity data. This is in the form of “App A was used from **:** to **:*** at Loc L consumed **kWh”.
+The user may have chosen to report this as Correct or Incorrect. Choosing ‘Incorrect’ allows the user to report the correct values for multiple fields such as (appliance name, location name, co-occupant using it, duration of appliance running etc.)
+</p>
 
 <h2>Future</h2>
 
