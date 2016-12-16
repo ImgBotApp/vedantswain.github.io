@@ -22,26 +22,42 @@ $('a.back-to-top').click(function() {
 });
 
 $('.label-default.tag').click(function(){
-	$('.label-default.tag').toggleClass("filtered");
+	$(this).toggleClass("filtered");
 	filter= this.innerHTML;
 	console.log(filter);
 	postFilter(filter)
 });
 
-function postFilter(input) {
-    var filter, li, a, i;
+var filter_tags = [];
 
-    filter=input.toUpperCase();
+function postFilter(input) {
+    var li, a, i, isTag;
+
+    filter_tags.push(input.toUpperCase());
     li = document.getElementsByClassName("mini-post");
     
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
-        console.log(a.innerHTML);
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        // console.log(a.innerHTML);
+        isTag = filterTags(a.innerHTML.toUpperCase());
+        if (isTag) {
             li[i].style.display = "";
         } else {
             li[i].style.display = "none";
 
         }
     }
+}
+
+function filterTags(input) {
+	var i, filter;
+
+	for (i = 0; i < filter_tags.length; i++) {
+		 filter = filter_tags[i];
+		 if (input.indexOf(filter) > -1){
+		 	return true;
+		 }
+	}
+
+	return false;
 }
