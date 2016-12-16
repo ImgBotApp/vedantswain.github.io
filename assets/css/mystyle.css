@@ -57,4 +57,28 @@ a.back-to-top {
 	-moz-border-radius: 30px;
 	border-radius: 30px;
 }
+
+.label-default.tag{
+	font-family: "Raleway", Helvetica, sans-serif;
+    letter-spacing: 0.25em;
+    font-weight: 300;
+    font-size: 50%;
+    text-transform: uppercase;
+    padding: 1%;
+    cursor: pointer;
+}
+
+.label-default.tag:hover{
+	    box-shadow: 2px 2px 2px #cccccc;
+}
+
+.filtered{
+    background: #F4B350;
+    box-shadow: 4px 4px 7px #cccccc;
+	}
+
+#search {
+	padding: 2%;
+    margin: 2%;
+}
 	
