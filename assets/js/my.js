@@ -22,18 +22,27 @@ $('a.back-to-top').click(function() {
 });
 
 $('.label-default.tag').click(function(){
-	$(this).toggleClass("filtered");
-	filter= this.innerHTML;
-	console.log(filter);
-	postFilter(filter)
+	var t_class="filtered";
+	$(this).toggleClass(t_class);
+	filter= this.innerHTML.toUpperCase();
+	if ($(this).hasClass(t_class)) {
+	    filter_tags.push(filter);		
+	}
+	else {
+		var index= filter_tags.indexOf(filter);
+		if (index > -1) {
+    		filter_tags.splice(index, 1);
+		}
+	}
+
+	postFilter()
 });
 
 var filter_tags = [];
 
-function postFilter(input) {
+function postFilter() {
     var li, a, i, isTag;
 
-    filter_tags.push(input.toUpperCase());
     li = document.getElementsByClassName("mini-post");
     
     for (i = 0; i < li.length; i++) {
@@ -51,6 +60,10 @@ function postFilter(input) {
 
 function filterTags(input) {
 	var i, filter;
+
+	if (filter_tags.length < 1) {
+		return true;
+	}
 
 	for (i = 0; i < filter_tags.length; i++) {
 		 filter = filter_tags[i];
