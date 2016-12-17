@@ -46,7 +46,7 @@ function postFilter() {
     li = document.getElementsByClassName("mini-post");
     
     for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
+        a = li[i].getElementsByTagName("section")[0];
         // console.log(a.innerHTML);
         isTag = filterTags(a.innerHTML.toUpperCase());
         if (isTag) {

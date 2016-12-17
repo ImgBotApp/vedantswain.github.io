@@ -77,8 +77,12 @@ a.back-to-top {
     box-shadow: 4px 4px 7px #cccccc;
 	}
 
+.filter-tags{
+	visibility: hidden;
+	font-size: 0%;
+}
+
 #search {
 	padding: 2%;
-    margin: 2%;
 }
 	
