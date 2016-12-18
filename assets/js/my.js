@@ -49,11 +49,13 @@ function postFilter() {
         a = li[i].getElementsByTagName("section")[0];
         // console.log(a.innerHTML);
         isTag = filterTags(a.innerHTML.toUpperCase());
+        // console.log(isTag);
         if (isTag) {
-            li[i].style.display = "";
+            // li[i].style.display = "";
+            $(li[i]).fadeIn(300);
         } else {
-            li[i].style.display = "none";
-
+            // li[i].style.display = "none";
+            $(li[i]).fadeOut(300);
         }
     }
 }
