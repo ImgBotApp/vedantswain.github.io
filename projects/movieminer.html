@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="shortcut icon" href="../images/icon.ico" type="image/x-icon">
 		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+	    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="stylesheet" href="../assets/css/mystyle.css" />
 		<link rel="stylesheet" href="../assets/css/jquery.bxslider.css"/>
@@ -20,7 +21,7 @@
 		<script src="assets/js/ga.js"></script>
 
 	</head>
-	<body>
+	<body data-spy="scroll" data-target="#myScrollspy" data-offset="120">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -76,6 +77,19 @@
 				<!-- Main -->
 					<div id="main">
 
+
+					<div class="container">
+					  <div class="row">
+					    <nav class="col-sm-3" id="myScrollspy">
+					      <ul class="nav nav-pills nav-stacked">
+					        <li><a class="head-link" href="#section1">Section 1</a></li>
+					        <li><a class="head-link" href="#section2">Section 2</a></li>
+					        <li><a class="head-link" href="#section3">Section 3</a></li>
+					        <li><a class="head-link" href="#section4">Section 4</a></li>
+					      </ul>
+					    </nav>
+					    <div class="col-sm-9">
+
 						<!-- Post -->
 							<article class="post">
 								<header>
@@ -96,19 +110,19 @@
 									</ul>
 								</footer>
 								<a class="image banner"><img src="../images/mminer_cover.jpg" alt="" /></a>
-								<h2>Motivation</h2>
+								<h2 id="section1">Motivation</h2>
 								<p>As of now audiences can discover new movies via certain methods, namely croudsourcing (ratings) or recommendation systems.</p>
-					<p>
-The shortcoming of most of these recommender systems as usable applications is that, it expects the user to do a lot of work (e.g. rating films or buying products) before actually giving accurate suggestions. 
-</p>
-								<h2>Solution</h2>
+												<p>
+							The shortcoming of most of these recommender systems as usable applications is that, it expects the user to do a lot of work (e.g. rating films or buying products) before actually giving accurate suggestions. 
+							</p>
+								<h2 id="section2">Solution</h2>
 								<p>The solution proposed tries to deal with the first problem by harnessing the data stored in the user’s social media activity. This discards the initial setup or the initial slow-down. Social media data can be useful to calculate the similarity between users
 As an engineering solution, tapping into the repositories of social network sites, our system has no need of creating its own archive from scratch.</p>
 <p>
 A mobile application as a client or an interface helps us further our goals of decreasing latency and increasing portability.Hence, the approach taken was to build a mobile based recommender app. 
 </p>
 
-								<h2>Features</h2>
+								<h2 id="section3">Features</h2>
 								<ul class="bxslider">
   <li class="app-feature">
   	<img src="../images/project_images/movieminer/screen1.jpg"/>
@@ -145,7 +159,7 @@ A mobile application as a client or an interface helps us further our goals of d
   </li>
 </ul>
 
-<h2>Architecture</h2>
+<h2 id="section4">Architecture</h2>
 <img class="project-img" src="../images/project_images/movieminer/pic1.jpg"/>
 <img class="project-img" src="../images/project_images/movieminer/pic2.jpg"/>
 								<h2>Challenges</h2>
@@ -170,11 +184,15 @@ movie doesn’t match its IMDB title. The API uses Hamming distance against IMDB
 <p>Since the main source of user preferences is via Facebook, other user preferences such as books, songs and games can also be learnt. This way, the similarity between users can go beyond the boundaries of the movies domain.</p>
 
 							</article>
-
-							<section id="footer">
-								<p class="copyright">&copy; Vedant Das Swain | Template: <a href="http://html5up.net">HTML5 UP</a></p>
-							</section>
 					</div>
+					</div>
+				</div>
+			</div>
+
+					<section id="footer">
+						<p class="copyright">&copy; Vedant Das Swain | Template: <a href="http://html5up.net">HTML5 UP</a></p>
+					</section>
+
 
 			</div>
 
@@ -183,9 +201,11 @@ movie doesn’t match its IMDB title. The API uses Hamming distance against IMDB
 			<script src="../assets/js/skel.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/bootstrap.min.js"></script>
 			<script src="../assets/js/main.js"></script>
 			<script src="../assets/js/jquery.bxslider.min.js"></script>
 			<script src="../assets/js/my.js"></script>
+			<script src="../assets/js/project.js"></script>
 
 	</body>
 </html>

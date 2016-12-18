@@ -82,6 +82,27 @@ a.back-to-top {
 	font-size: 0%;
 }
 
+ul.nav-pills {
+	position: fixed;
+	font-family: "Raleway", Helvetica, sans-serif;
+	font-size: 75%;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+  }
+
+.nav-pills>li.active>a {
+	color: #F4B350;
+	background-color: #eee;
+}
+	.nav-pills>li.active>a:hover {
+		color: #F4B350;
+		background-color: #eee;
+	}
+	.nav-pills>li.active>a:focus {
+		color: #F4B350;
+		background-color: #eee;
+	}
+
 #search {
 	padding: 2%;
 }
