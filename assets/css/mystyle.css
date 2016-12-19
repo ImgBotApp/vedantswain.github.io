@@ -118,3 +118,12 @@ ul.nav-pills {
     font-size: 0.65em;
     text-transform: uppercase;
 }
+
+#header h2 {
+	height: inherit;
+	line-height: inherit;
+	padding: 0 0 0 1.5em;
+	white-space: nowrap;
+	font-size: 0.6em;
+	font-weight: 300;
+}
