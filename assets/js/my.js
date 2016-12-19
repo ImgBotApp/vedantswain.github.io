@@ -2,6 +2,7 @@ $(document).ready(function(){
   $('.bxslider').bxSlider({
   	mode: 'fade',
   });
+  postFilter();
 });
 
 var amountScrolled = 300;
@@ -35,13 +36,15 @@ $('.label-default.tag').click(function(){
 		}
 	}
 
-	postFilter()
+	postFilter();
 });
 
 var filter_tags = [];
 
 function postFilter() {
     var li, a, i, isTag;
+
+    var count=0;
 
     li = document.getElementsByClassName("mini-post");
     
@@ -53,11 +56,15 @@ function postFilter() {
         if (isTag) {
             // li[i].style.display = "";
             $(li[i]).fadeIn(300);
+            count++;
         } else {
             // li[i].style.display = "none";
             $(li[i]).fadeOut(300);
         }
     }
+
+    var pcount_html= "<b>"+count+"</b>/"+li.length+" Projects on display";
+    $("#project-count").html(pcount_html);
 }
 
 function filterTags(input) {

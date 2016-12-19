@@ -104,5 +104,17 @@ ul.nav-pills {
 	}
 
 #search {
-	padding: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+}
+
+#intro {
+	margin-bottom: 0px;
+}
+
+#project-count {
+	font-family: "Raleway", Helvetica, sans-serif;
+    letter-spacing: 0.25em;
+    font-size: 0.65em;
+    text-transform: uppercase;
 }
