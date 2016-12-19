@@ -74,12 +74,17 @@ function filterTags(input) {
 		return true;
 	}
 
+	var tag_count=0;
 	for (i = 0; i < filter_tags.length; i++) {
 		 filter = filter_tags[i];
 		 if (input.indexOf(filter) > -1){
-		 	return true;
+		 	tag_count++;
 		 }
 	}
+
+	if (tag_count == filter_tags.length) {
+		return true;
+	};
 
 	return false;
 }
