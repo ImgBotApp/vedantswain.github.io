@@ -59,6 +59,7 @@ a.back-to-top {
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
+	border: dotted 1px rgba(160, 160, 160, 0.65);
 }
 
 .label-default.tag{
