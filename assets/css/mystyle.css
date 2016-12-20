@@ -54,7 +54,7 @@ a.back-to-top {
 	position: fixed;
 	z-index: 999;
 	left: 50px;
-	bottom: 100px;
+	bottom: 20px;
 	/*background: #27AE61 url("up-arrow.png") no-repeat center 43%;*/
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
