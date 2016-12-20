@@ -52,6 +52,7 @@ function postFilter() {
         a = li[i].getElementsByTagName("section")[0];
         // console.log(a.innerHTML);
         isTag = filterTags(a.innerHTML.toUpperCase());
+        $(li[i]).fadeOut(100);
         // console.log(isTag);
         if (isTag) {
             // li[i].style.display = "";
