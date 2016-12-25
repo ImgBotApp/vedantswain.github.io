@@ -107,6 +107,11 @@ ul.nav-pills {
 		background-color: #eee;
 	}
 
+.sub-link {
+	 font-size: smaller;
+	 text-indent: 2em;
+}
+
 #search {
 	padding-bottom: 2%;
 	text-align: center;
