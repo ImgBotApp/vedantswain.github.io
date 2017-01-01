@@ -89,7 +89,7 @@ a.back-to-top {
 ul.nav-pills {
 	position: fixed;
 	font-family: "Raleway", Helvetica, sans-serif;
-	font-size: 75%;
+	font-size: 55%;
     letter-spacing: 0.25em;
     text-transform: uppercase;
   }
@@ -140,3 +140,7 @@ ul.nav-pills {
 #intro .logo {
 	cursor: pointer;
 	}
+
+#footer {
+	float: right;
+}
