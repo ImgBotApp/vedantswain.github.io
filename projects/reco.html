@@ -84,18 +84,10 @@
 					    <nav class="col-sm-3" id="myScrollspy">
 					      <ul class="nav nav-pills nav-stacked">
 					        <li><a class="head-link" href="#section1">Introduction</a></li>
+					        <li><a class="head-link" href="#sectionX">My Role</a></li>
 					        <li><a class="head-link" href="#section2">The Problem</a></li>
-			        		<li><a class="head-link sub-link" href="#section2-1">Status Quo</a></li>
-			        		<li><a class="head-link sub-link" href="#section2-2">Observations</a></li>
-			        		<li><a class="head-link sub-link" href="#section2-3">Challenges</a></li>
 					        <li><a class="head-link" href="#section3">The Design</a><li>
-			        		<li><a class="head-link sub-link" href="#section3-1">User</a></li>
-			        		<li><a class="head-link sub-link" href="#section3-2">Divergence</a></li>
-			        		<li><a class="head-link sub-link" href="#section3-3">Convergence</a></li>
 					        <li><a class="head-link" href="#section4">The Development</a></li>
-			        		<li><a class="head-link sub-link" href="#section4-1">How it works</a></li>
-			        		<li><a class="head-link sub-link" href="#section4-2">Success Metrics</a></li>
-			        		<li><a class="head-link sub-link" href="#section4-3">Our Considerations</a></li>
 					        <li><a class="head-link" href="#section5">The Future</a></li>
 
 					      </ul>
@@ -125,8 +117,11 @@
 								<p>
 									Today, more than ever, it’s apparent that sustaining the environment is a very real challenge humankind faces. An issue like the environment is generally considered a macro responsibility that a larger body needs to deal with. However, policy makers struggle to enforce new strategies that will be effective and easy to comply for individuals - who aggregate into a community that can affect the environment.
 									<br>
-									Amongst the many adversities of environmental sustainability, we decided to tackle waste segregation in the context of a university campus like that of Georgia Tech. Ultimately we conceived a wearable app that can nudge users right on time to take better decisions about throwinf their waste.
+									Amongst the many adversities of environmental sustainability, we decided to tackle waste segregation in the context of a university campus like that of Georgia Tech. Ultimately we conceived a wearable app that can nudge users right on time to take better decisions about throwing their waste.
 								</p>
+
+								<h2 id="sectionX">My Role</h2>
+
 								<h2 id="section2">The Problem</h2>
 
 								<h3 id="section2-1">Status Quo</h3>
@@ -506,6 +501,161 @@
   								Ultimately, we narrowed down the <b>Wearable Nudge Smartwatch App</b> as our final idea. This was based on the fact that it was quick to build, elegant and was far more specific in measuring what we intended to define as our success metrics.
   							</p>
 
+							<h2 id="section4">The Development</h2>
+
+							<h3 id="section4-1">Considerations</h3>
+							<p>
+								Before we went onto deciding a functional prototype to build we needed to draw out certain design decisions that we'd need to adhere to while selecting a solution. These were:
+							</p>
+
+							<div class="container">
+								<div class="row" style="margin-bottom:1em">
+									<div class="col-sm-2" style="font-size: small; text-align:center;">
+										<b>Behaviour Change</b><br>
+								    	<img src="../images/project_images/reco/change.png" style="height:30px;">
+								    	<br>
+								    	Our goal is to ultimately evoke a change in user behaviour by pursuasive nudges and not by force. The idea is to aid the user in making the choice themselves by carefully guiding them in the right path.
+								    </div>
+									<div class="col-sm-2" style="font-size: small; text-align:center;">
+										<b>Just in Time</b><br>
+								    	<img src="../images/project_images/reco/timing.png" style="height:30px;">
+								    	<br>
+								    	The phase where we believe an intervention would be effective was right when the action is taking place. This would dynamically catch the user's attention in the moment and requires less memorisation from the user.
+								    </div>
+									<div class="col-sm-2" style="font-size: small; text-align:center;">
+										<b>Convenience</b><br>
+								    	<img src="../images/project_images/reco/convenience.png" style="height:30px;">
+								    	<br>
+								    	Since our problem area involves an everyday activity, the user's comfort is of our utmost priority. Therefore, the solution shouldn't strongly disrupt the user's routine behaviour and thus should be easy and quick to use.
+								    </div>
+									<div class="col-sm-2" style="font-size: small; text-align:center;">
+										<b>Knowledge</b><br>
+								    	<img src="../images/project_images/reco/knowledge1.png" style="height:30px;">
+								    	<br>
+								    	Ultimately, we want the user to not only do the write thing, but to build knowledge. Naturally, repeated use and clarity of communicating information are prime.
+								    </div>
+								</div>
+							</div>
+
+							<p>
+								The idea that best fit these criteria was that of the <b>Wearable Nudge Smartwatch App</b>. 
+							</p>
+
+							<h3 id="section4-2">How it Works</h3>
+
+							<div class="container">
+								  <div class="row">
+								    <div class="col-sm-8" style="font-size: small;">
+								    	When a user approaches a recycling unit the proximity sensors detect which bin type they are closest to - where they are most likely to dispose off the item they possess
+								    </div>
+								  </div>
+								  <div class="row">
+									<div class="col-sm-1" style="font-size: small;">
+								    	<div style="height: 2px; background-color: #008d28; margin-top:10px"></div>
+								    </div>
+									<div class="col-sm-7" style="font-size: small;">
+								    	Based on the bin they are closest to, a vibrating notification is fired on their smartwatch with an initial probe question about the item they possess
+								    </div>
+								</div>
+								<div class="row">
+									<div class="col-sm-2" style="font-size: small;">
+								    	<div style="height: 2px; background-color: #008d28; margin-top:10px"></div>
+								    </div>
+								    <div class="col-sm-6" style="font-size: small;">
+								    	The user can answer this question (and every subsequent one) with a simple yes or a no that can be selected by basic swipe actions
+								    </div>
+								  </div>
+								<div class="row">
+									<div class="col-sm-3" style="font-size: small;">
+								    	<div style="height: 2px; background-color: #008d28; margin-top:10px"></div>
+								    </div>
+								    <div class="col-sm-5" style="font-size: small;">
+								    	Finally the user is prompted to throw the item they have in one of the bins or to try another
+								    </div>
+								  </div>
+							</div>
+							<br>
+
+							<h3 id="section4-3">Final Build</h3>
+
+							<p>
+								We identified two main areas of development including the wearable app itself and proximity sensors to be installed on the bins to trigger reaction in the nudging app.  Our initial plan was to develop the wearable app with Java and the proximity sensors with Arduino. However, due to the limited time frame given, we have decided to that sensing the proximity between user and bin then trigger signals to user’s device can be replaced by Wizard-of-oz technique. Therefore, we also developed an auxilliary wizard dashboard for a researcher to send signals and trigger a reaction on the wearable.
+								<br>
+								Before we began developing, we focused on refining the content. Our team paid another visit to the <i>Office of Facilities Management</i> to refine the content and the decision tree to be used in the wearable app to help our users segregate waste correctly on campus. We also used graphic design tool such as Sketch to create a quick preview of the UIs before diving into development.
+							</p>
+							<p>
+								Some of the specific decisions we took while building the device were:
+							</p>
+
+							<div class="container">
+								<div class="row" style="margin-bottom:1em">
+									<div class="col-sm-3" style="font-size: small;">
+										<b>Wizard of Oz</b><br>
+								    	The sensor-wearable architecture was complicated to construct given our time limitations. Thus we felt manually triggerring a remote notification on the smartwatch when the user walks up to a bin can help us achieve the same effect.
+								    </div>
+								</div>
+								<div class="row" style="margin-bottom:1em">
+									<div class="col-sm-3" style="font-size: small;">
+										<b>Minimalist UI</b><br>
+								    	To ensure maximum convenience we wanted the user to complete the given task with maximum speed. In order to do this we kept a simple aesthetic with basic interactions to minimize distractions.
+								    </div>
+								</div>
+								<div class="row" style="margin-bottom:1em">
+									<div class="col-sm-3" style="font-size: small;">
+										<b>Concise Framing of Questions</b><br>
+								    	Every question asked should be short and to the point as well as easy to understand for the user. Moreover, the user shouldn't be asked too many questions.
+								    </div>
+								</div>
+								<div class="row" style="margin-bottom:1em">
+									<div class="col-sm-3" style="font-size: small;">
+										<b>Clarity of Terminal State</b><br>
+								    	The UI should clearly indicate to the user if they are being asked a probe question or if they are being prompted at an imperative point.
+								    </div>
+								</div>
+							</div>
+
+							<p>
+								Our final prototype is also designed to help us measure 2 different success metrics. This is done by locally storing the users decisions for each question and how logging the timestamp since their initial probe and their final prompt.
+							</p>
+
+							<div class="container">
+							  <div class="row">
+							    <div class="col-sm-4" style="text-align:center; font-size: small;">
+							    	<img src="../images/project_images/reco/speed.png" style="height:30px"/>
+							    	<br>
+							    	<b>Speed</b> <br>
+							    	Measuring this passively removes the biases manually logging it in front of the user can lead to
+							    </div>
+							    <div class="col-sm-4" style="text-align:center; font-size: small;">
+							    	<img src="../images/project_images/reco/accuracy.png" style="height:30px"/>
+							    	<br>
+							    	<b>Accuracy</b> <br>
+							    	Logging user decisions not only helps tally correctness of choices but also helps understand how they arrived at a certain state
+							    </div>
+						  </div>
+						</div>
+
+						  <br>
+
+							<h2 id="section5">The Future</h2>
+
+							<h3 id="section5-1">Proposed Study</h3>
+							<p>
+								Participants will take part in a single session where they interact with reco by completing a waste sorting task.  The task involves sorting predetermined list of 15-20 sample waste items into a group of bins on Georgia Tech's campus.  The list of waste items is designed to be representative of everyday household waste that may be generated by a student.  To account for order effects, waste items will be presented in a random order.
+							</p>
+
+							<p>
+								For our first two research objectives, the following two hypotheses will be under consideration:
+								<br>
+								<i>H1 (comparing accuracy)</i> -
+								The overall accuracy of sorting waste will be significantly higher for the group using the reco compared to the controlled group.
+								<br>
+								<i>H2 (comparing convenience using task time)</i> -
+								The overall task time will not be significantly different between the two conditions.
+								<br> 
+								The study will consist of 40 participants in a between-subjects design, recruited from among the students at Georgia Tech.
+							</p>
+							
 							</div>
 						</article>
 					</div>
