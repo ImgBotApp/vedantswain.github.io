@@ -210,3 +210,32 @@ ul.nav-pills {
 #footer {
 	float: right;
 }
+
+.single10 {
+      height: 200px;
+      width: 200px;
+      border: 32px solid #3c3b3b;
+      border-radius: 50%;
+      position: relative;
+      -webkit-animation: single10anim 2s infinite linear;
+      animation: single10anim 2s infinite linear;
+      margin: 0 auto;
+   }  
+    
+   .single10:before {
+      content: '';
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background-color: #F4B350;
+      position: absolute;
+      top: -7px;
+      left: 14px;
+   }
+      
+   @-webkit-keyframes single10anim {
+      100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+   }   
+   @keyframes single10anim {
+      100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+   }
