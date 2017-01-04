@@ -76,11 +76,261 @@
 
 
 				<!-- Main -->
-				<div id="main" style="text-align:center; width:50%; margin:0 auto;">
+					<div id="main">
 
-					<div class="single10"></div>
-					<i>Do you see that yellow circle continuously revolving? Vedant is working exactly like that, tirelessly and round the clock to get this project up on his portfolio. Please be patient and check out some of the others (:</i>
 
+					<div class="container">
+					  <div class="row">
+					    <nav class="col-sm-3" id="myScrollspy">
+					      <ul class="nav nav-pills nav-stacked">
+					        <li><a class="head-link" href="#section1">Introduction</a></li>
+					        <li><a class="head-link" href="#sectionX">My Role</a></li>
+					        <li><a class="head-link" href="#section2">Past Work</a></li>
+					        <li><a class="head-link" href="#section3">New Requirements</a><li>
+					        <li><a class="head-link" href="#section4">Explorations</a></li>
+					        <li><a class="head-link" href="#section5">Ongoing Pilot Study</a></li>
+
+					      </ul>
+					    </nav>
+					    <div class="col-sm-9">
+
+								<div id="myModal" class="modal">
+							  		<img class="modal-content" id="img01">
+									<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+								  	<div id="caption"></div>
+								</div>
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2>CampusLife</h2>
+										<p>Explore mental-emotional-social context with smartphones</p>
+									</div>
+									<div class="meta">
+										<time class="published">Aug, 2016 - Jan, 2017</time>
+										<a class="author"><img src="../images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<footer>
+									<ul class="stats">
+										<li><a href="https://github.com/vedantswain/aware-client/tree/campuslife" class="icon fa-github" target="_blank">View project on Github</a></li>
+										<li><a href="http://www.quantifiedcampus.gatech.edu/" class="icon fa-globe" target="_blank">View research website</a></li>
+										<li>Team Size: 8</li>
+									</ul>
+								</footer>
+								<a class="image banner"><img src="../images/clife_cover.jpg" alt="" /></a>
+								<h2 id="section1">Introduction</h2>
+								<p>
+									Together with Dartmouth University, Carnegie Mellon University and Cornell University, we at Georgia Tech are interested in extending the seminal work of <a href="http://studentlife.cs.dartmouth.edu/" target="_blank">StudentLife</a>, started by Dartmouth’s Andrew Campbell a few years ago. Campbell sought to determine if mental health and academic performance could be correlated, or even predicted, through a student’s digital footprint. The CampusLife project is a logical extension, which aims to collect data from relevant subsets of a campus community through their interactions with mobile and wearable technology, social media and the environment itself.
+									<br>
+									In the Spring of 2016, the CampusLife team at Georgia Tech had performed a campus wide study similar to that of Dartmouth. The data collected from the study along with follow up studies with participants brought to light many pitfalls of the deployment. Due to which it was necessary to understand why these problems occurred and how can we mitigate for a future deployment in 2017.
+									<br>
+								</p>
+
+								<h2 id="sectionX">My Role</h2>
+
+								<p style="margin-bottom: 1em;">
+									This is a large project involving multiple universities. The team at Georgia Tech consists of 5 PIs and 8 student researchers - each student working under a PI and focussing on a specific area for the project. The areas can be broadly divided into privacy, social, health, informatics and technology. My work was primarily guided by <a href="http://ubicomp.cc.gatech.edu/gregory-d-abowd/" target="_blank">Gregory Abowd</a> and lied mainly in the realm of technology but was influenced by other areas too.<br>
+								</p>
+
+								<div class="container">
+									<div class="row" style="margin-bottom:1em">
+										<div class="col-sm-3" style="font-size: small; text-align:center;">
+											<b>Development Engineer</b><br>
+									    	<img src="../images/common_images/role_developer.png" style="width:30%;">
+									    </div>
+									    <div class="col-sm-5" style="font-size: small;">
+									    	I joined the team because of my background in Android development and experience in collecting sensor data passively from smartphones. I was the goto guy when it came to how the technology for the study is expected to work and understanding what its limits were. This role involved testing, unpacking and modifying the existing tools -mainly the AWARE framework used to collect context data.
+									    </div>
+									</div>
+									<div class="row" style="margin-bottom:1em">
+										<div class="col-sm-3" style="font-size: small; text-align:center;">
+											<b>Data Acquisition Researcher</b><br>
+									    	<img src="../images/common_images/role_data.png" style="width:30%;">
+									    </div>
+									    <div class="col-sm-5" style="font-size: small;">
+									    	In this position, I needed to investigate the data that was collected in the previous study for accuracy, consistency and usefulness - and subsequently the tools used for pooling this data needed to be tweaked to get better results. As this data involves quantifying humans, it was important to undersant how individuals behave in order to understand what the data is and how we retrieve that information remotely. Moreover, I was also responsible for exploring other kinds of data that can be collected and new methods to acquire it. Along with this position enabled me to conduct smaller studies to test improvements and changes.
+									    </div>
+									</div>
+									<div class="row" style="margin-bottom:1em">
+										<div class="col-sm-8" style="font-size: small;">
+											<i>Note: These roles are not necessarily exclusive to me nor are they exhaustive in describing everything I did in the project</i>
+										</div>
+									</div>
+								</div>
+
+								<br>
+
+								<h2 id="section2">Past Work</h2>
+								<h3 id="section2-1">Original Dartmouth Study</h3>
+								<p style="margin-bottom:1em">
+									StudentLife used passive and automatic sensing data from the phones of a class of 48 Dartmouth students over a 10 week term to assess their mental health (e.g., depression, loneliness, stress), academic performance (grades across all their classes, term GPA and cumulative GPA) and behavioral trends (e.g., how stress, sleep, visits to the gym, etc. change in response to college workload -- i.e., assignments, midterms, finals -- as the term progresses).
+								</p>
+								<p>
+									We use computational methods and machine learning algorithms on the phone to assess sensor data and make higher level inferences (i.e., sleep, sociability, activity, etc.) The StudentLife app that ran on students' phones automatically measured the following human behaviors 24/7 through the user's phones:
+								</p>
+
+								<div class="container">
+									  <div class="row" style="margin-bottom:1em;">
+									    <div class="col-sm-3" style="text-align:center; font-size: small;">
+									    	<img src="../images/project_images/campuslife/icons/sleep.png" style="height:30px"/>
+									    	<br>
+									    	Sleep Timings and Duration
+									    </div>
+									    <div class="col-sm-2" style="text-align:center; font-size: small;">
+									    	<img src="../images/project_images/campuslife/icons/conversation.png" style="height:30px"/>
+									    	<br>
+									    	Number of Conversations
+									    </div>
+									    <div class="col-sm-3" style="text-align:center; font-size: small;">
+									    	<img src="../images/project_images/campuslife/icons/activity.png" style="height:30px">
+									    	<br>
+									    	Physical Activity
+									    </div>
+									  </div>
+									  <div class="row" style="margin-bottom:1em;">
+									    <div class="col-sm-2" style="text-align:center; font-size: small;">
+									    	<img src="../images/project_images/campuslife/icons/location.png" style="height:30px"/>
+									    	<br>
+									    	Location
+									    </div>
+									    <div class="col-sm-2" style="text-align:center; font-size: small;">
+									    	<img src="../images/project_images/campuslife/icons/colocate.png" style="height:30px"/>
+									    	<br>
+									    	Colocated Students
+									    </div>
+									    <div class="col-sm-2" style="text-align:center; font-size: small;">
+									    	<img src="../images/project_images/campuslife/icons/mobility.png" style="height:30px"/>
+									    	<br>
+									    	Indoor/Outdoor Mobility
+									    </div>
+									    <div class="col-sm-2" style="text-align:center; font-size: small;">
+									    	<img src="../images/project_images/campuslife/icons/stress.png" style="height:30px"/>
+									    	<br>
+									    	Stress Level
+									    </div>
+									  </div>
+  									  <div class="row" style="margin-bottom:1em;">
+									    <div class="col-sm-3" style="text-align:center; font-size: small;">
+									    	<img src="../images/project_images/campuslife/icons/affect.png" style="height:30px"/>
+									    	<br>
+									    	Possitive Affect
+									    </div>
+									    <div class="col-sm-2" style="text-align:center; font-size: small;">
+									    	<img src="../images/project_images/campuslife/icons/eating.png" style="height:30px"/>
+									    	<br>
+									    	Eating Habits
+									    </div>
+									    <div class="col-sm-3" style="text-align:center; font-size: small;">
+									    	<img src="../images/project_images/campuslife/icons/app.png" style="height:30px"/>
+									    	<br>
+									    	App Usage
+									    </div>
+									  </div>
+								</div>
+
+								<br>
+								<p>
+									Some of the results from the study have been published on their <a href="http://studentlife.cs.dartmouth.edu/" target="_blank">website</a> along with the dataset that they used.
+								</p>
+
+							<div class="row">
+								<div class="col-sm-4" style="text-align:center">
+									<img src="http://studentlife.cs.dartmouth.edu/trend_0.jpg" class="project-thumb" style="height:120px">
+								</div>
+								<div class="col-sm-4" style="text-align:center">
+									<img src="http://studentlife.cs.dartmouth.edu/trend_1.jpg" class="project-thumb" style="height:120px">
+								</div>
+								<div class="col-sm-4" style="text-align:center">
+									<img src="http://studentlife.cs.dartmouth.edu/trend_2.jpg" class="project-thumb" style="height:120px">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12" style="text-align:center; font-size:small">
+									<i>Some trends from the original study by Dartmouth</i>
+								</div>
+							</div>
+
+							<p></p>
+
+								<h3 id="section2-2">CampusLife Spring 2016</h3>
+								<p style="margin-bottom:1em">
+									CampusLife is Georgia Tech's effort to emulate and improve upon the work done at Dartmouth, in the context of its own campus. The researchers at GT used 2 different tools in this study for the purpose of data acquisition:
+								</p>
+
+								<div class="container">
+									<div class="row" style="margin-bottom:1em">
+										<div class="col-sm-2" style="font-size: small; text-align:center;">
+											<b><a href="http://www.awareframework.com/" target="_blank">AWARE</a></b><br>
+									    	<img src="../images/project_images/campuslife/icons/aware.jpg" style="width:40%;">
+									    </div>
+									    <div class="col-sm-3" style="font-size: small;">
+								    		AWARE is an open source Android and iOS instrumentation framework for logging, sharing and reusing mobile context. The mobile application allows you to enable or disable sensors and plugins on smartphones that will unobtrusively collect data in the background. The data is saved locally on your mobile phone. The AWARE dashboard, lets researchers setup studies on the cloud and request participant data with periodic uploads.
+									    </div>
+	    								<div class="col-sm-3" style="text-align:center">
+											<img src="../images/project_images/campuslife/pics/aware2.png" alt="Samples of different data types AWARE is capable of collecting from phones" class="project-thumb" style="height:150px;float:left">
+											<img src="../images/project_images/campuslife/pics/aware1.png" alt="Samples of different data types AWARE is capable of collecting from phones" class="project-thumb" style="height:150px;">
+										</div>
+									</div>
+									<div class="row" style="margin-bottom:1em">
+										<div class="col-sm-2" style="font-size: small; text-align:center;">
+											<b><a href="http://quedget.com/about-us/" target="_blank">Quedget</a></b><br>
+									    	<img src="../images/project_images/campuslife/icons/quedget.png" style="width:40%">
+									    </div>
+									    <div class="col-sm-3" style="font-size: small;">
+								    		Quedget is a proprietary utility app for marketing teams and research groups to collect self reported data. Quedget replaces the standard lock-screen of a smartphone with a question widget that must be either answered or skipped to unlock the phone. This is especially useful for disseminating ecological momentary assessment (EMA) questions to participants of a study remotely and regularly.
+									    </div>
+	    								<div class="col-sm-3" style="text-align:center">
+											<img src="../images/project_images/campuslife/pics/quedget2.png" alt="rough sketch" class="project-thumb" style="height:150px;float:left">
+											<img src="../images/project_images/campuslife/pics/quedget1.png" alt="rough sketch" class="project-thumb" style="height:150px;">
+										</div>
+									</div>
+								</div>
+								<br>
+
+								<p style="margin-bottom:1em;"> 
+									In order to meet the needs of the CampusLife, both these tools were modified accordingly. While AWARE is open-source, researchers from the team were directly involved in making changes to core mechanics. On the other hand since Quedget is a commercial product, any requirements regarding that were outsourced.
+									<br>
+									Please note, CampusLife collects some information differently (e.g. the self reported information is far more broader) than the StudentLife study, and also some new kind of information (e.g. passive activity recognition, mobile communication etc). 
+								</p>
+
+								<div class="container">
+								  <div class="row">
+								    <div class="col-sm-4" style="text-align:center; font-size: small;">
+								    	<b style="color: #b19142;font-size: -webkit-xxx-large;">38</b> days<br>
+								    	From Arpil 6, 2016 - May 6, 2016
+								    </div>
+								    <div class="col-sm-4" style="text-align:center; font-size: small;">
+								    	<b style="color: #b19142;font-size: -webkit-xxx-large;">51</b> participants<br>
+								    	Of the total 63 that were enrolled 12 were removed
+								    </div>
+								  </div>
+								</div>
+
+								<br>
+								<p>
+									The data that was collected from these studies brought forth fresh requirements for the various stakeholders in this project. Why these were necessary and how we addressed these pain points will be discussed in the following sections. 
+								</p>
+
+								<h2 id="section3">New Requirements</h2>
+								<h3 id="section3-1">Stakeholders</h3>
+								<p style="margin-bottom:1em;">
+								</p>
+								<h3 id="section3-2">Passive Data</h3>
+								<h3 id="section3-3">Self-Report Data</h3>
+
+								<h2 id="section4">Explorations</h2>
+								<h3 id="section4-1">Novel Methods and Technology</h3>
+								<h3 id="section4-2">Data New and Old</h3>
+
+								<h2 id="section5">Ongoing Pilot Study</h2>
+
+
+
+						</article>
+					</div>
+					</div>
 				</div>
 					<section id="footer">
 						<p class="copyright">&copy; Vedant Das Swain | Template: <a href="http://html5up.net">HTML5 UP</a></p>
