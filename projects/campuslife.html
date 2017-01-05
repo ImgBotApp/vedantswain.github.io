@@ -141,7 +141,7 @@
 									    	<img src="../images/common_images/role_developer.png" style="width:30%;">
 									    </div>
 									    <div class="col-sm-5" style="font-size: small;">
-									    	I joined the team because of my background in Android development and experience in collecting sensor data passively from smartphones. I was the goto guy when it came to how the technology for the study is expected to work and understanding what its limits were. This role involved testing, unpacking and modifying the existing tools -mainly the AWARE framework used to collect context data. As a result of which I also step in as a liason between the CampusLife team and the AWARE team.
+									    	I joined the team because of my background in Android development and experience in collecting sensor data passively from smartphones. I was the goto guy when it came to how the technology for the study is expected to work and understanding what its limits were. This role involved testing, unpacking and modifying the existing tools -mainly the AWARE framework used to collect context data. As a result of which I also step in as a liaison between the CampusLife team and the AWARE team.
 									    </div>
 									</div>
 									<div class="row" style="margin-bottom:1em">
@@ -363,7 +363,7 @@
 								<h3 id="section3-2">Passive Data</h3>
 
 								<p>
-									A huge amount of data that is being collected is from the background, it is almost unnoticeable for the participant. However, this leads to a few different problems. The first being that while the process of data collection is invisible, it might lead to repurcussions, or if I may, side-effects, that users might experience. The next issue is the kinds of data we as researchers need to collect so that we can arrive at the goal we're aiming at. And lastly, due to the sensitivity of the data, a balance between privacy and security of information along with efficiency and quality of information needed to be struck.
+									A huge amount of data that is being collected is from the background, it is almost unnoticeable for the participant. However, this leads to a few different problems. The first being that while the process of data collection is invisible, it might lead to repercussions, or if I may, side-effects, that users might experience. The next issue is the kinds of data we as researchers need to collect so that we can arrive at the goal we're aiming at. And lastly, due to the sensitivity of the data, a balance between privacy and security of information along with efficiency and quality of information needed to be struck.
 									<br>
 									To be specific these are some of the major requirements that spun out of the Spring Study:
 								</p>
@@ -441,7 +441,7 @@
 											The challenge of utilising Bluetooth is the privacy issue concerning storing device names of other individuals and third parties who are not consenting to it. The solution to this was to anonymize any personally identifiable information even locally. In spite of all this there are still some technical glitches around using this sensor, particularly when the user has wireless audio devices users connect to. These need to be worked on before the new deployment.
 									    </div>
         								<div class="col-sm-2" style="text-align:center">
-											<img src="../images/project_images/campuslife/pics/btdata.png" alt="Rough sketch" class="project-thumb" style="width:150px;">
+											<img src="../images/project_images/campuslife/pics/btdata.png" alt="Replacing the device names with aliases for the purpose of the study would be the sensible thing to do" class="project-thumb" style="width:150px;">
 										</div>
 									</div>
 									<div class="row" style="margin-bottom:1em;">
@@ -454,7 +454,7 @@
 											To segregate the two situations, we began logging the user's keystrokes. Knowing whether the user is typing, how fast they're typing, how much they're writing and in which app they are typing - these are key features to understand how a user is interacting. Naturally, this would raise major privacy questions. A lot of which would be hard to convince the IRB of and even worse, get new participants to agree to. Thus, we decided to obscure the characters we record and never store any password information. And this level of abstraction is maintained at the local level itself, even before it's pushed to our study servers.
 									    </div>
         								<div class="col-sm-2" style="text-align:center">
-											<img src="../images/project_images/campuslife/pics/keylog.png" alt="Rough sketch" class="project-thumb" style="width:150px;">
+											<img src="../images/project_images/campuslife/pics/keylog.png" alt="For the pilot study the every character of logged is replaced and stored as '*' to protect privacy" class="project-thumb" style="width:150px;">
 										</div>
 									</div>
 	  							</div>
@@ -471,10 +471,10 @@
 									    <div class="col-sm-4" style="font-size: small;">
 											With the advent of technology, there are ways to measure or detect a user's emotion today with the development of wearable devices. The market for these devices is hot, and many commercial grade products can show user's stats about their physiological state. The primary sensors that let us tap into this kind of information is Heart-Rate Variability (HRV) and Galvanic Skin Response (GSR). Even the accelerometry data from a wearable device is far more accurate than that on a phone (that stays in your phone) and because of its positioning it can tell you more about the user.<br>
 											The first device that we sought to work with was the Microsoft Band. Not only did it have all the sensors we required, it is also gave developer access via its SDKs, that were available for both Android and iOS. Unfortunately, as we toiled to build a plugin for AWARE that could harness the power of the Band, Microsoft announced that it will be shutting production on the device. Additionally they also took down the SDKs for developers. Since our requirement was to use an off-the-shelf device, despite the Band's sophistication, it was rendered virtually obsolete for our purposes.<br>
-											This lead us to investigating all the other alternatives in the market that not only have the sensors we need but also provide the end points needed to retrieve that data for third parties. A survey of these devices lead to a competitive analysis of the products that we have considered for the future. A summary of the analytics can be seen in the table on the right.
+											This lead us to investigating all the other alternatives in the market that not only have the sensors we need but also provide the end points needed to retrieve that data for third parties. A survey of these devices lead to a competitive analysis of the products that we have considered for the future. A summary of the analytics can be seen in the table on the right. As of now, the two top runners are Jawbone UP and the Empatica E4. The only drawback is the limited developer access. This problem should solve itself given enough time.
 									    </div>
         								<div class="col-sm-2" style="text-align:center">
-											<img src="../images/project_images/campuslife/pics/analysis.png" alt="Rough sketch" class="project-thumb" style="width:150px;">
+											<img src="../images/project_images/campuslife/pics/analysis.png" alt="Competitive analysis of the sensors on wearable trackers" class="project-thumb" style="width:150px;">
 										</div>
 									</div>
 									<div class="row" style="margin-bottom:1em;">
@@ -487,8 +487,8 @@
 											One of the alternatives we have considered to use is an <a href="http://dl.acm.org/citation.cfm?doid=2858036.2858360">Unlock Journaling Utility</a> developed by James Fogarty et al at University of Washington. Prof. Fogarty graciously gave us open access to the tool and we've been tinkering with it since. This journaling app relies on a single fluid motion (without requiring the user to raise their finger from the touchscreen) to get the user to go through multiple states. We hypothesise this interaction to be far more usable. Moreover, it lets the user actually select which kind of question they want to answer at a given time.
 									    </div>
         								<div class="col-sm-2" style="text-align:center">
-											<img src="http://i.imgur.com/uyc4DWg.gif" alt="Rough sketch" class="project-thumb" style="height:150px;float:left">
-											<img src="http://i.imgur.com/PSlnixu.gif" alt="Rough sketch" class="project-thumb" style="height:150px;">
+											<img src="http://i.imgur.com/PSlnixu.gif" alt="Single instance lets user pick from two different type of questions to answer" class="project-thumb" style="height:150px;float:left">
+											<img src="http://i.imgur.com/uyc4DWg.gif" alt="Modified utility to test usability for EMAs to parents that can be helped to understand their confidence parenting" class="project-thumb" style="height:150px;">
 										</div>
 									</div>
 	  							</div>
