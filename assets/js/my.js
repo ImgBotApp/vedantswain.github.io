@@ -1,6 +1,3 @@
-$('[data-toggle="tooltip"]').tooltip(); 
-$('[data-toggle="popover"]').popover(); 
-
 $(document).ready(function(){
   $('.bxslider').bxSlider({
   	mode: 'fade',

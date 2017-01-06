@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="shortcut icon" href="../images/icon.ico" type="image/x-icon">
 		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+	    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="stylesheet" href="../assets/css/mystyle.css" />
 		<link rel="stylesheet" href="../assets/css/jquery.bxslider.css"/>
@@ -20,7 +21,7 @@
 		<script src="assets/js/ga.js"></script>
 
 	</head>
-	<body>
+	<body data-spy="scroll" data-target="#myScrollspy" data-offset="120">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -77,6 +78,26 @@
 				<!-- Main -->
 					<div id="main">
 
+					<div class="container">
+					  <div class="row">
+					    <nav class="col-sm-3" id="myScrollspy">
+					      <ul class="nav nav-pills nav-stacked">
+					        <li><a class="head-link" href="#section1">Introduction</a></li>
+					        <li><a class="head-link" href="#sectionX">My Role</a></li>
+					        <li><a class="head-link" href="#section2">The Problem</a></li>
+					        <li><a class="head-link" href="#section3">The Solution</a><li>
+					        <li><a class="head-link" href="#section4">Future</a></li>
+
+					      </ul>
+					    </nav>
+					    <div class="col-sm-9">
+
+								<div id="myModal" class="modal">
+							  		<img class="modal-content" id="img01">
+									<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+								  	<div id="caption"></div>
+								</div>
+
 						<!-- Post -->
 							<article class="post">
 								<header>
@@ -96,102 +117,160 @@
 										<li>Team Size: 5</li>
 									</ul>
 								</footer>
+
 								<a class="image banner"><img src="../images/snoo_cover.jpg" alt="" /></a>
-								<h2>Motivation</h2>
-								<p>The privacy issues in social networks lead to the popularity of anonymous networks like Reddit, Whisper and Secret. But many incidents in the past suggest that this blanket of protection may just be a puff of smoke. Anonymity can still leave footprints that can be followed by predators. Since Reddit generates a large amount of textual data and has suitable APIs to work with, this social network and its users were chosen as the sample.</p>
-								<h2>Solution</h2>
-								<p>A web tool that pulls all the public data of a given Reddit user and analysis it. Natural Language Processing and Machine Learning techniques are applied to extract sensitive information from this bulk of data. Ultimately the user must be presented a classification of how sensitive their data is based on kind of features extracted. The sensitivity of any given feature is ascertained via surveys.</p>
-								<p>SnooKnows (named after Reddit’s mascot) is a simple web tool for Reddit users to quantify their vulnerability.</p>
-								<h2>Features</h2>
-								<ul class="bxslider">
-  <li class="web-feature">
-  	<img src="../images/project_images/snooknows/screen1.jpg"/>
-  	<div class="web-feature content">
-  		<h3>Dynamic Data Fetch</h3>
-								<p>Any reddit user can use this tool to understand their vulnerability. Due to latency issues, currently it fetches the top 100 comments by the user. However this can be extended to larger bulks as the processing stage becomes faster.</i></p>
-  	</div>
-  </li>
-  <li class="web-feature">
-  	<img src="../images/project_images/snooknows/screen2.jpg"/>
-  	<div class="web-feature content">
-								<h3>Vulnerability Score</h3>
 
-<p>The user is presented with a vulnerability score that was calculated based on the number of sensitive fields the tool could infer. A list of all these fields and the inferred value is also presented. Certain objective fields also have external links that a user can use to track back to the actual comment where that piece of information was revealed.
-This score was determined based on a prior study where respondents rated how vulnerable they feel on a scale of 1-10, if someone learns about one of the fields.
-</p>
+								<h2 id="section1">Introduction</h2>
+								<p>
+									The privacy issues in social networks lead to the popularity of anonymous networks like Reddit, Whisper and Secret. But many incidents in the past suggest that this blanket of protection may just be a puff of smoke. Anonymity can still leave footprints that can be followed by predators, since users tend to be more "candid". And these traces can help ill-willed individuals harass other users in these communities with whatever information they can dig up.<br>
+									To increase the awareness of users on one such social network, Reddit, we conceived <i>SnooKnows</i> (named after Reddit’s extraterrestrial mascot). This is a simple web tool for Reddit users to quantify their vulnerability and preemptively build a defense against such harassing elements.
+								</p>
+								
+								<h2 id="section2">The Problem</h2>
+								<p style="margin-bottom:1em">
+									By the late 2000s and early 2010s the internet audience had been flooded with different social networks or online communities, each trying to offer something unique. While Facebook is arguably the most popular network, in the later years of this bubble, many anonymous networks started bubbling up. Such networks thrive on their ability to maintain a user's privacy and identity. Take for e.g. Reddit (the network we focused on in this project), it doesn't even need an email to signup. Just think of a username and password and you're good to go.
+								</p>
 
-  	</div>
-  </li>
-  <li class="web-feature">
-  	<img src="../images/project_images/snooknows/screen3.jpg"/>
-  	<div class="web-feature content">
-  		<h3>Subreddit Distribution</h3>
+								<div class="container">
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-5" style="font-size: small;">
+											<b>Anonymity ~ Candidness</b><br>
+												Many of these networks don't need photos, or "about me" sections, or anything of that sort. Without such artifacts, one would assume it separates the online personalities from their offline, or real personality. The reason being, since users are not obliged to present their offline selves (for verification, validation or otherwise), they are playing make pretend on these communities. <br>However the truth is, for many users, these anonymous networks is where they can be themselves without the fear of persecution. The defensive shield these networks provide by their abstraction, allows these supposedly elusive individuals tell the truth without fear. And this candour, often times causes user's to slip and give away valuable details.<br>
+												<i>As David Carr of The New York Times recently wrote, the anonymity of Reddit “has the odd effect of prompting users to be very intimate and remarkably candid.”Agreed. But it is not mere anonymity that makes Reddit work so well.</i>
+									    </div>
+        								<div class="col-sm-3" style="text-align:center">
+											<img src="../images/project_images/snooknows/pics/clipping1.png" alt="From: State of the Web: Reddit, the world’s best anonymous social network (Digital Trends)" class="project-thumb" style="width:90%;">
+										</div>
+									</div>
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-5" style="font-size: small;">
+											<b>Hateful Elements Exist</b><br>
+												Quite a few Reddit loyalist would claim the real spine of the community and what maintains order within the chaos of the web are the rules of Reddit, known within the community as "reddiquette".<br>
+												Yet, another nuance to Reddit is localisation of these rules to the subreddits (or discussion boards) and the strict adherence to these. An example of this is the popular <a href="https://www.reddit.com/r/nosleep/">r/nosleep</a> where nobody questions the legitimacy of the horror stories posted. This mentality has lead to the creation of hate subreddits or other subreddits that clearly thrive on character assassination. <a href="https://www.wikiwand.com/en/Controversial_Reddit_communities">Many of these have been banned</a>. But many of them can be formed quickly too. Given that users often use Reddit for help and expose their problems to a community, they put themselves at risk to negative attention from these fringe elements. This can lead to harassment of users.
+									    </div>
+        								<div class="col-sm-3" style="text-align:center">
+											<img src="../images/project_images/snooknows/pics/clipping2.png" alt="A list of banned subreddits related to bodyshaming of fat indivduals" class="project-thumb" style="height:200px;">
+										</div>
+									</div>
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-5" style="font-size: small;">
+											<b>Redditors can be Tracked</b><br>
+											Among the community members, one of the most infamous incidents of user getting tracked from their virtual profile to their real one was that <a href="http://www.theatlantic.com/technology/archive/2012/10/what-was-reddit-troll-violentacrez-thinking/263648/">u/violenacrez</a>. This man is known to be "The Biggest Troll on the Web" and was known to moderate some extremely controversial subreddits.<br>
+											Though, this is a case of investigative journalists tracking down a nefarious element on an anonymous network, there are other low-key incidents too. Many subreddits are dedicated to users talking about real incidents and or what they are like in real life. These discussions attract harassment. And one would believe that Reddit would downvote such comments into oblivion and protect the interests of the person in question. But the truth is, users can still feel threatened via personal messages, that are hidden from the community. There have been incidents of people leaving Reddit due to this feeling of insecurity.
+									    </div>
+        								<div class="col-sm-3" style="text-align:center">
+											<img src="../images/project_images/snooknows/pics/clipping3.png" alt="From: The dark side of Reddit's GoneWild (The Daily Dot)" class="project-thumb" style="width:90%;">
+										</div>
+									</div>
+								</div>
+								<br>
+								<p>Simply put, this endangers the experience of users on Reddit which can actually lead to them quitting the website in totality. This takes a hit on Reddit's user retention but also creates a hole in the space a site like Reddit could fill in people's lives.</p>
 
-<p>Sources of all the inferences are comments. On Reddit, every comment belongs to a post that belongs to a subreddit. These subreddits are topics. A split showing where maximum information is revealed can urge the user to modify their activity on that subreddit.
-</p>
+								<h2 id="section3">The Solution</h2>
 
-  	</div>
-  </li>
-  <li class="web-feature">
-  	<img src="../images/project_images/snooknows/screen4.jpg"/>
-  	<div class="web-feature content">
-  		<h3>Most Vulnerable Combination</h3>
+								<p style="margin-bottom:1em;">To tackle this problem, we developed a web tool that pulls all the public data of a given Reddit user and analysis it. Natural Language Processing and Machine Learning techniques are applied to extract sensitive information from this bulk of data. Ultimately the user is presented a classification of how sensitive their data is based on kind of features extracted.</p>
 
-<p>Once features have been extracted, the tool computes what are the possible combinations of features an attacker might learn. A prior study was used to have users rate which set of features at the hands of a predator would make them feel vulnerable. The percentage of each such combination is presented.
-The best way to understand this is, <i>“50% of people feel vulnerable only when their family members and location is known.”
-</i></p>
+								<h3 id="section3-1">Our Process</h3>
 
-  </li>
-  </ul>
+								<div class="container">
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-4" style="text-align:justify; font-size: small;">
+											<b>1) Getting the Users</b><br>
+												We floated a survey to collect the Reddit username handles within the our undergraduate institute, to obtain some ground truth. However, the response was understandably very low as most users are concerned about their privacy. Due to which few hundreds of active Reddit handles were manually handpicked by us from various popular subreddits. Only content generators and creators were selected rather than simple spectators. The reason for this was that we planned to planned to analyse the textual content posted by users as either fresh posts or comments. Since Reddit does not provide access to what users upvote, it was unreasonable to learn something about users from that information.
+									    </div>
+        								<div class="col-sm-4" style="text-align:justify; font-size: small;">
+											<b>2) Obtaining Ground Truth</b><br>
+												Once we had prepared a list, we planned to analyse the public information of these users and then follow up with them to validate our estimates. Initial analysis of the collected user profiles was via their an online Reddit analytics tool called <a href="http://snoopsnoo.com/">SnoopSnoo</a>. The results were then sent to the said users as private messages and asked to fill a form to verify the accuracy and authenticity of the results. These results were then used as ground truth for SnooKnows. <br>
+												<i>Note: At this point users were asked to provide consent for us to continue using their publicly available data</i><br>
+											<img src="../images/project_images/snooknows/pics/pic1.jpg" alt="A sample of the direct message we used to follow up our ground truth with users" class="project-thumb" style="width:90%;">
+										</div>
+									</div>
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-4" style="text-align:justify; font-size: small;">
+											<b>3) User Data Analysis</b><br>
+												Now it was time to analyse the user data themselves. We employed a third party Natural Language Processing API, known as TextRazor to analyse various features from their publicly available comments. The API extracts various things like Entities and Relationships from the given text which are then used to get attributes like things user <i>likes to discuss</i>, user’s <i>relationships</i> and <i>people in the family</i>. The API also gives the broad list of topics based on the text based on a “contextual score”.<br>
+												The results from our data are compared with the ground truth to gauge how accurate the tool we are trying to construct is.<br>
+											<img src="../images/project_images/snooknows/pics/pic2.jpg" alt="The accuracy of our extractions based on the ground truth." class="project-thumb" style="width:90%;">
+									    </div>
+										<div class="col-sm-4" style="text-align:justify; font-size: small;">
+											<b>4) Data sensitivity analysis</b><br>
+											Another survey was floated to analyse what kind of data, if gathered about anonymous users, could be sensitive and thereby potentially used against them for harassment. This survey was sent to the students in our institute and to the Reddit community for results. These were then combined at the end, for analysis, and used to come up with a vulnerability score for a Reddit user.<br>
+											Based on the score they get, the potential of them being harassed on Reddit is what is the most important information to present to users. We also decide to provide users with links to the sensitive information they posted on Reddit so that they can track back and modify the content.<br>
+											<img src="../images/project_images/snooknows/pics/pic3.jpg" alt="How vulnerable on a scale of 1-10 an average users feel if a predator learns of about one of the fields" class="project-thumb" style="width:90%;">
+									    </div>
+									</div>
+								</div>
 
-								<h2>Method</h2>
 
-<h3>Getting the Users</h3>
-  	<p>A survey to collect the Reddit handles within the institute was sent, to get the ground truth. However, the response was very low, due to which few hundreds of active Reddit handles were handpicked from various subreddits. Only content generators and creators were selected rather than simple spectators.
-</p>
+								<h3 id="section3-1">Functional Prototype</h3>
 
-<h3>Obtaining Ground Truth</h3>
-	<img class="project-img" src="../images/project_images/snooknows/pic1.jpg"/>
-<p>Initial analysis of the collected user profiles was via their an online Reddit analytics tool called SnoopSnoo. The results were then sent to the said users as private messages and asked to fill a form to verify the accuracy and authenticity of the results. These results were then used as ground truth for SnooKnows.
-</p>
 
-<h3>User Data Analysis</h3>
-  	  	<img class="project-img" src="../images/project_images/snooknows/pic2.jpg"/>
-  	  	<p><i>img. </i>The accuracy of our extractions based on the ground truth.</p>
-<p>A third party Natural Language Processing API, known as TextRazor to analyse various features from their publicly available comments. The API extracts various things like Entities and Relationships from the given text which are then used to get attributes like things user <i>likes to discuss</i>, user’s <i>relationships</i> and <i>people in the family</i>. 
-The API also gives the broad list of topics based on the text based on a “contextual score”. </p>
+								<div class="container">
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-4" style="text-align:justify; font-size: small;">
+											<b>Dynamic Data Fetch</b><br>
+												Any reddit user can use this tool to understand their vulnerability. Due to latency issues, currently it fetches the top 100 comments by the user. However this can be extended to larger bulks as the processing stage becomes faster.<br>
+											<img src="../images/project_images/snooknows/pics/pic1.jpg" alt="A sample of the direct message we used to follow up our ground truth with users" class="project-thumb" style="width:90%;">
+									    </div>
+        								<div class="col-sm-4" style="text-align:justify; font-size: small;">
+											<b>Vulnerability Score</b><br>
+												The user is presented with a vulnerability score that was calculated based on the number of sensitive fields the tool could infer. A list of all these fields and the inferred value is also presented. Certain objective fields also have external links that a user can use to track back to the actual comment where that piece of information was revealed.<br>
+												This score was determined based on a prior study where respondents rated how vulnerable they feel on a scale of 1-10, if someone learns about one of the fields.<br>
+											<img src="../images/project_images/snooknows/pics/screen2.jpg" alt="A radial meter with dynamic colour is used to draw attention to how vulnerable a user is" class="project-thumb" style="width:90%;">
+										</div>
+									</div>
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-4" style="text-align:justify; font-size: small;">
+											<b>Subreddit Distribution</b><br>
+												Sources of all the inferences this tool makes are comments. On Reddit, every comment belongs to a post that belongs to a subreddit. These subreddits are essentially topics used for discussion.<br>
+												A distribution showing where maximum information is revealed can urge the user to modify their activity on that subreddit. More importantly, they can be more cautious when interacting with members of that community.<br>
+											<img src="../images/project_images/snooknows/pics/screen3.jpg" alt="A donut chart representing where maximum vulnerable information is revealed" class="project-thumb" style="width:90%;">
+									    </div>
+										<div class="col-sm-4" style="text-align:justify; font-size: small;">
+											<b>Most Vulnerable Combination</b><br>
+											Once features have been extracted, the tool computes what are the possible combinations of features an attacker might learn. A prior study was used to have users rate which set of features at the hands of a predator would make them feel vulnerable.<br> 
+											We calculate what are the possible sets a predator can learn for this particular user. After which we present the percentage of each such combination.<br>
+											The best way to understand this is, <i>“50% of people feel vulnerable only when their family members and location is known.”</i><br>
+											<img src="../images/project_images/snooknows/pics/screen4.jpg" alt="Showing how vulnerable they might be based on multiple pieces of information someone can retrieve from their profile" style="width:90%;">
+									    </div>
+									</div>
+								</div>
 
-<h3>Data sensitivity analysis</h3>
-  	  	<img class="project-img" src="../images/project_images/snooknows/pic3.jpg"/>
-  	  	<p><i>img. </i> How vulnerable on a scale of 1-10 an average users feel if a predator learns of about one of the fields</p>
+								<p></p>
+									<img src="../images/project_images/snooknows/pics/pic4.jpg" class="project-thumb" style="height:250px" alt="The User-Application flow of the tool"><br>
+									<p></p>
+															
+								<h2 id="section4">Future</h2>
 
-<p>Another survey was floated to analyse what kind of data, if gathered about anonymous users, could be sensitive and thereby potentially used against them for harassment. This survey was sent to the students in the institute and to the Reddit community for results. These were then combined at the end, for analysis, and used to come up with a vulnerability score for a Reddit user.
-Based on the score they get, the potential of them being harassed on Reddit gets depicted too. We even provide users with links to the sensitive information they posted on Reddit.
-</p>
+								<p style="margin-bottom:1em;">
+									This tool is just a prototype and can do with a lot of improvements.
+								</p>
 
-<h2>Application Flow</h2>
+								<div class="container">
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-2" style="text-align:justify; font-size: small;">
+											<b>User Authentication</b><br>
+											Naturally, only a given Reddit user may be allowed to check their vulnerability. Without implementing this, the tool becomes a weapon for predators who we are trying to protect users from in the first place.
+									    </div>
+        								<div class="col-sm-3" style="text-align:justify; font-size: small;">
+											<b>Improvement of Vulnerability Score</b><br>
+												Based on the studies, only the sensitivity of the field has been determined, but not of its value. The overall results indicate that sexuality is not a very sensitive feature. However, this may be biased because the sample size was comprised of heterosexual individuals.
+										</div>
+										<div class="col-sm-2" style="text-align:justify; font-size: small;">
+											<b>Attack Tool</b><br>
+												Currently this is a defence tool but its usefulness in offensive measures needs to be explored. This might have a future in investigating and hunting down trolls.
+									    </div>
+									</div>
+								</div>
 
-<img class="project-img" src="../images/project_images/snooknows/pic4.jpg">
-
-							<h2>Existing Alternative</h2>
-<p><a href="http://snoopsnoo.com/" target="_blank">SnoopSnoo</a> is a publicly accessible dashboard that shows many different analytics for Reddit users and guesses features similar to SnooKnows. However, this dashboard doesn’t aim to measure vulnerability of a user and simply extracts a lot of data.</p>
-
-<h2>Future</h2>
-
-<h3>Improvement of Vulnerability Score</h3>
-
-<p>Based on the studies, only the sensitivity of the field has been determined, but not of its value. The overall results indicate that sexuality is not a very sensitive feature. However, this may be biased because the sample size was comprised of heterosexual individuals.</p>
-
-<h3>User Authentication</h3>
-
-<p>Naturally, only a given Reddit user may be allowed to check their vulnerability.</p>
-
-<h3>Attack Tool</h3>
-
-<p>Currently this is a defence tool but its usefulness in offensive measures needs to be explored.</p>
-
+								<p>
+									Beyond all this, there needs to be much more user testing for the tool and interface itself. The information visualisation may not be the best means of communicating the point of this tool to a user. These are the future challenges for SnooKnows.
+								</p>
 
 							</article>
+						</div>
+					</div>
+				</div>
 
 							<section id="footer">
 								<p class="copyright">&copy; Vedant Das Swain | Template: <a href="http://html5up.net">HTML5 UP</a></p>
@@ -208,6 +287,7 @@ Based on the score they get, the potential of them being harassed on Reddit gets
 			<script src="../assets/js/main.js"></script>
 			<script src="../assets/js/jquery.bxslider.min.js"></script>
 			<script src="../assets/js/my.js"></script>
+			<script src="../assets/js/project.js"></script>
 
 	</body>
 </html>
