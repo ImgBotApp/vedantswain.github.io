@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="shortcut icon" href="../images/icon.ico" type="image/x-icon">
 		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+	    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="stylesheet" href="../assets/css/mystyle.css" />
 		<link rel="stylesheet" href="../assets/css/jquery.bxslider.css"/>
@@ -20,7 +21,7 @@
 		<script src="assets/js/ga.js"></script>
 
 	</head>
-	<body>
+	<body data-spy="scroll" data-target="#myScrollspy" data-offset="120">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -77,6 +78,28 @@
 				<!-- Main -->
 					<div id="main">
 
+
+					<div class="container">
+					  <div class="row">
+					    <nav class="col-sm-3" id="myScrollspy">
+					      <ul class="nav nav-pills nav-stacked">
+					        <li><a class="head-link" href="#section1">Introduction</a></li>
+					        <li><a class="head-link" href="#sectionX">My Role</a></li>
+					        <li><a class="head-link" href="#section2">The Problem</a></li>
+					        <li><a class="head-link" href="#section3">The Solution</a><li>
+					        <li><a class="head-link" href="#section4">The Findings</a><li>
+					        <li><a class="head-link" href="#section5">Future</a></li>
+
+					      </ul>
+					    </nav>
+					    <div class="col-sm-9">
+
+								<div id="myModal" class="modal">
+							  		<img class="modal-content" id="img01">
+									<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+								  	<div id="caption"></div>
+								</div>
+
 						<!-- Post -->
 							<article class="post">
 								<header>
@@ -96,101 +119,273 @@
 									</ul>
 								</footer>
 								<a class="image banner"><img src="../images/focus_cover.jpg" alt="" /></a>
-								<h2>Motivation</h2>
-								<p>With the incessant arrival of new engaging apps coupled with the immersiveness of other classics, users have gained access to vast multitude of activities. However, for many individuals it becomes a challenge to understand which of these apps actually lead to productivity. Since productivity is a very subjective attribute, a simple tag to weed out applications that are not useful is inadequate.</p>
-								<h2>Solution</h2>
-								<p>User’s should be provided the discretion of assigning the utility of a given app, as per their personal activity. Moreover, a real time monitoring system to understand and visualise their smart phone usage will elucidate them about their daily productive. These coupled with positive reinforcement and regular encouragement makes the app a wholesome productivity tracker.</p>
-								<p>F.O.C.U.S (Focus on Constructive and Useful Stuff) is an android app that tries to fulfil these tasks in order to tackle the problem.</p>
-								<h2>Features</h2>
-								<ul class="bxslider">
-  <li class="app-feature">
-  	<img src="../images/project_images/focus/screen1.jpg"/>
-  	<div class="app-feature content">
-  		<h3>Configure Utility</h3>
-								<p>Every user is enabled to pick out which apps to track and select (on a scale of 1-10) how useful an app is to them. A simple way of explaining this to the user was, <i>“How many times out of 10 do use app A for productive tasks?”</i></p>
-  	</div>
-  </li>
-  <li class="app-feature">
-  	<img src="../images/project_images/focus/screen2.jpg"/>
-  	<div class="app-feature content">
-								<h3>Real Time Monitoring</h3>
 
-<p>Based on user configurations, the app monitors the duration other apps remain on the foreground. Depending on how an app is scored, an overall productivity score for that day is gauged. <i>E.g. App A is scored 5/10 and the user uses it for an hour. The user’s will be shown that their day has been 50% productive so far and they’ve spent 30 minutes productively.</i></p>
+								<h2 id="section1">Introduction</h2>
+								<p>
+									With the incessant arrival of new engaging apps coupled with the how immersive the classics are, users have gained access to vast multitude of activities - social networking, streaming videos, group conversations are some. However, for many individuals it becomes a challenge to understand which of these apps actually lead to productivity. Since productivity is a very subjective attribute, a simple tag to weed out applications that are not useful is inadequate.<br>
+									<i>F.O.C.U.S.</i> is a reflection tool to provide actionable information to users that are interested in optimising the time they spend on their phones. The aim of this smartphone application is to make users aware of their distractions and attempts to motivate them to adjust their behaviour to be more productive.<br>
+									<iframe width="560" height="315" style="margin-left:12%" src="https://www.youtube.com/embed/PYIrWva51T0" frameborder="0" allowfullscreen></iframe>
+								</p>
 
-  	</div>
-  </li>
-  <li class="app-feature">
-  	<img src="../images/project_images/focus/screen3.jpg"/>
-  	<div class="app-feature content">
-  		<h3>Aggregate Statistics</h3>
+								<h2 id="sectionX">My Role</h2>
 
-<p>Apart from daily monitoring, a user may also view their overall productivity over all time. Being exposed to their record over a period of time helps them remain motivated.</p>
+								<p style="margin-bottom: 1em;">
+									This project was a part of one of my undergraduate courses, <i>Designing Human Centered Systems</i>. It was a heavy chunk of the course grade and took us the entire semester to build over. The phases of this piece of work, can be broadly split into finding the problem and then iterating a solution from paper to functional. While initially the team roles were more fluid, we eventually diverged into specialised roles when the problem was less nebulous.
+								</p>
 
-  	</div>
-  </li>
-  <li class="app-feature">
-  	<img src="../images/project_images/focus/screen4.jpg"/>
-  	<div class="app-feature content">
-  		<h3>App Wise Breakdown</h3>
+								<div class="container">
+									<div class="row" style="margin-bottom:1em">
+										<div class="col-sm-3" style="font-size: small; text-align:center;">
+											<b>User Testing</b><br>
+									    	<img src="../images/common_images/role_research.png" style="width:30%;">
+									    </div>
+									    <div class="col-sm-5" style="font-size: small;">
+									    	At the initial stages of the project, to maximize our data we split the load of the user research. Hence, like all of my other teammates, I too was involved in conducting user testing with think-aloud sessions as well as facilitating follow up interviews. And eventually, all of worked together to affinity map and build up themes from our iterations.
+									    </div>
+									</div>
+									<div class="row" style="margin-bottom:1em">
+										<div class="col-sm-3" style="font-size: small; text-align:center;">
+											<b>Design and Frontend Development</b><br>
+									    	<img src="../images/common_images/role_data.png" style="width:30%;">
+									    </div>
+									    <div class="col-sm-5" style="font-size: small;">
+									    	Due to my experience in sketching and design as a hobby, I lead the lo-fi prototyping of our solution. This included rapid iterations of different layouts on paper to eventually porting it to a higher fidelity digital prototype. <br>
+									    	After which, I worked on building the skeleton and the structure for our tool on Android. The frontend display and the backend processing of this application were built in isolation - as black boxes to each other. Once these had been merged, I also polished the more surface level issues like aesthetics, animations etc.
+									    </div>
+									</div>
+									<div class="row" style="margin-bottom:1em">
+										<div class="col-sm-8" style="font-size: small;">
+											<i>Note: These roles are not necessarily exclusive to me nor are they exhaustive in describing everything I did in the project</i>
+										</div>
+									</div>
+								</div>
 
-<p>Along with this a real time app wise breakdown of the productivity is also provided. This helps a user understand how much an app contributes to their total productivity. Furthermore a user can select an app and get in-depth statistics of that app over time. On observing this a user can pinpoint which apps to spend more time on and which ones to avoid.</p>
+								<br>
 
-  </li>
+								<h2 id="section2">The Problem</h2>
 
-  <li class="app-feature">
-  	<img src="../images/project_images/focus/screen5.jpg"/>
-  	<div class="app-feature content">
-								<h3>Zen Mode</h3>
+									<p style="margin-bottom:1em;">
+										The Google Play Store has an entire segment dedicated to <a href="https://play.google.com/store/apps/category/PRODUCTIVITY">Productivity</a>. Many of the applications found here are for doing productive work and the others, the more meta ones, are to measure and ensure productivity. We are interested in the latter set, where the apps either track your phone usage or help you log your habits (such as to-do lists and goal trackers). To zoom in further, let's take the case of one of the more popular apps of the time, that addresses phone usage.<br>
+										<a href="https://play.google.com/store/apps/details?id=com.zerodesktop.appdetox.qualitytime" target="_blank">QualityTime</a> is an app on that is motivated by a similar problem. QT’s approach relies on simply displaying the user raw duration based data. It doesn’t quantify the productivity in anyway, rather expecting the user to mentally work that bit out. While QT provides a breadth of information to the user, how much of it is really useful can be questioned. It acts like a bulletin that does increase a user's knowledge, but one might argue that this information is rather trivial.<br>
+										And there are many other apps similar to this, that lead to similar problems.
+									</p>
 
-<p>A simple feature that allows the user to set a time during which they must remained focussed on another task away from the phone. If the user gets distracted and opens a new app or responds to a notification, their zen breaks. The aim of this feature is for the user to self train themselves to focus their attention.</p>
-  </li>
 
-    <li class="app-feature">
-  	<div class="app-feature content">
-								<h3>Daily Notifications</h3>
+								<div class="container">
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-2" style="text-align:justify; font-size: small;">
+											<b>Meaningful Information</b><br>
+									    	<img src="../images/project_images/focus/icons/meaning.png" style="width:20%; margin-left:30%"/>
+									    	<br>
+									    	A lot of raw data, seems like useful information. But a user needs to mentally take the effort to draw inferences from them. Which bits to ignore and what some bits even mean. Throwing numbers at a user can lead to an overload and even worse a misinterpretation.
+									    </div>
+        								<div class="col-sm-3" style="text-align:justify; font-size: small;">
+											<b>Personalisation</b><br>
+									    	<img src="../images/project_images/focus/icons/personal.png" style="width:22%; margin-left:30%"/>
+									    	<br>
+									    	Every application has a different meaning for a user and each user might associate with an app differently. While Facebook might be universally panned as a distraction, for some occupations, like marketing, it's a major resource. The same argument can be made for other applications like YouTube, which can be used for learning as well as leisure.<br>
+									    	There needs to be a way to tailor how a user perceives an app into computing whether a particular application is productive or not.
+										</div>
+										<div class="col-sm-2" style="text-align:justify; font-size: small;">
+											<b>Reinforcements</b><br>
+									    	<img src="../images/project_images/focus/icons/motivate.png" style="width:20%; margin-left:30%"/>
+									    	<br>
+									    	At the end of the day the user needs validation of their actions. They need a push when they are going right, and a rectification when they are deviating from their goals. Beyond the reflection, the user is in need of some subtle nudges that can guide them to improve their habits.
+									    </div>
+									</div>
+								</div>
 
-<p>Every time a user’s productivity for the day surpasses their average, they are encouraged with a positive notification. In case of failing to do so they are encouraged to do better. This also leads to the user remaining engaged.</p>  </li>
-  
-  </ul>
+								<br>
 
-								<h2>Iterations</h2>
-  	<img class="project-img" src="../images/project_images/focus/pic1.jpg"/>
-<p>The initial design was meant to be extremely minimalist. A static single screen was used to show the user their progress. This screen also housed basic icons which would lead to different screens for different purposes. The idea was to put a spotlight on the main activity of the app, that is to monitor your daily productivity, while letting the users go to other screens on a need basis.</p>
-	<img class="project-img" src="../images/project_images/focus/pic2.jpg"/>
-<p>Primary evaluations of that prototype lead us to modify the UI such that it is more intuitive. User’s wanted equally quick access to other screens as well. Plus, they would often tend to quickly switch across multiple screens to understand their phone usage better. The next iteration improved upon this feedback by placing the major screens as laterally navigable tabs. Infrequent tasks were collapsed and placed in a hamburger menu.</p>
-  	  	<img class="project-img" src="../images/project_images/focus/pic3.jpg"/>
-<p>As a solution FOCUS strongly hinges on user input to gauge the productivity of an app while monitoring it. Often some users would forget or ignore this aspect. Consequently their app would not produce the best results. In order to ensure users provide the initial impetus required to make FOCUS work, overlay tutorials triggered when the app starts. This behaved as a virtual tour for the user.</p>
+								<h2 id="section3">The Solution</h2>
 
-<p>For the solution to this problem, the original concept was expected to be thorough, i.e. it tracks all apps. What subsequent evaluations revealed was that this can lead to a lot of noise, while a user is only interested in understanding their engagement with particular apps. An opt-in based mechanism with normalised ratings were given to every app on the phone. Now, every user could personally configure what FOCUS tracks.</p>
-  	<img class="project-img" src="../images/project_images/focus/pic4.jpg"/>
-<p>The last user study that was conducted had testers use the app on their own phones for over a week. At the end of this duration they answered a questionnaire. New areas of improvement came to light. These are especially relevant since this app is supposed to be a long-term lifestyle app</p>
+								<p style="margin-bottom:1em;">User’s should be provided the discretion of assigning the utility of a given app, as per their personal activity. Moreover, a real time monitoring system to understand and visualise their smart phone usage will elucidate them about their daily productive. These coupled with positive reinforcement and regular encouragement makes the app a wholesome productivity tracker.</p>
+								
+								<h3 id="section3-1">Iterations</h3>
 
-	<h2>Reporting</h2>
-	<h3>Usage Statistics</h3>
-		<p>App usage stats were being recorded whenever the app is used. Recorded parameters are: which screens were visited, how often were indepth stats viewed, how often was Zen Mode used/completed etc.</p>
-		<p>This data was stored locally and collected from the test users at the end of the final study.</p>
 
-							<h2>Existing Alternative</h2>
-<p><a href="https://play.google.com/store/apps/details?id=com.zerodesktop.appdetox.qualitytime" target="_blank">QualityTime</a> is an app on the Google Play Store that is motivated by a similar problem. Although QT’s approach relies on simply displaying the user raw duration based data. It doesn’t quantify the productivity in anyway, rather expecting the user to mentally work that bit out. However, it is far most robust and extensive in the breadth of its information.</p>
+							<div class="container">
+								<div class="row" style="margin-bottom:1em">
+									<div class="col-sm-3" style="font-size: small;">
+										<b>1) Paper Prototype</b><br>
+								    	The initial design was meant to be extremely minimalist. A static single screen was used to show the user their progress. This screen also housed basic icons which would lead to different screens for different purposes. The idea was to put a spotlight on the main activity of the app, that is to monitor your daily productivity, while letting the users go to other screens on a need basis.
+								    </div>
+    								<div class="col-sm-5" style="text-align:center">
+										<img src="../images/project_images/focus/pics/pic1.png" class="project-thumb" style="width:80%" alt="Primary evaluations with our paper prototypes">
+									</div>
+								</div>
+								<div class="row" style="margin-bottom:1em">
+									<div class="col-sm-3" style="font-size: small;">
+										<b>2) Modified Prototype</b><br>
+								    	Primary evaluations of that prototype lead us to modify the UI such that it is more intuitive. User’s wanted equally quick access to other screens as well. Plus, they would often tend to quickly switch across multiple screens to understand their phone usage better. The next iteration improved upon this feedback by placing the major screens as laterally navigable tabs. Infrequent tasks were collapsed and placed in a hamburger menu.
+								    </div>
+    								<div class="col-sm-5" style="text-align:center">
+										<img src="../images/project_images/focus/pics/pic2.jpg" class="project-thumb" style="width:80%">
+									</div>
+								</div>
+								<div class="row" style="margin-bottom:1em">
+									<div class="col-sm-3" style="font-size: small;">
+										<b>3) Adding Customisations</b><br>
+								    	As a solution FOCUS strongly hinges on user input to gauge the productivity of an app while monitoring it. Often some users would forget or ignore this aspect. Consequently their app would not produce the best results. In order to ensure users provide the initial impetus required to make FOCUS work, overlay tutorials triggered when the app starts. This behaved as a virtual tour for the user.</br>
+								    	The solution to this problem, the original concept was expected to be thorough, i.e. it tracks all apps. What subsequent evaluations revealed was that this can lead to a lot of noise, while a user is only interested in understanding their engagement with particular apps. An opt-in based mechanism with normalised ratings were given to every app on the phone. Now, every user could personally configure what FOCUS tracks.
+								    </div>
+    								<div class="col-sm-5" style="text-align:center">
+										<img src="../images/project_images/focus/pics/pic3.jpg" class="project-thumb" style="width:80%">
+									</div>
+								</div>
+  							</div>
 
-<p>Another feature of QT that needs to mentioned is called Take-a-Break. Unlike Zen Mode that is virtually trying to act as a Yoda or a Miyagi for the user, Take-a-Break puts the user on a leash. If this mode is activated, the user is practically enslaved out of their phone as QT automatically pops up on every attempt to change the app.</p>
+  							<br>
 
-<h2>Future</h2>
+								<h3 id="section3-2">Final Prototype</h3>
 
-<h3>Gamification</h3>
+								<p style="margin-bottom:1em;">F.O.C.U.S (Focus on Constructive and Useful Stuff) is what we call the android app that tries to fulfill these tasks in order to tackle the problem.</p>
 
-<p>Rewarding the user with badges and achievements (such as zen mode streaks) can make it extremely engaging.</p>
+								<div class="container">
+									<div class="row" style="margin-bottom:1em">
+										<div class="col-sm-2" style="font-size: small; text-align: justify;">
+											<b>Configure Utility</b><br>
+											Every user is enabled to pick out which apps to track and select (on a scale of 1-10) how useful an app is to them. A simple way of explaining this to the user was, <i>“How many times out of 10 do use app A for productive tasks?”</i>
+										</div>
+										<div class="col-sm-2" style="font-size: small;">
+										<img src="../images/project_images/focus/pics/screen1.jpg" class="project-thumb" style="height:200px" alt="Users can opt-in and decide which apps to track and user a slider to define how productive an app is for them personally">
+										</div>
+										<div class="col-sm-2" style="font-size: small; text-align: justify;">
+											<b>Real-time Reflection</b><br>
+											Based on user configurations, the app monitors the duration other apps remain on the foreground. Depending on how an app is scored, an overall productivity score for that day is gauged. <i>E.g. App A is scored 5/10 and the user uses it for an hour, then the user’s will be shown that, their day has been 50% productive so far and they’ve spent 30 minutes productively </i>.
+										</div>
+										<div class="col-sm-2" style="font-size: small;">
+										<img src="../images/project_images/focus/pics/screen2.jpg" class="project-thumb" style="height:200px" alt="The landing tab of the app is a radial dial that shows their productivity for the day and how far they are from the target.">
+										</div>
+									</div>
+									<div class="row" style="margin-bottom:1em">
+										<div class="col-sm-3" style="font-size: small;">
+											<img src="../images/project_images/focus/pics/screen3.jpg" class="project-thumb" style="width:80%" alt="">
+										</div>
+										<div class="col-sm-5" style="font-size: small; text-align: justify;">
+											<b>Aggregate Statistics</b><br>
+											Apart from daily monitoring, a user may also view their overall productivity over all time. Being exposed to their record over a period of time helps them remain motivated.
+										</div>
+									</div>
+									<div class="row" style="margin-bottom:1em">
+										<div class="col-sm-5" style="font-size: small; text-align: justify;">
+											<b>App-Wise Breakdown</b><br>
+											Along with this a real time app wise breakdown of the productivity is also provided. This helps a user understand how much an app contributes to their total productivity. Furthermore a user can select an app and get in-depth statistics of that app over time. On observing this a user can pinpoint which apps to spend more time on and which ones to avoid.
+										</div>
+										<div class="col-sm-3" style="font-size: small;">
+											<img src="../images/project_images/focus/pics/screen4.jpg" class="project-thumb" style="width:80%" alt="">
+										</div>
+									</div>
+									<div class="row" style="margin-bottom:1em">
+										<div class="col-sm-3" style="font-size: small;">
+											<img src="../images/project_images/focus/pics/screen3.jpg" class="project-thumb" style="width:80%" alt="">
+										</div>
+										<div class="col-sm-5" style="font-size: small; text-align: justify;">
+											<b>Aggregate Statistics</b><br>
+											Apart from daily monitoring, a user may also view their overall productivity over all time. Being exposed to their record over a period of time helps them remain motivated.
+										</div>
+									</div>
+									<div class="row" style="margin-bottom:1em">
+										<div class="col-sm-3" style="font-size: small; text-align: justify;">
+											<b>Zen Mode</b><br>
+											A simple feature that allows the user to set a time during which they must remained focused on another task away from the phone. If the user gets distracted and opens a new app or responds to a notification, their zen breaks. The aim of this feature is for the user to self train themselves to focus their attention.
+										</div>
+										<div class="col-sm-2" style="font-size: small;">
+										<img src="../images/project_images/focus/pics/screen5.jpg" class="project-thumb" style="height:200px" alt="">
+										</div>
+										<div class="col-sm-2" style="font-size: small; text-align: justify;">
+											<b>Daily Notifications</b><br>
+											Every time a user’s productivity for the day surpasses their average, they are encouraged with a positive notification. In case of failing to do so they are encouraged to do better. This also leads to the user remaining engaged.
+										</div>
+									</div>
+								</div>
 
-<h3>Competition</h3>
+								<p></p>
 
-<p>Global, local or social leaderboards that users can participate in would bring in added enjoyment and regularity of use.</p>
 
-<h3>Parental/Employer Perspective</h3>
+							<h2 id="section4">The Findings</h2>
+							<h3 id="section4-1">User Study</h3>
 
-<p>One possible use case would be to allow higher entity to access this information and accordingly provide bonuses.</p>
 
+								<div class="container">
+									  <div class="row" style="margin-bottom:1em;">
+									    <div class="col-sm-4" style="text-align:center; font-size: small;">
+									    	<b style="color: #247ebe; font-size: -webkit-xxx-large;">21</b> participants<br>
+									    </div>
+									    <div class="col-sm-4" style="text-align:center; font-size: small;">
+									    	<b style="color: #247ebe; font-size: -webkit-xxx-large;">7</b> days<br>
+									    </div>
+									</div>
+									<div class="row" style="margin-bottom:1em;">
+									    <div class="col-sm-7" style="text-align:center; font-size: small;">
+									    	The app was deployed to students in our institute to use without our intervention
+									    </div>
+									</div>
+								</div>
+
+							<p style="margin-bottom:1em;">App usage stats were being recorded whenever the app is used. Recorded parameters are: which screens were visited, how often were indepth stats viewed, how often was Zen Mode used/completed etc.<br>
+							This data was stored locally and collected from the test users at the end of the final study.</p>
+
+							<img src="../images/project_images/focus/pics/pic4.png" class="project-thumb" style="width:80%">
+							<br>
+
+							<div class="container">
+								 <div class="row" style="margin-bottom:1em;">
+								    <div class="col-sm-4" style="text-align:center; font-size: small;">
+										<img src="../images/project_images/focus/pics/stats1.png" class="project-thumb" style="width:80%">
+								    </div>
+								    <div class="col-sm-4" style="text-align:center; font-size: small;">
+										<img src="../images/project_images/focus/pics/stats2.png" class="project-thumb" style="width:80%">
+								    </div>
+								</div>
+								 <div class="row" style="margin-bottom:1em;">
+								    <div class="col-sm-4" style="text-align:center; font-size: small;">
+										<img src="../images/project_images/focus/pics/stats3.png" class="project-thumb" style="width:80%">
+								    </div>
+								    <div class="col-sm-4" style="text-align:center; font-size: small;">
+										<img src="../images/project_images/focus/pics/stats4.png" class="project-thumb" style="width:80%">
+								    </div>
+								</div>
+							</div>
+
+							<p>The last user study that was conducted had testers use the app on their own phones for over a week. At the end of this duration they answered a questionnaire. And hence, new areas of improvement came to light. These are especially relevant since this app is supposed to be a long-term lifestyle app</p>
+
+
+						<h2 id="section5">Future</h2>
+
+
+
+								<div class="container">
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-2" style="text-align:justify; font-size: small;">
+											<b>Gamification</b><br>
+									    	<img src="../images/project_images/focus/icons/game.png" style="width:20%; margin-left:30%"/>
+									    	<br>
+									    	Rewarding the user with badges and achievements (such as zen mode streaks) can make it extremely engaging.
+									    </div>
+        								<div class="col-sm-3" style="text-align:justify; font-size: small;">
+											<b>Competition</b><br>
+									    	<img src="../images/project_images/focus/icons/competition.png" style="width:17%; margin-left:30%"/>
+									    	<br>
+									    	Global, local or social leaderboards that users can participate in would bring in added enjoyment and regularity of use.
+										</div>
+										<div class="col-sm-2" style="text-align:justify; font-size: small;">
+											<b>Surveillance</b><br>
+									    	<img src="../images/project_images/focus/icons/control.png" style="width:20%; margin-left:30%"/>
+									    	<br>
+									    	One possible commercial use case would be to allow a parent/employer to access this information.
+									    </div>
+									</div>
+								</div>
+
+								<br>
+
+								<p>These are just future directions an application of this type can explore</p>
 
 							</article>
+						</div>
+					</div>
+				</div>
 
 							<section id="footer">
 								<p class="copyright">&copy; Vedant Das Swain | Template: <a href="http://html5up.net">HTML5 UP</a></p>
@@ -207,6 +402,7 @@
 			<script src="../assets/js/main.js"></script>
 			<script src="../assets/js/jquery.bxslider.min.js"></script>
 			<script src="../assets/js/my.js"></script>
+			<script src="../assets/js/project.js"></script>
 
 	</body>
 </html>

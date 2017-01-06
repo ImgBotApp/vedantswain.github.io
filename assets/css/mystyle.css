@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .image.banner {
 			display: block;
 			margin: 0 0 3em 0;
@@ -145,6 +150,7 @@ ul.nav-pills {
     display: block;
     height: 80%;
     max-height: 500px;
+    max-width: 100%;
     background-color: rgba(0,0,0,0); /* Fallback color */
 
 }
