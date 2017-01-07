@@ -172,6 +172,10 @@ ul.nav-pills {
     cursor: pointer;
 }
 
+.container {
+	max-width: 100%;
+}
+
 #caption {
     margin: auto;
     display: block;
