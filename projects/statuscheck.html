@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="shortcut icon" href="../images/icon.ico" type="image/x-icon">
 		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+	    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="stylesheet" href="../assets/css/mystyle.css" />
 		<link rel="stylesheet" href="../assets/css/jquery.bxslider.css"/>
@@ -20,7 +21,7 @@
 		<script src="assets/js/ga.js"></script>
 
 	</head>
-	<body>
+	<body data-spy="scroll" data-target="#myScrollspy" data-offset="120">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -77,6 +78,28 @@
 				<!-- Main -->
 					<div id="main">
 
+
+					<div class="container">
+					  <div class="row">
+					    <nav class="col-sm-3" id="myScrollspy">
+					      <ul class="nav nav-pills nav-stacked">
+					        <li><a class="head-link" href="#section1">Introduction</a></li>
+					        <li><a class="head-link" href="#sectionX">My Role</a></li>
+					        <li><a class="head-link" href="#section2">The Problem</a></li>
+					        <li><a class="head-link" href="#section3">The Solution</a><li>
+					        <li><a class="head-link" href="#section5">Future</a></li>
+
+					      </ul>
+					    </nav>
+					    <div class="col-sm-9">
+
+						<div id="myModal" class="modal">
+					  		<img class="modal-content" id="img01">
+							<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+						  	<div id="caption"></div>
+						</div>
+
+
 						<!-- Post -->
 							<article class="post">
 								<header>
@@ -92,110 +115,168 @@
 								<footer>
 									<ul class="stats">
 										<li><a href="https://github.com/vedantswain/Status-Check" class="icon fa-github" target="_blank">View project on Github</a></li>
-										<li>Team Size: 1</li>
+										<li>Team Size: 2</li>
 									</ul>
 								</footer>
 								<a class="image banner"><img src="../images/scheck_cover.jpg" alt="" /></a>
-								<h2>Motivation</h2>
-								<p>Social media is often used as a channel to broadcast one’s views. Often these opinions are politically incorrect, harassing or strongly obscene. Many such posts often lead to larger problems. Sometimes users get arrested. At other times they might get targeted by others, leading them to take drastic measures.</p>
-								<h2>Solution</h2>
-								<p>Nudging users with information was already being explored. Drawing inspiration from <a href="http://precog.iiitd.edu.in/events/psosm2013/9psosm6-wang.pdf">this paper</a>, a new solution was conceived. While the paper mostly dealt with the privacy aspect of posts, the tool being discussed focusses on the security aspect.</p>
-								<p>In order to maintain the immersion provided by social media, this tool is packaged in the form of a browser extension that can provide vital information about a user’s post before it is published as a status.</p>
+
+								<h2 id="section1">Introduction</h2>
+
+								<p>
+									In the 2nd decade of the 21st century, social media is often used as the primary channel to broadcast one’s views. Amidst this plethora of statements in the web space, arguably a significant proportion of these opinions are politically incorrect, harassing or strongly obscene.Many such posts often lead to larger problems. Sometimes users get arrested. At other times they might get targeted by others, leading them to take drastic measures.<br>
+									We prototype a light weight chrome extension for Facebook users to receive just-in-time persuasive nudges before they publish their post. The aim of this is to improve posting practices online.
+								</p>
+
+								<h2 id="sectionX">My Role</h2>
+
+								<p style="margin-bottom: 1em;">
+									I got hands on with this project during final summer of undergrad. I closely worked with, Niharika Sachdeva a PhD student at IIIT-Delhi associated with the research group, <a href="http://precog.iiitd.edu.in/">Precog</a> who guided me with her prior research in this space. Our primary investigator for this endeavour was <a href="http://precog.iiitd.edu.in/people/pk/Home.html">Dr. Ponnurangam Kumaraguru</a>.<br>
+									The design and development of the tool itself was largely performed by me alone, with valuable inputs and feedback from others.
+								</p>
+
+								<div class="container">
+									<div class="row" style="margin-bottom:1em">
+										<div class="col-sm-4" style="font-size: small; text-align:center;">
+											<b>Full Stack</b><br>
+									    	<img src="../images/common_images/role_full.png" style="width:30%;">
+									    </div>
+									    <div class="col-sm-8" style="font-size: small;">
+									    	Brought into this project as a developer, I was in control of the construction of the tool itself from the start to the end. This involved skeletal layouts as well as surface level decisions. I had to manage engineering both the frontend (built on Javascript) and the backend (putting together a Django server). Therefore, designing an extension that injects code into Facebook, while still blending into the native interface of the site was my first task. My other was to build the architecture to communicate with other APIs, as well as analyse text.<br>
+									    	Thus, any changes at any of the different planes of UX/UI were all under my belt.
+									    </div>
+									</div>
+									<div class="row" style="margin-bottom:1em">
+										<div class="col-sm-12" style="font-size: small;">
+											<i>Note: These roles are not necessarily exclusive to me nor are they exhaustive in describing everything I did in the project</i>
+										</div>
+									</div>
+								</div>
+
+								<br>
+
+								<h2 id="section2">The Problem</h2>
+
+								<p style="margin-bottom:1em;">
+									Getting in trouble because of posting something inappropriate online is not unheard of today. The cases can vary from cyber-bullying to exposing the world to legally questionable activities. Agreed, there is a strong argument regarding free speech in modern democracies when it comes to cases like this. However, our aim is not to enter the ethical and moral debate regarding whether it is right or wrong. Rather, the problem we deal with is that the way things are today, people who post such content risk facing difficulties and challenges to even keep their head up after. Not to forget, the ripples it creates in their networks.
+								</p>
+								<p style="margin-bottom:1em;">
+									One of the most unexpected challenges that can arise due to one's social network behaviour is legal ramifications. In the November of 2012, 2 ladies from Mumbai, India were arrested for a post about the death of a regional political leader. In retrospect, the argument has remained that the <a href="http://timesofindia.indiatimes.com/city/mumbai/Shame-2-girls-arrested-for-harmless-online-comment/articleshow/17286105.cms">post in itself</a> was innocuous, or at the very least not vitriolic. However, the state was quick enough to act and had two innocent women had to encounter police handling and angered loyalists. The debate and discussion only emerged after. Thus, it's understandable to see why users need to be preempted before they go through traumatic experience. Especially when they belong to politically volatile environments.<br>
+									<img src="../images/project_images/statuscheck/pics/pic2.png" class="project-thumb" style="width:70%" alt="Writing this made the posters life extrememly miserable for the days to come">
+								</p>
+
+								<p style="margin-bottom:1em;">
+									Another challenge faced by many netizens is becoming the target of cyber-bullying or online harassment. What is worse is, that the perpetrators often don't realise they're doing it. Many join in the crowd. Many can't gauge how harmful their words might be, or how it could possibly effect others. Getting a backlash on a post or a comment isn't unheard of. Neither is people herding together to reprimand someone else. Even if the post is eventually deleted it still leads to creating a negative and emotionally intense atmosphere in the web space. And this could lead to fatal consequences, including death.<br>
+									<img src="../images/project_images/statuscheck/pics/pic3.png" class="project-thumb" style="width:50%" alt="There are countless examples of this kind of content online">
+								</p>
+
+								<p>
+									As with everything on social networks, the problems are generally societal. Yet, it can't be denied that posts are the impetus that starts the fire. What if we could get users to be more careful about there impulsive actions to avoid these situations?
+								</p>
+
+								<h2 id="section3">The Solution</h2>
+
+								<p>
+									To caution the user before a post is published is the simplest way to make them more aware of their actions. Nudging users with information was already being explored. Drawing inspiration from <a href="http://precog.iiitd.edu.in/events/psosm2013/9psosm6-wang.pdf">this paper</a>, a new solution was conceived. While the paper mostly dealt with the privacy aspect of posts, the tool we will discuss focuses on the security aspect.<br>
+									In order to maintain the immersion provided by social media, this tool is packaged in the form of a Chrome browser extension that can provide vital information about a user’s post before it is published as a status.
+								</p>
+
+
+								<h3 id="section3-1">How it Works</h2>
+
+								<div class="container">
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-4" style="font-size: small; text-align:center;">
+											<b>Sentiment</b><br>
+									    	<img src="../images/project_images/statuscheck/icons/sentiment.png" style="width:20%;">
+									    </div>
+									    <div class="col-sm-8" style="font-size: small;">
+									    	The first intervention we conceived was to simply inform the user what the general sentiment of their status is. After learning this, they get to decide whether they want to execute the post.<br>
+									    	We tap into a third party tool, the <i>MeaningCloud API</i> that performs topic extraction on the status and evaluates the sentiment around the extracted topics - This helps perform more contextual analysis of the status. The response from the API provides us different metrics about the status. We pick out a polarity score, a value which varies from -1 to 1. According this value a score tag, a simple letter grade is assigned to a user's status.
+									    </div>
+									</div>
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-4" style="font-size: small; text-align:center;">
+											<b>Majority</b><br>
+									    	<img src="../images/project_images/statuscheck/icons/majority.png" style="width:20%;">
+									    </div>
+									    <div class="col-sm-8" style="font-size: small;">
+									    	Given that we do function within a society, pushing our individual ideas cannot be done without understanding the conversation about similar themes in the community. Not only is this important for awareness but also sensitisation towards others.<br>
+									    	The <i>MeaningCloud API</i> is used to perform extraction of keywords from the status - specific keywords help in narrowing down the search query parameters. The response from that query is provided as keywords to the Twitter Search api to find similar posts on the Twitter space. These posts are quickly assigned a polarity  tag via the <i>TextBlob</i> module at the backend.</p>
+									    </div>
+									</div>
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-4" style="font-size: small; text-align:center;">
+											<b>Protection</b><br>
+									    	<img src="../images/project_images/statuscheck/icons/protection.png" style="width:17%;">
+									    </div>
+									    <div class="col-sm-8" style="font-size: small;">
+									    	If saving a thought or curbing an impulse could decrease the risk of being questioned legally for it, an ideal user would choose to do so.<br>
+									    	A classifier was trained before hand with a mean accuracy tested as 84%. The training set consisted of 90 posts that got into trouble (arrests, firing etc.) and 90 safe/generic posts. An SVM classifier is trained on the server using a custom feature set which comprises of a vocabulary and a polarity. The vocabulary included words flagged to be occurring more regularly in posts that get users into trouble. These are further classified into; <i>words that indicate wrong intent</i>: e.g. kill, shoot, bang, hate etc, <i>profane words</i>: e.g. sh*t, f**k, b**ch etc, <i>subject words</i>: e.g. god, boss, police, woman etc, <i>situational words</i>: e.g. die, blood, murder etc, and <i>polarising words</i>: e.g. black, nig**r etc.
+									    </div>
+									</div>
+	  							</div>
+
+	  							<p>
+									<img src="../images/project_images/statuscheck/pics/pic1.jpg" class="project-thumb" style="width:50%" alt="An architectural flow of how the user interacts with the application and how the system works in the background">
+	  							</p>
 								
-								<h2>Features</h2>
-								<ul class="bxslider">
-  <li class="web-feature">
-  	<img src="../images/project_images/statuscheck/screen1.jpg"/>
-  	<div class="web-feature content">
-  		<h3>Unobtrusive Injection</h3>
-								<p>The extension makes subtle changes at the interface level, so that the user doesn’t need to get readjusted. Unlike the traditional view, the “Post” button is now replaced by a “Check” button.</p>
-  	</div>
-  </li>
-  <li class="web-feature">
-  	<img src="../images/project_images/statuscheck/screen2.jpg"/>
-  	<div class="web-feature content">
-								<h3>Timer Module</h3>
+								<h2 id="section3-2">Functional Prototype</h2>
 
-<p>Defers the publishing of a post by a fixed duration. Along with this a new countdown timer is initiated, during which a user may decide to cancel or edit their post. They might also skip the process entirely by pressing the “Post Now” button.
-</p>
+								<div class="container">
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-4" style="font-size: small; text-align:center;">
+											<b>Unobtrusive Injection</b><br>
+									    	<img src="../images/project_images/statuscheck/pics/screen1.jpg" class="project-thumb" style="width:70%;">
+									    	<br>
+									    	The extension makes subtle changes at the interface level, so that the user doesn’t need to get readjusted. Unlike the traditional view, the “Post” button is now replaced by a “Check” button.
+										</div>
+										<div class="col-sm-4" style="font-size: small; text-align:center;">
+											<b>Timer Module</b><br>
+									    	<img src="../images/project_images/statuscheck/pics/screen2.jpg" class="project-thumb" style="width:70%;">
+									    	<br>
+									    	Defers the publishing of a post by a fixed duration. Along with this a new countdown timer is initiated, during which a user may decide to cancel or edit their post. They might also skip the process entirely by pressing the “Post Now” button.
+										</div>
+										<div class="col-sm-4" style="font-size: small; text-align:center;">
+											<b>Sentiment Module</b><br>
+									    	<img src="../images/project_images/statuscheck/pics/screen3.jpg" class="project-thumb" style="width:70%;">
+									    	<br>
+									    	The polarity of the user’s status is analyses. Apart from the sentiment it provides some more information as well (objective/subjective, ironic/unironic).
+										</div>
+									</div>
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-4" style="font-size: small; text-align:center;">
+											<b>Similar Posts Module</b><br>
+									    	Fetches up to 10 similar posts from Twitter’s public feed. Not only are the similar posts provided but they are also tagged with a general sentiment so that the user can learn about what other people are saying about the topics he/she is talking about.
+										</div>
+										<div class="col-sm-2" style="font-size: small; text-align:center;">
+									    	<img src="../images/project_images/statuscheck/pics/screen4.jpg" class="project-thumb" style="width:80%;">
+									    	<br>
+										</div>
+										<div class="col-sm-4" style="font-size: small; text-align:center;">
+											<b>Danger Classification Module</b><br>
+									    	Statuses are classified as dangerous or safe. A post is termed dangerous, if it bares resemblance to previous posts that have gotten users arrested or fired or led to any other mishaps.
+										</div>
+										<div class="col-sm-2" style="font-size: small; text-align:center;">
+									    	<img src="../images/project_images/statuscheck/pics/screen5.jpg" class="project-thumb" style="width:80%;">
+									    	<br>
+										</div>
+									</div>
+								</div>
+								
 
-  	</div>
-  </li>
-  <li class="web-feature">
-  	<img src="../images/project_images/statuscheck/screen3.jpg"/>
-  	<div class="web-feature content">
-  		<h3>Sentiment Module</h3>
+								<h2 id="section4">Future</h2>
 
-<p>The polarity of the user’s status is analyses. Apart from the sentiment it provides some more information as well (objective/subjective, ironic/unironic) 
+								<h3></h3>
 
-</p>
-
-  	</div>
-  </li>
-  <li class="web-feature">
-  	<img src="../images/project_images/statuscheck/screen4.jpg"/>
-  	<div class="web-feature content">
-  		<h3>Similar Posts Module</h3>
-
-<p>Fetches up to 10 similar posts from Twitter’s public feed. Not only are the similar posts provided but they are also tagged with a general sentiment so that the user can learn about what other people are saying about the topics he/she is talking about.
-</p>
-
-  </li>
-
-  <li class="web-feature">
-  	<img src="../images/project_images/statuscheck/screen5.jpg"/>
-  	<div class="web-feature content">
-  		<h3>Danger Classification Module</h3>
-
-<p>Statuses are classified as dangerous or safe. A post is 
-termed dangerous, if it bares resemblance to previous posts that have gotten users arrested or fired or led to any other mishaps.</p>
-
-  </li>
-  </ul>
-
-								<h2>Backend Method</h2>
-
-<h3>Sentiment Module</h3>
-  	<p>The <i>MeaningCloud API</i> is used to performs topic extraction on the status and evaluates the sentiment around the extracted topics - This helps perform more targeted analysis of the status.
-The response from the MeaningCloud API provides us different metrics about the status. This is a polarity score, the value of which varies from -1 to 1. According this value a score tag, a simple letter grade is assigned.
-</p>
-<p>
-The grades provided are P(ositive), N(egative) and NEU(tral). The letter may also be succeeded by a “+” that indicates “strongly”, i.e. if the score tag is “N+”, then the analysed test is strongly negative.
-</p>
-
-<h3>Similar Posts Module</h3>
-  	  	<p>The <i>MeaningCloud API</i> is used to performs extracts keywords from the status - Specific keywords help in narrowing down the search query parameters.
-The response from are provided as keywords that are queried to the Twitter Search api to find similar posts.</p>
-
-<p>These posts are quickly assigned a polarity via the <i>TextBlob</i> module at the backend.</p>
-
-<h3>Danger Classification Module</h3>
-  	  	<p>
-  	  		A classifier was trained before hand with a mean accuracy tested is 84%. The training set consists of 90 posts that got into trouble (arrests, firing etc.) and 90 safe/generic posts.</p>
-
-<p>
-An SVM classifier is trained on the server using a custom feature set which comprises of vocabulary and polarity.
-Vocabulary included words flagged to be occurring more regularly in posts that get users into trouble. These are further classified into;
-<i>words that indicate wrong intent</i>: e.g. kill, shoot, bang, hate etc,
-<i>profane words</i>: e.g. sh*t, f**k, b**ch etc,
-<i>subject words</i>: e.g. god, boss, police, woman etc,
-<i>situational words</i>: e.g. die, blood, murder etc,
-and <i>polarising words</i>: e.g. black, nig**r etc.
-
-</p>
-
-<h2>Architecture</h2>
-
-<img class="project-img" src="../images/project_images/statuscheck/pic1.jpg">
-
-<h2>Future</h2>
-
-<h3>Nudges based on Network and Profile</h3>
-
-<p>Since the extension works on the front end without any need of user authentication, there was no relevance of who was the poster. However, with access to this network, many new informative nudges can be explored.</p>
+								<p>
+									Since the extension works on the front end without any need of user authentication, there was no relevance of who the poster was, and then tailor the nudges based on their network and profile. However, with access to this network, many new informative nudges can be explored.
+								</p>
 
 
 							</article>
+						</div>
+					</div>
+				</div>
 
 							<section id="footer">
 								<p class="copyright">&copy; Vedant Das Swain | Template: <a href="http://html5up.net">HTML5 UP</a></p>
@@ -212,6 +293,7 @@ and <i>polarising words</i>: e.g. black, nig**r etc.
 			<script src="../assets/js/main.js"></script>
 			<script src="../assets/js/jquery.bxslider.min.js"></script>
 			<script src="../assets/js/my.js"></script>
+			<script src="../assets/js/project.js"></script>
 
 	</body>
 </html>
