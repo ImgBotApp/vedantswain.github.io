@@ -81,6 +81,15 @@ a.back-to-top {
 	    box-shadow: 2px 2px 2px #cccccc;
 }
 
+.label-default.deftag{
+	font-family: "Raleway", Helvetica, sans-serif;
+    letter-spacing: 0.25em;
+    font-weight: 300;
+    font-size: 50%;
+    text-transform: uppercase;
+    padding: 1%;
+}
+
 .filtered{
     background: #F4B350;
     box-shadow: 4px 4px 7px #cccccc;
@@ -174,6 +183,35 @@ ul.nav-pills {
 
 .container {
 	max-width: 100%;
+}
+
+.posts {
+	top:60%;
+	position: fixed;
+}
+	ul.posts li{
+		margin: 0;
+	}
+
+	.posts header{
+		margin-top: 2%;
+	}
+
+.cover-thumb {
+    cursor: pointer;
+    width: 8%;
+    margin-right: 2%;
+}
+	.cover-thumb img {
+		width: 100%;
+    	border-radius: 100%;
+	}
+	.cover-thumb:hover {opacity: 0.7;}
+
+#similar {
+	font-family: "Raleway", Helvetica, sans-serif;
+	margin-bottom:0; text-transform:uppercase; letter-spacing:0.25em;
+	font-size: x-small
 }
 
 #caption {
