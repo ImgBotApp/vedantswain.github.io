@@ -3,6 +3,10 @@
     overflow-x: hidden;
 }*/
 
+#wrapper {
+	padding: 1em;
+}
+
 .image.banner {
 			display: block;
 			margin: 0 0 3em 0;
@@ -184,6 +188,14 @@ ul.nav-pills {
 .container {
 	max-width: 100%;
 }
+	
+	@media screen and (max-width: 480px) {
+
+		.container {
+			width: 480px;
+		    overflow-x: hidden;
+		}
+	}
 
 .post > header {
 	margin-bottom: 1em;
@@ -200,7 +212,7 @@ ul.nav-pills {
 
 		.post {
 			min-width: 320px;
-			width: calc(100% - (6em * 2));
+			width: 380px;
 		}
 	}
 
@@ -278,6 +290,13 @@ ul.nav-pills {
 #footer {
 	float: right;
 }
+	@media screen and (max-width: 736px) {
+
+		#myScrollspy {
+			display: none;
+		}
+	}
+
 
 .single10 {
       height: 200px;
