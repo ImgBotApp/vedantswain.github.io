@@ -1,7 +1,7 @@
-html, body {
+/*html, body {
     max-width: 100%;
     overflow-x: hidden;
-}
+}*/
 
 .image.banner {
 			display: block;
@@ -191,6 +191,19 @@ ul.nav-pills {
 	.post > header .title {
 		padding-bottom: 1em;
 	}
+
+.post {
+    max-width: 100%;
+}
+
+	@media screen and (max-width: 480px) {
+
+		.post {
+			min-width: 320px;
+			width: calc(100% - (6em * 2));
+		}
+	}
+
 
 .posts {
 	top:60%;
