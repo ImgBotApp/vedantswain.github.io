@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="shortcut icon" href="../images/icon.ico" type="image/x-icon">
 		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+	    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="stylesheet" href="../assets/css/mystyle.css" />
 		<link rel="stylesheet" href="../assets/css/jquery.bxslider.css"/>
@@ -77,6 +78,27 @@
 				<!-- Main -->
 					<div id="main">
 
+
+					<div class="container">
+					  <div class="row">
+					    <nav class="col-sm-3" id="myScrollspy">
+					      <ul class="nav nav-pills nav-stacked">
+					        <li><a class="head-link" href="#section1">Introduction</a></li>
+					        <li><a class="head-link" href="#sectionX">My Role</a></li>
+					        <li><a class="head-link" href="#section2">The Motivation</a></li>
+					        <li><a class="head-link" href="#section3">The Prototype</a><li>
+					        <li><a class="head-link" href="#section4">Future</a></li>
+
+					      </ul>
+					    </nav>
+					    <div class="col-sm-9">
+
+								<div id="myModal" class="modal">
+							  		<img class="modal-content" id="img01">
+									<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+								  	<div id="caption"></div>
+								</div>
+
 						<!-- Post -->
 							<article class="post">
 								<header>
@@ -98,90 +120,153 @@
 									</ul>
 								</footer>
 								<a class="image banner"><img src="../images/elens_cover.jpg" alt="" /></a>
-								<h2>Motivation</h2>
-								<p>Power is an expensive commodity and keeping it in check is the best way to prevent overuse. While homes have evolved to use smart meters that allow dwellers to view their consumption remotely, there still seems to room for great improvement in informing these individuals. Without the in-depth knowledge of how much energy is used by each appliance, it becomes a tedious hit-and-try process to figure out the actual culprits. Although the usual suspects may be turned off, only real data can urge one to confidently regulate personal energy consumption.</p>
-								<h2>Solution</h2>
-								<p>EnergyLens+ is a portable energy monitoring system for smart homes at IIIT-Delhi.
-It records various environmental data (including light, sound and connectivity) and couples it with information acquired by interacting with an inference engine on the central IIIT-Delhi server. This data is processed and represented to the you in the form of interactive and easy to understand charts and graphs.</p>
-								<p>This is an advanced version of <a href="http://dl.acm.org/citation.cfm?id=2602058">EnergyLens</a></p>
-								<h2>Features</h2>
-								<ul class="bxslider">
-  <li class="app-feature">
-  	<img src="../images/project_images/energylens/screen1.jpg"/>
-  	<div class="web-feature content">
-  		<h3>Monitor Energy Consumption and Wastage</h3>
-								<p>The tabular navigation of the app allows the user to view the hourly wastage and consumption of energy over the last 12 hours.</p>
-  	</div>
-  </li>
-  <li class="app-feature">
-  	<img src="../images/project_images/energylens/screen2.jpg"/>
-  	<div class="web-feature content">
-								<h3>Disaggregated Data for Each Appliance</h3>
 
-<p>The distribution of the energy between different appliances is shown in percentages. Such a split is very useful to a user trying to understand which appliances are the actual trouble makers.
-</p>
-<p>Moreover, each of the appliances can be clicked to go into a new screen with a greater in-depth analysis of that appliance.
-</p>
+								<h2 id="section1">Introduction</h2>
+								
+								<p>
+									Power is an expensive commodity and keeping it in check is the best way to prevent overuse. While homes have evolved to use smart meters that allow dwellers to view their consumption remotely, there still seems to room for great improvement in informing these individuals. Without the in-depth knowledge of how much energy is used by each appliance, it becomes a tedious hit-and-try process to figure out the actual culprits. Although the usual suspects may be turned off, only real data can urge one to confidently regulate personal energy consumption.<br>
+									We present a tool that can provide users with a new perspective to see their power consumption with. This new scope, aims to help users reflect and change their everyday behaviour. 
+								</p>
 
-  	</div>
-  </li>
-  <li class="app-feature">
-  	<img src="../images/project_images/energylens/screen3.jpg"/>
-  	<div class="web-feature content">
-  		<h3>Real-Time Energy Monitoring</h3>
 
-<p>Lets user view the power consumption of their home in real time. Sudden spikes and troughs in this graph will indicate the switching on/off of appliances. 
-</p>
+								<h2 id="sectionX">My Role</h2>
 
-  	</div>
-  </li>
-  <li class="web-feature">
-  	<div class="web-feature content">
-  		<h3>Wastage Notifications</h3>
+								<p style="margin-bottom: 1em;">
+									This research project was the soul successor of <a href="http://dl.acm.org/citation.cfm?id=2602058">EnergyLens</a>. My mentor and partner-in-crime through this engagement was <a href="https://manaswisaha.wordpress.com/">Manaswi Saha</a>, who was a research associate at IIIT-Delhi at the time. Our primary academic guide through the process was <a href="https://www.iiitd.edu.in/~amarjeet/">Amarjeet Singh</a> and the <a href="http://muc.iiitd.edu.in/muc/">Mobile Ubiquitous Computing group</a>.<br>
+									Interestingly enough, not only was this my first independent project, it was also my stepping stone into the land of Human-Computer Interaction and Ubiquitous Computing. Both of these are areas that I'm extensively working in today.
+								</p>
 
-<p>Users are notified of the name and location of an appliance which is not in use but continues to consume energy.</p>
-		
-		<h3>Home Detection</h3>
-<p>When the user exits their home, i.e. is out of range from the WiFi Access Point they had initially registered, the app considers goes into an idle state. In this state apart from WiFi, all other data collecting background services are stopped and no data is stored. Data collection is resumed on reentering.
-		</p>
-  </li>
-  </ul>
+								<div class="container">
+									<div class="row" style="margin-bottom:1em">
+										<div class="col-sm-4" style="font-size: small; text-align:center;">
+											<b>Mobile Development Engineer</b><br>
+									    	<img src="../images/common_images/role_developer.png" style="width:30%;">
+									    </div>
+									    <div class="col-sm-8" style="font-size: small;">
+									    	As a fledgling but highly motivated Android developer, the entire build of the application was a product of my fingertips. This application doesn't use any third party package to collect ambient information from the environment. So all the code for polling that data and syncing it was written up from scratch. <br>
+									    	I was also responsible for implementing the visualisation on the foreground section of the application. We used simple graphs to help users reflect on their quantified self.
+									    </div>
+									</div>
+									<div class="row" style="margin-bottom:1em">
+										<div class="col-sm-12" style="font-size: small;">
+											<i>Note: These roles are not necessarily exclusive to me nor are they exhaustive in describing everything I did in the project</i>
+										</div>
+									</div>
+								</div>
 
-								<h2>Working</h2>
+								<br>
 
-<h3>Ambient Data</h3>
-  	<p>The app keeps collecting and uploading data to a server from the phone. This data is from the lightmeter, accelerometer, magnetometer, wifi and audio. Based on what the server already knows about the signatures of particular appliances, the new data is analysed to infer which appliance is consuming or wasting energy.
-</p>
+								<h2 id="section2">The Motivation</h2>
+								<p>
+									One could consider this project as an investigation into understanding an individual's personal energy footprint and trying to quantify it as actionable information. But why is this an interesting endeavour? Well for one, we know that <a href="http://dl.acm.org/citation.cfm?id=1753629">prior work shows, that providing feedback to users about their energy use can help bring about a change in their usage</a><br> 
+									Inferring human activity is of interest for various ubiquitous computing applications, particularly if it can be done using ambient information that can be collected non intrusively. We go onto explore human activity inference, in the context of energy consumption within a home, where we define an "activity" as the usage of an electrical appliance, its usage duration and its location. We primarily explore the dimension of segregating which device was used by an occupant at a particular time. <br><br>
 
-<h3>Backend Server</h3>
-	<p>An inference engine in the cloud gauges the energy consumption and wastage of each appliance. This is based on learned patterns from the smart grid along with data sent via the phone on regular intervals. The smart grid data can help determine which appliance(s) are running. The ambient data from the phone can be used to learn which app is being used directly by the user.
-</p>
+									<img src="../images/project_images/energylens/pics/pic1.png" class="project-thumb" style="width:40%" alt="An analog in the context of a smartphone is to see the application-level distribution of which app consumed how much battery"><br>
 
-<h3>Training Phase</h3>
-  	  	<p>The app is inbuilt with a training mode. Every appliance at the smarthome must used for training. During this sequence, the user manually annotates the appliance’s name and location. This is followed by data collection that is sent over to the server.
-	</p>
-	<p>
-The server uses this data along with other data from the smart grid the homes are connected to. These are considered as features that are input to a machine learning module</p>
+									Our goal is to answer questions such as "Who is watching TV in the Dining Room and during what times?". This information is particularly important for scenarios such as the apportionment of energy use to individuals in shared settings for better understanding of occupant's energy consumption behavioral patterns.<br>
+								</p>
 
-<h2>Reporting</h2>
+								<h2 id="section3">The Prototype</h2>
+								<p>
+									EnergyLens+ is a portable energy monitoring system for smart homes at IIIT-Delhi. It records various environmental data (including light, sound and connectivity) and couples it with information acquired by interacting with an inference engine on the central IIIT-Delhi server.This data is processed and represented to the you in the form of interactive and easy to understand charts and graphs.</p>
 
-<h3>Usage Statistics</h3>
-<p>App usage stats were being recorded whenever the app is used. Recorded parameters are: which screens were used, for how long were they used and when were they used. Logging is done for all the screens.
-</p>
+								<h3 id="section3-1">How it works</h3>
 
-<h3>Ground Truth Reporting</h3>
-<p>
-Users received hourly validation reports with some activity data. This is in the form of “App A was used from **:** to **:*** at Loc L consumed **kWh”.
-The user may have chosen to report this as Correct or Incorrect. Choosing ‘Incorrect’ allows the user to report the correct values for multiple fields such as (appliance name, location name, co-occupant using it, duration of appliance running etc.)
-</p>
+								<div class="container">
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-4" style="font-size: small; text-align:center;">
+											<b>Ambient Data</b><br>
+									    	<img src="../images/project_images/energylens/icons/ambient.png" style="width:20%;">
+									    	<br>
+									    	The app keeps collecting and uploading data to a server from the phone. This data is from the lightmeter, accelerometer, magnetometer, wifi and audio. Based on what the server already knows about the signatures of particular appliances, the new data is analysed to infer which appliance is consuming or wasting energy.
+										</div>
+										<div class="col-sm-4" style="font-size: small; text-align:center;">
+											<b>Backend Server</b><br>
+									    	<img src="../images/project_images/energylens/icons/server.png" style="width:20%;">
+									    	<br>
+									    	An inference engine in the cloud gauges the energy consumption and wastage of each appliance. This is based on learned patterns from the smart grid along with data sent via the phone on regular intervals. The smart grid data can help determine which appliance(s) are running. The ambient data from the phone can be used to learn which app is being used directly by the user.
+										</div>
+										<div class="col-sm-4" style="font-size: small; text-align:center;">
+											<b>Training Phase</b><br>
+									    	<img src="../images/project_images/energylens/icons/train.png" style="width:20%;">
+									    	<br>
+									    	The app is inbuilt with a training mode. Every appliance at the smarthome must used for training. During this sequence, the user manually annotates the appliance’s name and location. This is followed by data collection that is sent over to the server.
+										</div>
+									</div>
+								</div>
 
-<h2>Future</h2>
+								<br>
+								<p>
+									The server uses this data along with other data from the smart grid the homes are connected to. These are considered as features that are input to a machine learning module
+								</p>
 
-<h3>Wearable Tech</h3>
+								<h3 id="section3-2">What it does</h3>
 
-<p>Since the system works on the basis of ambient data, wearable technology like smartwatches would be much more efficient at collecting accurate data than a phone. One reason for this is that a watch will remain on the user consistently throughout, whereas a phone can be left in different rooms.</p>
+								<div class="container">
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-3" style="font-size: small; text-align:center;">
+											<b>Monitor Energy Consumption and Wastage</b><br>
+									    	The tabular navigation of the app allows the user to view the hourly wastage and consumption of energy over the last 12 hours.
+										</div>
+										<div class="col-sm-3" style="font-size: small; text-align:center;">
+									    	<img src="../images/project_images/energylens/pics/screen1.jpg" class="project-thumb" style="width:80%;">
+									    	<br>
+										</div>
+										<div class="col-sm-3" style="font-size: small; text-align:center;">
+											<b>Disaggregated Data for Each Appliance</b><br>
+									    	The distribution of the energy between different appliances is shown in percentages. Such a split is very useful to a user trying to understand which appliances are the actual trouble makers. Moreover, each of the appliances can be clicked to go into a new screen with a greater in-depth analysis of that appliance.
+										</div>
+										<div class="col-sm-3" style="font-size: small; text-align:center;">
+									    	<img src="../images/project_images/energylens/pics/screen2.jpg" class="project-thumb" style="width:80%;">
+									    	<br>
+										</div>
+									</div>
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-3" style="font-size: small; text-align:center;">
+											<b>Real-Time Energy Monitoring</b><br>
+									    	Lets user view the power consumption of their home in real time. Sudden spikes and troughs in this graph will indicate the switching on/off of appliances. 
+										</div>
+										<div class="col-sm-3" style="font-size: small; text-align:center;">
+									    	<img src="../images/project_images/energylens/pics/screen3.jpg" class="project-thumb" style="width:80%;">
+									    	<br>
+										</div>
+										<div class="col-sm-3" style="font-size: small; text-align:center;">
+											<b>Wastage Notifications</b><br>
+									    	Users are notified of the name and location of an appliance which is not in use but continues to consume energy.
+										</div>
+										<div class="col-sm-3" style="font-size: small; text-align:center;">
+											<b>Home Detection</b><br>
+									    	When the user exits their home, i.e. is out of range from the WiFi Access Point they had initially registered, the app considers goes into an idle state. In this state apart from WiFi, all other data collecting background services are stopped and no data is stored. Data collection is resumed on reentering.
+									    	<br>
+										</div>
+									</div>
+								</div>
+
+
+								<h3 id="section3-3">How it Reports</h3>
+
+								<div class="container">
+									<div class="row" style="margin-bottom:1em;">
+										<div class="col-sm-6" style="font-size: small; text-align:center;">
+											<b>Usage Statistics</b><br>
+									    	App usage stats were being recorded whenever the app is used. Recorded parameters are: which screens were used, for how long were they used and when were they used. Logging is done for all the screens.
+										</div>
+										<div class="col-sm-6" style="font-size: small; text-align:center;">
+											<b>Ground Truth Reporting</b><br>
+									    	Users received hourly validation reports with some activity data. This is in the form of “App A was used from **:** to **:*** at Loc L consumed **kWh”. The user may have chosen to report this as Correct or Incorrect. Choosing ‘Incorrect’ allows the user to report the correct values for multiple fields such as (appliance name, location name, co-occupant using it, duration of appliance running etc.)
+										</div>
+									</div>
+								</div>
+
+
+								<h2 id="section4">Future</h2>
+
+								<p>Since the system works on the basis of ambient data, wearable technology like smartwatches would be much more efficient at collecting accurate data than a phone. One reason for this is that a watch will remain on the user consistently throughout, whereas a phone can be left in different rooms.</p>
 
 							</article>
+						</div>
+					</div>
+				</div>
 
 							<section id="footer">
 								<p class="copyright">&copy; Vedant Das Swain | Template: <a href="http://html5up.net">HTML5 UP</a></p>
@@ -198,6 +283,7 @@ The user may have chosen to report this as Correct or Incorrect. Choosing ‘Inc
 			<script src="../assets/js/main.js"></script>
 			<script src="../assets/js/jquery.bxslider.min.js"></script>
 			<script src="../assets/js/my.js"></script>
+			<script src="../assets/js/project.js"></script>
 
 	</body>
 </html>
