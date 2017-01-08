@@ -185,6 +185,13 @@ ul.nav-pills {
 	max-width: 100%;
 }
 
+.post > header {
+	margin-bottom: 1em;
+}
+	.post > header .title {
+		padding-bottom: 1em;
+	}
+
 .posts {
 	top:60%;
 	position: fixed;
