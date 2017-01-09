@@ -212,7 +212,7 @@ ul.nav-pills {
 
 		.post {
 			min-width: 320px;
-			width: calc(100% - (3em * 2));
+			width: calc(100% - (4.3em * 2));
 		}
 	}
 
