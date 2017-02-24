@@ -88,7 +88,7 @@
 					        <li><a class="head-link" href="#section2">Past Work</a></li>
 					        <li><a class="head-link" href="#section3">New Requirements</a><li>
 					        <li><a class="head-link" href="#section4">Changes and Suggestions</a></li>
-					        <li><a class="head-link" href="#section5">Planned Study</a></li>
+					        <li><a class="head-link" href="#section5">Future</a></li>
 
 					      </ul>
 					      <section>
@@ -398,15 +398,6 @@
 											<img src="http://i.imgur.com/UdO5vgm.gif" alt="Power users can inspect cost segments with a simple tap" class="project-thumb" style="height:250px;">
 										</div>
 									</div>
-									<div class="row" style="margin-bottom:1em;">
-										<div class="col-sm-8" style="font-size: small;">
-											<b>Placebo Study</b><br>
-											The best way to verify the effectiveness of our solution and truly meaningful it is would be to perform a field study. Here the participant group would use a "placebo" instead of the actual application.<br> 
-											The participants would be briefed about the application exactly the same way as before. Unlike the original study however, the new tool will not report per-trip estimates to the user after every ride but a single estimate at the end of the study. This will not actually be calculated on the fly, but rather via static values the researchers would manually calculate for a participant before the study. Then, based on a follow-up interview, it would be measured how believable the nudges provided by the tool are to the user.<br>
-											Variations of this study could be to use two groups, 1 where the OBD is installed in the cars and another where it isn't. This can reveal what effects does a visible apparatus like the OBD have on the user.
-									    </div>
-									</div>
-
 	  							</div>
 
 								<p>
@@ -414,41 +405,13 @@
 
 	  							<br>
 
-								<h2 id="section5">Planned Study</h2>
+								<h2 id="section5">Future</h2>
 
 								<p style:"margin-bottom:1em;">
-									The nitty-gritty of the placebo study mentioned above have still not been finalized. Yet some requirements from the researchers end have arisen, which would make the study simpler for them to conduct.<br>
-									Keeping these demands in mind, the features specifically designed for providing a smooth experience to the facilitators.
+									The nitty-gritty of a future study are still to be finalized. More importantly because of the ongoing academic nature of this work, most of the details for this are confidential.
+								<br>
+									This study is expected to be conducted sometime in Spring 2017. The learnings from this would propel us towards the next iteration where we would also explore how to replace the utility of the OBD with a more scalable solution. Eventually we are looking to deploy this tool for a greater sample set, and obtain more conclusive results.
 								</p>
-
-								<div class="container">
-									<div class="row" style="margin-bottom:1em;">
-										<div class="col-sm-8" style="font-size: small;">
-											<b>Discretionary Access</b><br>
-											The study is primarily going to rely on a <i>Wizard of Oz</i> like method. And the beauty of this technique relies on letting the user see the man behind the curtain. How the wizard performs the trick should be left a mystery for the magic to be effective.<br>
-											In the context of our system, that would mean providing master access to the facilitators to change the configurations on the system and denying these privileges to a regular user. This is implemented by simply adding a passcode lock on most of the power features. Therefore, a user can't access the app's settings (where the variable values for the costs to be calculated reside), nor can they have a look at visualisations in-between the study.
-									    </div>
-        								<div class="col-sm-4" style="text-align:center">
-											<img src="http://i.imgur.com/rVr1Ka6.gif" alt="Similar to access to the settings, a user cannot start the app to see the meters without a passcode" class="project-thumb" style="height:250px;">
-										</div>
-									</div>
-									<div class="row" style="margin-bottom:1em;">
-										<div class="col-sm-8" style="font-size: small;">
-											<b>Remote Narration</b><br>
-											The new tool houses 3 different meters. The first being a simple bar showing the fuel cost. The next one is bisected with fuel costs and the operating costs stacked on tip of that. The last consists of a third segment stacked on top representing the ownership cost.<br>
-											At the end of the study, when the participant would be interviewed as they check the app they would be asked questions after they view each meter. The aim of this is to understand how they interpret costs, when certain values are truly hidden. Moreover, it can highlight how they react when the hidden values are revealed to them.<br>
-											Therefore, the facilitators need to be in control of the narrative or the flow of the app. To do this we established a <i>Firebase</i> communication stream for the app to receive data pushed to it. The facilitator can push the information about which screen to traverse to from a simple python script we prepared to talk to the Firebase cloud messaging service.
-									    </div>
-        								<div class="col-sm-4" style="text-align:center">
-											<img src="http://i.imgur.com/yZG8N2D.gif" alt="The user can't accidentally skip to the next screen unless the facilitator executes the command" class="project-thumb" style="height:250px;">
-										</div>
-									</div>
-								</div>
-							<br>
-
-							<p>
-								This study is expected to be conducted sometime in Spring 2017. The learnings from this would propel us towards the next iteration where we would also explore how to replace the utility of the OBD with a more scalable solution. Eventually we are looking to deploy this tool for a greater sample set, and obtain more conclusive results.
-							</p>
 
 						</article>
 					</div>
