@@ -1,0 +1,20 @@
+// fixed dimensions
+$size: 60px;
+$offset: 50px;
+
+a.floating-button {
+	display: none;
+	text-align: center;
+	width: $size;
+	height: $size;
+	/*text-indent: -9999px;*/
+	position: fixed;
+	z-index: 999;
+	left: $offset;
+	bottom: $offset;
+	/*background: #27AE61 url("up-arrow.png") no-repeat center 43%;*/
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	border: dotted 1px _palette(border-alt);
+}

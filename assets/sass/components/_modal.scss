@@ -1,0 +1,65 @@
+$offset: 80px;
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 140px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    margin: auto;
+    display: block;
+    height: 80%;
+    max-height: 500px;
+    max-width: 100%;
+    background-color: rgba(0,0,0,0); /* Fallback color */
+
+}
+
+// Close Icon
+.close {
+    position: absolute;
+    top: $offset;
+    right: $offset;
+    color: _palette(bg-alt);
+    font-size: xx-large;
+    font-weight: _font(weight-bold);
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+.close:hover,
+.close:focus {
+    color: _palette(fg-light);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+// Modal caption
+#caption {
+    margin: auto;
+    display: block;
+    text-align: center;
+    color: _palette(fg-light);
+    padding: 1% 0;
+    font-family: _font(family-heading);
+    font-size: small;
+    position: absolute;
+    bottom: 0;
+    width: -webkit-fill-available;
+}
+

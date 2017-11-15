@@ -1,0 +1,22 @@
+ul.nav-pills {
+	position: fixed;
+	font-family: _font(family-heading);
+	font-size: 60%;
+    letter-spacing: _font(letter-spacing);
+    text-transform: uppercase;
+  }
+
+
+.nav-pills>li.active>a {
+	color: _palette(accent);
+	background-color: _palette(shadow-light);
+	
+	&:hover {
+		color: _palette(accent);
+		background-color: _palette(shadow-light);
+	}
+	&:focus {
+		color: _palette(accent);
+		background-color: _palette(shadow-light);
+	}
+}

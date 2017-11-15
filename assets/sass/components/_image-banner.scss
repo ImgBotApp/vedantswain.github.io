@@ -1,0 +1,22 @@
+.image.banner {
+	display: block;
+	margin: 0 0 3em 0;
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+
+	img {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 736px) {
+
+	.image.banner {
+		margin: 0 0 1.5em 0;
+		height: 200px;
+	}
+
+}

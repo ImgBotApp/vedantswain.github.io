@@ -1,25 +1,32 @@
+// 
+// floating button scroll to top animation
+// 
+var amountScrolled = 300;
+
+$(window).scroll(function() {
+	if ( $(window).scrollTop() > amountScrolled ) {
+		$('a.floating-button').fadeIn('slow');
+	} else {
+		$('a.floating-button').fadeOut('slow');
+	}
+});
+
+$('a.floating-button').click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 700);
+	return false;
+});
+
+
+// 
+// filtered projects effects
+// 
 $(document).ready(function(){
   $('.bxslider').bxSlider({
   	mode: 'fade',
   });
   postFilter();
-});
-
-var amountScrolled = 300;
-
-$(window).scroll(function() {
-	if ( $(window).scrollTop() > amountScrolled ) {
-		$('a.back-to-top').fadeIn('slow');
-	} else {
-		$('a.back-to-top').fadeOut('slow');
-	}
-});
-
-$('a.back-to-top').click(function() {
-	$('html, body').animate({
-		scrollTop: 0
-	}, 700);
-	return false;
 });
 
 $('.label-default.tag').click(function(){

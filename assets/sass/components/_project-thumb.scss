@@ -1,0 +1,14 @@
+.project-thumb {
+	border-radius: 5px;
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+    	opacity: 0.7;
+    }
+}

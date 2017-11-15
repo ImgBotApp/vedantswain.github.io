@@ -28,7 +28,8 @@
 		weight-heading:				400,
 		weight-heading-bold:		800,
 		weight-heading-extrabold:	900,
-		kerning-heading:			0.25em
+		kerning-heading:			0.25em,
+		letter-spacing: 			0.25em
 	);
 
 // Palette.
@@ -41,5 +42,7 @@
 		border:						rgba(160,160,160,0.3),
 		border-bg:					rgba(160,160,160,0.075),
 		border-alt:					rgba(160,160,160,0.65),
-		accent:						#2ebaae
+		accent:						#F4B350,
+		shadow:						#cccccc,
+		shadow-light:						#eee
 	);

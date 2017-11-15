@@ -1,0 +1,20 @@
+.label-default{
+	font-family: _font(family-heading);
+    letter-spacing: _font(letter-spacing);
+    font-weight: _font(weight);
+    font-size: 50%;
+    text-transform: uppercase;
+    padding: 1%;
+
+    &.tag{
+        cursor: pointer;
+        &:hover{
+            box-shadow: 2px 2px 2px _palette(shadow);
+        }  
+
+        &.filtered{
+            background: _palette(accent);
+            box-shadow: 4px 4px 7px _palette(shadow);
+        }
+    }
+}
