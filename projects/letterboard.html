@@ -6,7 +6,7 @@
 -->
 <html>
 <head>
-		<title>reco | Vedant Das Swain</title>
+		<title>Letterboard | Vedant Das Swain</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="shortcut icon" href="../images/icon.ico" type="image/x-icon">
@@ -151,23 +151,28 @@
 									<br>
 									Letterboards are key artifacts to facilitate learning through RPM. During initial phases the letterboard is used by educators (teachers and/or parents) to conduct lessons. 
 									In order to augment the evaluation method, by making it more data-driven we designed a prototype smart letterboard that captures inputs as well as logs performance to responsive interface in realtime. 
-									<iframe width="80%" style="margin-left:12%;min-height: 15em;" src="https://www.youtube.com/embed/STqX42lQPBk" frameborder="0" allowfullscreen></iframe>
+									<iframe width="80%" style="margin-left:12%;min-height: 15em;" src="https://www.youtube.com/embed/LfvBNbCgDi4" frameborder="0" allowfullscreen></iframe>
 								</p>
 
 								<h2 id="sectionX">My Role</h2>
 
 								<p style="margin-bottom: 1em;">
-									This tool is the end-product of our foundation course in Human-Computer Interaction. Throughout the lifetime of this project my teammates and I shuffled through many different roles. Each of us actively participated at every stage of the project. The listing below only represents roles which I personally consider to be my greatest contributions.<br>
+									Constructing this instrument was the core component of our coursework in Design of Interactive Environments. 
+									The initial user research involved all group members participating. The division of labour for the development phase was more specific.
+									Broadly, it was built on 3 pillars; hardware, network and interface.
 								</p>
 
 								<div class="container">
 									<div class="row" style="margin-bottom:1em">
 										<div class="col-sm-4" style="font-size: small; text-align:center;">
-											<b>Development Lead</b><br>
+											<b>Infrastructure Development</b><br>
 									    	<img src="../images/common_images/role_developer.png" style="width:4em;">
 									    </div>
 									    <div class="col-sm-8" style="font-size: small;">
-									    	As the only member from a technical background (my undergraduate major was CS) I took on the responsibility of actually building a working prototype that we can evaluate. In this role I was also required to make decisions regarding the feasibility of certain ideas as well as thinking how to realistically materialize ideas from paper.
+											In order to keep the prime artefact, the letterboard, similar to the traditional form we decided to take an embedded systems approach. 
+											Our hardware was rigged with circuits and augmented with an Arduino that communicates in realtime with a monitoring dashboard. 
+											In my role, I had to setup an intermediate server as well as the communication interfaces on the both the hardware and the UI side. 
+											Additionally, I was also responsible for determining the feasibility of other connected devices - that could help monitoring - during the early stages of development.
 									    </div>
 									</div>
 									<div class="row" style="margin-bottom:1em">
@@ -176,8 +181,9 @@
 									    	<img src="../images/common_images/role_designer.png" style="width:4em;">
 									    </div>
 									    <div class="col-sm-8" style="font-size: small;">
-									    	Having done a literature review and having some background in behavioural technology I could guide the brainstorming by providing broader themes within which we sought a solution. Even while trying to narrow down ideas, I proposed many different dimensions along which we arranged our ideas. Lastly, I was involved in sketching out prototypes of each of the major solutions we conceived of. 
-									    </div>
+											In the early stages of designing the interface of the dashboard I helped mockup the interaction flow in the low-fi to mid-fi span.
+											This includes playing with the idea of syncing the output of two differnt sensors (eye tracking and touch) to represent a child's performance.
+										</div>
 									</div>
 									<div class="row" style="margin-bottom:1em">
 										<div class="col-sm-8" style="font-size: small;">
@@ -190,178 +196,84 @@
 
 								<h2 id="section2">The Problem</h2>
 
-								<h3 id="section2-1">Status Quo</h3>
-								<p style="margin-bottom: 1em;">After an observational survey of the campus as well as researching the campus resources we learnt that waste segregation on the Georgia Tech campus is encouraged in two ways:</p>
-									<div class="container">
-									  <div class="row">
-									    <div class="col-sm-6" style="text-align:center; font-size: small;">
-									    	<i><b>Single Stream</b></i><br>
-									    	1 bin for landfill + 1 bin for all recyclable materials<br>
-									    	<img src="../images/project_images/reco/icons/single-stream.png" style="width:20%"/>
-									    	<br>
-									    	<p>
-										    	<i>Location:</i> Dormitories <br>
-										    	<i>Advantage:</i> Lower cognitive load motivates good recycling practice <br>
-												<i>Disadvantage:</i> Recycling quality is worse as recyclable materials can contaminate each other
-											</p>
-									    </div>
-									    <div class="col-sm-6" style="text-align:center; font-size: small;">
-									    	<i><b>Source Separated</b></i><br>
-									    	1 bin each for landfill, aluminum, plastic, paper<br>
-									    	<img src="../images/project_images/reco/icons/source-separated.png" style="width:40%"/>
-									    	<p>
-										    	<i>Location:</i> Student centers, Sports Complex, Library etc <br>
-										    	<i>Advantage:</i> Homogeneity of materials leads to improved recycling quality <br>
-												<i>Disadvantage:</i> Greater Cognitive load
-											</p>
-									    </div>
-									  </div>
-									</div>
+								<h3 id="section2-1">How RPM Works</h3>
+								<p style="margin-bottom: 1em;">We were fortunate to get access to a private english lesson of an autistic child. 
+									The three major players of a session like this are the student, the facilitator and the parent. In some cases the latter two can be the same.
+									Based on this, we can describe the communication between the players as follows:
+								</p>
+									
+								<img src="../images/project_images/reco/pics/target.png" class="project-thumb" style="width:80%">
+								<br>
 
 								<p style="margin-bottom: 1em;">
-									Understandably, source separated recycling units are more abundant on campus as these tend to yield recycled products more efficiently (e.g. pellets that are produced from recycling plastic.)
+									Practitioners of this method are often self-taught or acquire this skill through workshops, or through other facilitators. 
+									Parents, for example, pick this up from facilitators, so that they are equipped to conduct lessons on their own. 
+									Our understanding is that continuous use of this method can lead to children communicating unassisted via the letterboard and eventually even move onto typing.
+								</p>
+
+								<h3 id="section2-3">Observations</h3>
+								
+								<p style="margin-bottom: 1em;">
+									One of our major observations was the asynchronous relation between the child's cognitive ability and their motor movements, and how this influences 
+									their performance with during an RPM lesson. <br>
+									
+									<img src="../images/project_images/reco/pics/target.png" class="project-thumb" style="width:80%">
 									<br>
-									In a utopian world, there would be no problem. However, we learnt from the <i>Office of Facilities Management</i> that they had performed a waste audit during the past summer and all wasn’t as it seemed. The bin for a particular type of material, had a significant proportion of other materials. 
+
+									In the case we observed, the child was in the verbal band of the autism spectrum. This helped us discern their general ability in spelling as well as constructing sentences. 
+									Often however, this would not entirely line up with the coordination of their input. To put it simply, the letter they want to indicate might be 'X' but their input would be 
+									at 'R'. <br>
+									However, we could extrapolate that in the case of non-verbal autism, such an assertion is hard to make, since the child's general learning ability can be questioned, i.e. 
+									they letter they wanted to indicate is indeed 'R', even though that's not the correct letter. 
 								</p>
-
-								<div class="container">
-									  <div class="row">
-									    <div class="col-sm-6" style="text-align:center; font-size: small;">
-									    	<b style="color: #a94442; font-size: -webkit-xxx-large;">45%</b><br>
-									    	Correctly captured trash in the plastic bin at the walkway
-									    </div>
-									    <div class="col-sm-6" style="text-align:center; font-size: small;">
-									    	<b style="color: #a94442; font-size: -webkit-xxx-large;">39%</b><br>
-									    	Correctly captured trash in the plastic bin at the courtyard
-									    </div>
-									  </div>
-									</div>
-
-								<p>
-								This meant that the separated bins were getting contaminated by types of trash not meant to be thrown together, such as non-plastics being thrown in the plastic bin. </p>
-
-								<h3 id="section2-2">Observations</h3>
-
-								<p style="margin-bottom: 1em;">
-									In order to understand why students on campus were failing to dispose trash in the correct bins we performed <b>5 controlled observations</b>. In these, we asked each participant to perform a simple waste segregation task. Everyday items that can be found on campus were provided to them and they had to think-aloud as they decided where to dispose a given item. We also enquired the confidence of their action, on a scale of 1-5, (1 being least confident and 5 being most) after each item they sorted.
-								</p>
-
-								<div class="container">
-									  <div class="row">
-									    <div class="col-sm-6" style="text-align:center; font-size: small;">
-									    	<b style="color: #555; font-size: -webkit-xxx-large;">5</b>
-									    	Participants <br>
-									    	<b>2</b> American + <b>3</b> International
-									    </div>
-									    <div class="col-sm-6" style="text-align:center; font-size: small;">
-									    	<b style="color: #555; font-size: -webkit-xxx-large;">3</b>
-									    	Locations <br>
-									    	<b>2</b> Indoor + <b>1</b> Outdoor
-									    </div>
-									  </div>
-									</div>
-
-								<p style="margin-bottom: 1em;">These choices were made intentionally in order to maximize the possible scenarios where students could find themselves in.</p>
-
-								<div class="container">
-									  <div class="row">
-									    <div class="col-sm-6" style="text-align:center; font-size: small;">
-									    	<b style="color: #a94442; font-size: -webkit-xxx-large;">100%</b><br>
-									    	of all participants sorted plastic ware into the wrong bin with an average sorting confidence of <b>4.4/5</b>
-									    </div>
-									    <div class="col-sm-6" style="text-align:center; font-size: small;">
-									    	<b style="color: #a94442; font-size: -webkit-xxx-large;">60%</b><br>
-									    	of all participants sorted plastic bags into the wrong bin with an average sorting confidence of <b>4.2/5</b>
-									    </div>
-									  </div>
-									</div>
-
-								<p style="margin-bottom: 1em;">
-								Evidently enough, people were under-perfoming when it comes to accurately disposing waste. This did line up with what the waste audit suggested in the first place. But what were the reasons for people not being able to sort waste correctly. We learnt this by analysing our notes from the think-aloud. This is discussed further in the next section. </p>
-
-
-								<div class="row">
-									<div class="col-sm-6" style="text-align:center">
-										<img src="../images/project_images/reco/pics/source-sep-bins.jpg" alt="Indoor source separated recycling units" class="project-thumb" style="width:200px">
-										<i style="font-size: small">Indoor</i><br>
-									</div>
-									<div class="col-sm-6" style="text-align:center">
-										<img src="../images/project_images/reco/pics/outdoor-bins.jpg" alt="Outdoor source separated recycling units" class="project-thumb" style="width:200px">
-										<i style="font-size: small">Outdoor</i><br>
-									</div>
-								</div>
-								<p></p>
 
 								<h3 id="section2-3">Challenges</h3>
 
 								<p style="margin-bottom: 1em;">
-									After we transcribed all our notes, we performed affinity mapping to learn the general themes associated with waste segregation. 
-								</p>
-
-								<div class="row">
-									<div class="col-sm-6" style="text-align:center">
-										<img src="../images/project_images/reco/pics/affinity.jpg" alt="How we affinity mapped all the information from our notes" class="project-thumb" style="height:150px">
-										<i style="font-size: small">Affinity Mapping</i><br>
-									</div>
-									<div class="col-sm-6" style="text-align:center">
-										<img src="../images/project_images/reco/pics/task-analysis.png" alt="A breakdown of how our typical user performs the task of disposing trash" class="project-thumb" style="height:150px">
-										<i style="font-size: small">Task Analysis</i><br>
-									</div>
-								</div>
-
-								<p></p>
-
-								<p>
-									That lead us to understanding the strategies used by individuals to sort the waste. Even though this is generally a split second decision in real life, participants of our study communicated their rationale rather well. </br>
-									Learning this also helped us draw out the challenges that leads to the indecision or downright fallacious notions they've developed regarding the disposal of certain items. 
+									Based on our personal observations and informal interviews with the facilitator and parent we could identify certain painpoints of this method. <br>
+									As a process, using RPM via letterboards to teach is very instinctive and intimate. Different individuals could have varying approaches to this,
+									for example the facilitator we observed had developed a sing-song prompting style. Interestingly enough the parent did not use this method to nudge the child.
+									The onus is on the facilitator to guide the child during their learning phase. However, the method of evaluating a child's perfomace through a session is 
+									rather rudimentary - pen and paper.   
 								</p>
 
 								<div class="container">
-									  <div class="row">
-									    <div class="col-sm-6" style="text-align:center; font-size: small;">
-									    	<img src="../images/project_images/reco/icons/time.png" style="width:2em"/>
-									    	<br>
-									    	Limited Time
-									    </div>
-									    <div class="col-sm-6" style="text-align:center; font-size: small;">
-									    	<img src="../images/project_images/reco/icons/knowledge.png" style="width:2em"/>
-									    	<br>
-									    	Limited Knowledge
-									    </div>
-									  </div>
-									  <div class="row">
-									    <div class="col-sm-6" style="text-align:center; font-size: small;">
-									    	<img src="../images/project_images/reco/icons/texture.png" style="width:2em"/>
-									    	<br>
-									    	Confusing Texture
-									    </div>
-									    <div class="col-sm-6" style="text-align:center; font-size: small;">
-									    	<img src="../images/project_images/reco/icons/contamination.png" style="width:2em"/>
-									    	<br>
-									    	Contaminated Items
-									    </div>
-									  </div>
-  									  <div class="row">
-									    <div class="col-sm-4" style="text-align:center; font-size: small;">
-									    	<img src="../images/project_images/reco/icons/quote.png" style="width:2em"/>
-									    	<br>
-									    	Specific Labels
-									    </div>
-									    <div class="col-sm-4" style="text-align:center; font-size: small;">
-									    	<img src="../images/project_images/reco/icons/less.png" style="width:2em"/>
-									    	<br>
-									    	Insufficient Categories
-									    </div>
-								    	<div class="col-sm-4" style="text-align:center; font-size: small;">
-									    	<img src="../images/project_images/reco/icons/funnel.png" style="width:2em"/>
-									    	<br>
-									    	Catchall Landfills
-									    </div>
-									  </div>
+									<div class="row" style="margin-bottom:2em;">
+										<div class="col-sm-3" style="font-size: small; text-align:center;">
+											<b>Observation</b><br>
+											<img src="../images/project_images/reco/icons/thoughts.png" style="width: 3em;">
+										</div>
+										<div class="col-sm-9" style="font-size: small;top: 2em;">
+											Evaluating the child's performance manually is complicated. Keeping a check on the child's interactions (eye movements, verbal cues and interactions) 
+											along with correcting the actual inputs (checking the spelling, grammar or structure) is a difficult to manage by single individual simultaneously. 
+										</div>
+									</div>
+									<div class="row" style="margin-bottom:2em;">
+										<div class="col-sm-3" style="font-size: small; text-align:center;">
+											<b>Data</b><br>
+											<img src="../images/project_images/reco/icons/actions.png" style="width: 3em;">
+										</div>
+										<div class="col-sm-9" style="font-size: small;top: 2em;">
+											Apart from manual, self-reported markings and annotations there is no convenient way of tracking a child's itneractions. 
+											This is essential for revising the facilitation of prompts by understanding how the child makes errors. 
+											Some attempts using cameras have been made to mitigate this, however these can often be obtrusive and disrupt the sessions entirely.
+										</div>
+									</div>
+									<div class="row" style="margin-bottom:2em;">
+										<div class="col-sm-3" style="font-size: small; text-align:center;">
+											<b>Participation</b><br>
+											<img src="../images/project_images/reco/icons/actions.png" style="width: 3em;">
+										</div>
+										<div class="col-sm-9" style="font-size: small;top: 2em;">
+											Involving a parent into the RPM session could be considered a means to distribute the load on the facilitator. 
+											However, we learnt that physically co-locating a parent in the same space could distract the child (if they are not the facilitators themselves). 
+											This makes it complicated to provide parents and other aids some form of reflection with regard to the child's goals.	
+										</div>
+									</div>
 								</div>
 
 								<p>
-									Apart from these challenges other aspects like past experiences (for e.g. some international students mentioned not having the practice of recycling back home) as well as social context (for e.g. following what the person accompanying them does or referring to items already thrown in the bin)
+									Apart from these challenges other issues that may arrise are specific to the child's inherent or learnt skills upto that point.
 								</p>
 
 							<h2 id="section3">The Design</h2>
