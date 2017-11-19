@@ -16,7 +16,7 @@
 		small: '(max-width: 736px)',
 		xsmall: '(max-width: 480px)'
 	));
-	
+
 // Base.
 
 	@import 'base/page';
@@ -32,6 +32,7 @@
 	@import 'components/label';
 	@import 'components/modal';
 	@import 'components/nav-pills';
+	@import 'components/project-roll';
 	@import 'components/scroll-spy';
 	@import 'components/search-header';
 
