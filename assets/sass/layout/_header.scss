@@ -61,6 +61,11 @@
 		    left: 50%;
 		    transform: translateX(-50%);
 		}
+		@include breakpoint(xsmall) {
+			h2 {
+				display: none;
+			}
+		}
 
 		.links {
 			@include vendor('flex', '1');

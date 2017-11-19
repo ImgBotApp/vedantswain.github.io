@@ -1,0 +1,19 @@
+.full-image-wrapper {
+	display: flex;
+    align-items: baseline;
+    margin: 0 0 2em 0;
+
+	iframe {
+		height: 20em;
+
+		@include breakpoint(xsmall) {
+			height: 15em;
+		}
+	}
+
+	img {
+		width: 100%;
+		object-fit: contain;
+		cursor: crosshair;
+	}
+}

@@ -1,4 +1,13 @@
 // 
+// modal close when blank space
+// 
+$('#myModal').click(function(e){
+	if(e.target.className!='modal-content'){
+		document.getElementById('myModal').style.display='none';
+	}
+})
+
+// 
 // floating button scroll to top animation
 // 
 var amountScrolled = 300;

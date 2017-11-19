@@ -15,6 +15,11 @@ $offset: 80px;
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
+img.modal-content{
+    width: 100%;
+    object-fit: contain;
+}
+
 /* Modal Content (Image) */
 .modal-content {
     position: absolute;
@@ -23,11 +28,9 @@ $offset: 80px;
     transform: translate3d(-50%, -50%, 0);
     margin: auto;
     display: block;
-    height: 80%;
     max-height: 500px;
     max-width: 100%;
     background-color: rgba(0,0,0,0); /* Fallback color */
-
 }
 
 // Close Icon
@@ -35,16 +38,17 @@ $offset: 80px;
     position: absolute;
     top: $offset;
     right: $offset;
-    color: _palette(bg-alt);
+    color: #ff0000;
     font-size: xx-large;
     font-weight: _font(weight-bold);
     transition: 0.3s;
     opacity: 0.8;
+    text-shadow: none;
 }
 
 .close:hover,
 .close:focus {
-    color: _palette(fg-light);
+    color: #ff0000;
     text-decoration: none;
     cursor: pointer;
 }
