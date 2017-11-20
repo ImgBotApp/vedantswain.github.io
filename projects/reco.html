@@ -377,7 +377,7 @@
 							<h3 id="section3-1">User</h3>
 							<p>Before designing our solution we wanted to concretize who really our user is. To simple put our users can be described as: </p>
 
-							<div class="container">
+							<div class="content-flex">
 								  <div class="row">
 								    <div class="col-sm-12" style="font-size: small;">
 								    	Students
@@ -403,26 +403,24 @@
   							<p></p>
 							<p>	Our typical user also needed to be characterized, so we personify them as follows:</p>
 
-							<div class="container">
-								<div class="row" style="margin-bottom:2em;">
-									<div class="col-sm-3" style="font-size: small; text-align:center;">
-										<b>Thoughts</b><br>
-								    	<img src="../images/project_images/reco/icons/thoughts.png" style="width: 3em;">
-								    </div>
-								    <div class="col-sm-9" style="font-size: small;top: 2em;">
+							<div class="content-flex">
+								<div class="display-insight">
+									<b>Thoughts</b>
+							    	<img src="../images/project_images/reco/icons/thoughts.png">
+							    	<div class="description">
 								    	System designs are confusing |
 								    
 								    	Individual actions are insignificant |
 								   
 								    	Don't have time to waste
 								    </div>
-								</div>
-								<div class="row" style="margin-bottom:2em;">
-									<div class="col-sm-3" style="font-size: small; text-align:center;">
-										<b>Actions</b><br>
-								    	<img src="../images/project_images/reco/icons/actions.png" style="width: 3em;">
-								    </div>
-								    <div class="col-sm-9" style="font-size: small;top: 2em;">
+
+							    </div>
+								    
+								<div class="display-insight">
+									<b>Actions</b>
+							    	<img src="../images/project_images/reco/icons/actions.png">
+								    <div class="description">
 								    	Most convenient given the socio-temporal context |
 
 								    	Value judgments based on personal biases |
@@ -430,12 +428,11 @@
 								    	Conforms to how others have behaved
 								    </div>
 								</div>
-								<div class="row" style="margin-bottom:2em;">
-									<div class="col-sm-3" style="font-size: small; text-align:center;">
-										<b>Wants</b><br>
-								    	<img src="../images/project_images/reco/icons/wants.png" style="width: 3em;">
-								    </div>
-								    <div class="col-sm-9" style="font-size: small;top: 2em;">
+
+								<div class="display-insight">
+									<b>Wants</b>
+							    	<img src="../images/project_images/reco/icons/wants.png">
+								    <div class="description">
 								    	Improve sorting accuracy |
 
 								    	Do more than the average citizen |
@@ -444,7 +441,6 @@
 								    </div>
 								</div>
   							</div>
-  							<p></p>
 
 							<h3 id="section3-2">Divergence</h3>
 							<p style="margin-bottom: 1em;">
@@ -461,31 +457,25 @@
 								<br>Thus there were 3 main verticals within which we explored possibilities:
 							</p>
 
-							<div class="container">
-								<div class="row" style="margin-bottom:2em;">
-									<div class="col-sm-4" style="font-size: small; text-align:center;">
-										<b>Nudges</b><br>
-								    	<img src="../images/project_images/reco/icons/nudge.png" style="width:4em;">
-								    </div>
-								    <div class="col-sm-8" style="font-size: small;top: 30px;">
+							<div class="content-flex">
+								<div class="display-insight">
+									<b>Nudges</b>
+							    	<img src="../images/project_images/reco/icons/nudge.png">
+								    <div class="description">
 								    	Providing users actionable information in the moment they perform the task
 								    </div>
 								</div>
-								<div class="row" style="margin-bottom:2em;">
-									<div class="col-sm-4" style="font-size: small; text-align:center;">
-										<b>Reflection</b><br>
-								    	<img src="../images/project_images/reco/icons/reflection.png" style="width:4em">
-								    </div>
-								    <div class="col-sm-8" style="font-size: small;top: 30px;">
+								<div class="display-insight">
+									<b>Reflection</b>
+							    	<img src="../images/project_images/reco/icons/reflection.png">
+								    <div class="description">
 								    	Tracking the user's activity and representing them as meaningful informatics
 								    </div>
 								</div>
-								<div class="row" style="margin-bottom:2em;">
-									<div class="col-sm-4" style="font-size: small; text-align:center;">
-										<b>Learning</b><br>
-								    	<img src="../images/project_images/reco/icons/learning.png" style="width:4em">
-								    </div>
-								    <div class="col-sm-8" style="font-size: small;top: 30px;">
+								<div class="display-insight">
+									<b>Learning</b>
+							    	<img src="../images/project_images/reco/icons/learning.png">
+								    <div class="description">
 								    	Training/teaching the users with regular/repeated practice
 								    </div>
 								</div>
@@ -653,33 +643,35 @@
 								Before we went onto deciding a functional prototype to build we needed to draw out certain design decisions that we'd need to adhere to while selecting a solution. These were:
 							</p>
 
-							<div class="container">
-								<div class="row" style="margin-bottom:1em">
-									<div class="col-sm-3" style="font-size: small; text-align:center;">
-										<b>Behaviour Change</b><br>
-								    	<img src="../images/project_images/reco/icons/change.png" style="height:30px;">
-								    	<br>
-								    	Our goal is to ultimately evoke a change in user behaviour by persuasive nudges and not by force. The idea is to aid the user in making the choice themselves by carefully guiding them in the right path.
-								    </div>
-									<div class="col-sm-3" style="font-size: small; text-align:center;">
-										<b>Just in Time</b><br>
-								    	<img src="../images/project_images/reco/icons/timing.png" style="height:30px;">
-								    	<br>
-								    	The phase where we believe an intervention would be effective was right when the action is taking place. This would dynamically catch the user's attention in the moment and requires less memorisation from the user.
-								    </div>
-									<div class="col-sm-3" style="font-size: small; text-align:center;">
-										<b>Convenience</b><br>
-								    	<img src="../images/project_images/reco/icons/convenience.png" style="height:30px;">
-								    	<br>
-								    	Since our problem area involves an everyday activity, the user's comfort is of our utmost priority. Therefore, the solution shouldn't strongly disrupt the user's routine behaviour and thus should be easy and quick to use.
-								    </div>
-									<div class="col-sm-3" style="font-size: small; text-align:center;">
-										<b>Knowledge</b><br>
-								    	<img src="../images/project_images/reco/icons/knowledge1.png" style="height:30px;">
-								    	<br>
-								    	Ultimately, we want the user to not only do the right thing, but to build knowledge. Naturally, repeated use and clarity of communicating information are prime.
-								    </div>
-								</div>
+							<div class="content-flex">
+								<div class="display-insight">
+									<b>Behaviour Change</b>
+							    	<img src="../images/project_images/reco/icons/change.png">
+							    	<div class="description">
+							    		Our goal is to ultimately evoke a change in user behaviour by persuasive nudges and not by force. The idea is to aid the user in making the choice themselves by carefully guiding them in the right path.
+							    	</div>
+							    </div>
+								<div class="display-insight">
+									<b>Just in Time</b>
+							    	<img src="../images/project_images/reco/icons/timing.png">
+							    	<div class="description">
+							    		The phase where we believe an intervention would be effective was right when the action is taking place. This would dynamically catch the user's attention in the moment and requires less memorisation from the user.
+							    	</div>
+							    </div>
+								<div class="display-insight">
+									<b>Convenience</b>
+							    	<img src="../images/project_images/reco/icons/convenience.png">
+							    	<div class="description">
+							    		Since our problem area involves an everyday activity, the user's comfort is of our utmost priority. Therefore, the solution shouldn't strongly disrupt the user's routine behaviour and thus should be easy and quick to use.
+							    	</div>
+							    </div>
+								<div class="display-insight">
+									<b>Knowledge</b>
+							    	<img src="../images/project_images/reco/icons/knowledge1.png">
+							    	<div class="description">
+							    		Ultimately, we want the user to not only do the right thing, but to build knowledge. Naturally, repeated use and clarity of communicating information are prime.
+							    	</div>
+							    </div>
 							</div>
 
 							<p>
@@ -782,24 +774,22 @@
 								Our final prototype is also designed to help us measure 2 different success metrics. This is done by locally storing the users decisions for each question and how logging the timestamp since their initial probe and their final prompt.
 							</p>
 
-							<div class="container">
-							  <div class="row">
-							    <div class="col-sm-6" style="text-align:center; font-size: small;">
-							    	<img src="../images/project_images/reco/icons/speed.png" style="height:30px"/>
-							    	<br>
-							    	<b>Speed</b> <br>
-							    	Measuring this passively removes the biases manually logging it in front of the user can lead to
+							<div class="content-flex">
+							    <div class="display-insight">
+							    	<b>Speed</b>
+							    	<img src="../images/project_images/reco/icons/speed.png">
+							    	<div class="description">
+							    		Measuring this passively removes the biases manually logging it in front of the user can lead to
+							    	</div>
 							    </div>
-							    <div class="col-sm-6" style="text-align:center; font-size: small;">
-							    	<img src="../images/project_images/reco/icons/accuracy.png" style="height:30px"/>
-							    	<br>
-							    	<b>Accuracy</b> <br>
-							    	Logging user decisions not only helps tally correctness of choices but also helps understand how they arrived at a certain state
+							    <div class="display-insight">
+							    	<b>Accuracy</b>
+							    	<img src="../images/project_images/reco/icons/accuracy.png"/>
+							    	<div class="description">
+							    		Logging user decisions not only helps tally correctness of choices but also helps understand how they arrived at a certain state
+							    	</div>
 							    </div>
-						  </div>
-						</div>
-
-						  <br>
+							</div>
 
 							<h2 id="section5">Future</h2>
 
