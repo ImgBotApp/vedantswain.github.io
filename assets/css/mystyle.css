@@ -209,6 +209,51 @@ hr {
     .content-flex .display-insight > .description {
       padding: 0 1em;
       max-width: 26em; }
+  .content-flex .display-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2em 1em 2em;
+    font-size: 10pt;
+    flex: 1;
+    text-align: center; }
+    .content-flex .display-icon > img {
+      object-fit: contain;
+      height: 3em; }
+  .content-flex .display-artefact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    font-size: 10pt;
+    width: 100%; }
+    .content-flex .display-artefact .details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .content-flex .display-artefact .details .icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1em; }
+        .content-flex .display-artefact .details .icon img {
+          width: 3em;
+          margin: 0 3em; }
+      .content-flex .display-artefact .details .description {
+        margin: 0 1em;
+        min-width: 18em;
+        max-width: 30em; }
+    .content-flex .display-artefact .evidence {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1em;
+      flex: 1; }
+      .content-flex .display-artefact .evidence > img {
+        object-fit: contain;
+        width: 10em;
+        margin-right: 0.5em;
+        flex: 1;
+        cursor: crosshair; }
 
 .cover-thumb {
   cursor: pointer;
@@ -394,6 +439,7 @@ ul.nav-pills {
 .container {
   width: 100%;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 1em; }
 
 /*# sourceMappingURL=mystyle.css.map */
