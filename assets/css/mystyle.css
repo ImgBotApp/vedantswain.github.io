@@ -154,6 +154,26 @@ hr {
 .align-right {
   text-align: right; }
 
+.content-flex {
+  display: flex; }
+  .content-flex .display-value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    flex: 1; }
+    .content-flex .display-value > .value {
+      font-size: 24pt; }
+      .content-flex .display-value > .value.negative {
+        color: #a94442; }
+      .content-flex .display-value > .value.neutral {
+        color: #555; }
+      .content-flex .display-value > .value.positive {
+        color: #008d28; }
+    .content-flex .display-value > .description {
+      padding: 0 3em;
+      font-size: 10pt; }
+
 .cover-thumb {
   cursor: pointer;
   width: 8%;
