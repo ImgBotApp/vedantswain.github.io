@@ -156,7 +156,8 @@ hr {
 
 .content-flex {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 1em; }
   .content-flex > i {
     width: 100%;
     font-size: 10pt;
@@ -177,7 +178,8 @@ hr {
         color: #008d28; }
     .content-flex .display-value > .description {
       padding: 0 3em;
-      font-size: 10pt; }
+      font-size: 10pt;
+      max-width: 26em; }
   .content-flex .display-img {
     display: flex;
     flex-direction: column;
@@ -199,12 +201,14 @@ hr {
     align-items: center;
     margin-bottom: 1em;
     font-size: 10pt;
+    min-width: 12em;
     flex: 1; }
     .content-flex .display-insight > img {
       object-fit: contain;
       height: 3em; }
     .content-flex .display-insight > .description {
-      padding: 0 1em; }
+      padding: 0 1em;
+      max-width: 26em; }
 
 .cover-thumb {
   cursor: pointer;
