@@ -155,7 +155,12 @@ hr {
   text-align: right; }
 
 .content-flex {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
+  .content-flex > i {
+    width: 100%;
+    font-size: 10pt;
+    text-align: center; }
   .content-flex .display-value {
     display: flex;
     flex-direction: column;
@@ -173,6 +178,21 @@ hr {
     .content-flex .display-value > .description {
       padding: 0 3em;
       font-size: 10pt; }
+  .content-flex .display-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    flex: 1; }
+    .content-flex .display-img > img {
+      object-fit: contain;
+      height: 8em; }
+      @media screen and (max-width: 736px) {
+        .content-flex .display-img > img {
+          height: 10em; } }
+    .content-flex .display-img > i {
+      font-size: 10pt;
+      text-align: center; }
 
 .cover-thumb {
   cursor: pointer;
