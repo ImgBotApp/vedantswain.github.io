@@ -416,7 +416,9 @@ ul.nav-pills {
 .project-role {
   display: flex;
   align-items: center;
-  margin: 1em 0; }
+  margin: 1em 0;
+  justify-content: center;
+  flex-wrap: wrap; }
   .project-role > .label {
     display: flex;
     flex-direction: column;
@@ -424,13 +426,14 @@ ul.nav-pills {
     height: fit-content;
     min-width: 12em; }
     .project-role > .label b {
-      margin-bottom: 1em; }
+      margin-bottom: 0.5em; }
     .project-role > .label img {
       width: 4em; }
   .project-role > .description {
     font-size: 10pt;
     padding: 0 1em;
-    flex: 1; }
+    flex: 1;
+    min-width: 20em; }
 
 @media screen and (max-width: 736px) {
   #myScrollspy {
