@@ -242,8 +242,8 @@ hr {
           margin: 0 3em; }
       .content-flex .display-artifact .details .description {
         margin: 0 1em 0.5em 1em;
-        min-width: 18em;
-        max-width: 30em; }
+        min-width: 12em;
+        max-width: 24em; }
     .content-flex .display-artifact .evidence {
       display: flex;
       align-items: center;
@@ -256,6 +256,8 @@ hr {
         margin-right: 0.5em;
         flex: 1;
         cursor: crosshair; }
+    .content-flex .display-artifact.no-evidence .description {
+      max-width: 40em; }
 
 .cover-thumb {
   cursor: pointer;

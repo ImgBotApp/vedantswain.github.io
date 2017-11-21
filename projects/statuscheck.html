@@ -161,12 +161,12 @@
 								</p>
 
 								<div class="container">
-									<div class="row" style="margin-bottom:1em">
-										<div class="col-sm-4" style="font-size: small; text-align:center;">
+									<div class="project-role">
+										<div class="label">
 											<b>Full Stack</b><br>
-									    	<img src="../images/common_images/role_full.png" style="width:4em;">
+									    	<img src="../images/common_images/role_full.png">
 									    </div>
-									    <div class="col-sm-8" style="font-size: small;">
+									    <div class="description">
 									    	Brought into this project as a developer, I was in control of the construction of the tool itself from the start to the end. This involved skeletal layouts as well as surface level decisions. I had to manage engineering both the frontend (built on Javascript) and the backend (putting together a Django server). Therefore, designing an extension that injects code into Facebook, while still blending into the native interface of the site was my first task. My other was to build the architecture to communicate with other APIs, as well as analyse text.<br>
 									    	Thus, any changes at any of the different planes of UX/UI were all under my belt.
 									    </div>
@@ -187,12 +187,16 @@
 								</p>
 								<p style="margin-bottom:1em;">
 									One of the most unexpected challenges that can arise due to one's social network behaviour is legal ramifications. In the November of 2012, 2 ladies from Mumbai, India were arrested for a post about the death of a regional political leader. In retrospect, the argument has remained that the <a href="http://timesofindia.indiatimes.com/city/mumbai/Shame-2-girls-arrested-for-harmless-online-comment/articleshow/17286105.cms">post in itself</a> was innocuous, or at the very least not vitriolic. However, the state was quick enough to act and had two innocent women had to encounter police handling and angered loyalists. The debate and discussion only emerged after. Thus, it's understandable to see why users need to be preempted before they go through traumatic experience. Especially when they belong to politically volatile environments.<br>
-									<img src="../images/project_images/statuscheck/pics/pic2.png" class="project-thumb" style="width:70%" alt="Writing this made the posters life extrememly miserable for the days to come">
+									<div class="full-image-wrapper">
+										<img src="../images/project_images/statuscheck/pics/pic2.png" class="project-thumb" alt="Writing this made the posters life extrememly miserable for the days to come">
+									</div>
 								</p>
 
 								<p style="margin-bottom:1em;">
 									Another challenge faced by many netizens is becoming the target of cyber-bullying or online harassment. What is worse is, that the perpetrators often don't realise they're doing it. Many join in the crowd. Many can't gauge how harmful their words might be, or how it could possibly effect others. Getting a backlash on a post or a comment isn't unheard of. Neither is people herding together to reprimand someone else. Even if the post is eventually deleted it still leads to creating a negative and emotionally intense atmosphere in the web space. And this could lead to fatal consequences, including death.<br>
-									<img src="../images/project_images/statuscheck/pics/pic3.png" class="project-thumb" style="width:50%" alt="There are countless examples of this kind of content online">
+									<div class="full-image-wrapper">
+										<img src="../images/project_images/statuscheck/pics/pic3.png" class="project-thumb" alt="There are countless examples of this kind of content online">
+									</div>
 								</p>
 
 								<p>
@@ -209,87 +213,109 @@
 
 								<h3 id="section3-1">How it Works</h2>
 
-								<div class="container">
-									<div class="row" style="margin-bottom:1em;">
-										<div class="col-sm-4" style="font-size: small; text-align:center;">
-											<b>Sentiment</b><br>
-									    	<img src="../images/project_images/statuscheck/icons/sentiment.png" style="width:4em;">
-									    </div>
-									    <div class="col-sm-8" style="font-size: small;">
+								<div class="content-flex">
+									<div class="display-artifact no-evidence">
+										<div class="details">
+											<div class="icon">
+												<b>Sentiment</b>
+										    	<img src="../images/project_images/statuscheck/icons/sentiment.png">
+									    	</div>
+									    	<div class="description">
 									    	The first intervention we conceived was to simply inform the user what the general sentiment of their status is. After learning this, they get to decide whether they want to execute the post.<br>
 									    	We tap into a third party tool, the <i>MeaningCloud API</i> that performs topic extraction on the status and evaluates the sentiment around the extracted topics - This helps perform more contextual analysis of the status. The response from the API provides us different metrics about the status. We pick out a polarity score, a value which varies from -1 to 1. According this value a score tag, a simple letter grade is assigned to a user's status.
-									    </div>
+										    </div>
+										</div>
 									</div>
-									<div class="row" style="margin-bottom:1em;">
-										<div class="col-sm-4" style="font-size: small; text-align:center;">
-											<b>Majority</b><br>
-									    	<img src="../images/project_images/statuscheck/icons/majority.png" style="width:4em;">
+									<div class="display-artifact no-evidence">
+										<div class="details">
+											<div class="icon">
+											<b>Majority</b>
+									    	<img src="../images/project_images/statuscheck/icons/majority.png">
 									    </div>
-									    <div class="col-sm-8" style="font-size: small;">
+									    <div class="description">
 									    	Given that we do function within a society, pushing our individual ideas cannot be done without understanding the conversation about similar themes in the community. Not only is this important for awareness but also sensitisation towards others.<br>
 									    	The <i>MeaningCloud API</i> is used to perform extraction of keywords from the status - specific keywords help in narrowing down the search query parameters. The response from that query is provided as keywords to the Twitter Search api to find similar posts on the Twitter space. These posts are quickly assigned a polarity  tag via the <i>TextBlob</i> module at the backend.</p>
-									    </div>
+										    </div>
+										</div>
 									</div>
-									<div class="row" style="margin-bottom:1em;">
-										<div class="col-sm-4" style="font-size: small; text-align:center;">
-											<b>Protection</b><br>
-									    	<img src="../images/project_images/statuscheck/icons/protection.png" style="width:4em;">
-									    </div>
-									    <div class="col-sm-8" style="font-size: small;">
-									    	If saving a thought or curbing an impulse could decrease the risk of being questioned legally for it, an ideal user would choose to do so.<br>
-									    	A classifier was trained before hand with a mean accuracy tested as 84%. The training set consisted of 90 posts that got into trouble (arrests, firing etc.) and 90 safe/generic posts. An SVM classifier is trained on the server using a custom feature set which comprises of a vocabulary and a polarity. The vocabulary included words flagged to be occurring more regularly in posts that get users into trouble. These are further classified into; <i>words that indicate wrong intent</i>: e.g. kill, shoot, bang, hate etc, <i>profane words</i>: e.g. sh*t, f**k, b**ch etc, <i>subject words</i>: e.g. god, boss, police, woman etc, <i>situational words</i>: e.g. die, blood, murder etc, and <i>polarising words</i>: e.g. black, nig**r etc.
-									    </div>
-									</div>
-	  							</div>
+									<div class="display-artifact no-evidence">
+										<div class="details">
+											<div class="icon">
+												<b>Protection</b>
+										    	<img src="../images/project_images/statuscheck/icons/protection.png">
+										    </div>
+									    	<div class="description">
+									    		If saving a thought or curbing an impulse could decrease the risk of being questioned legally for it, an ideal user would choose to do so.<br>
+									    		A classifier was trained before hand with a mean accuracy tested as 84%. The training set consisted of 90 posts that got into trouble (arrests, firing etc.) and 90 safe/generic posts. An SVM classifier is trained on the server using a custom feature set which comprises of a vocabulary and a polarity. The vocabulary included words flagged to be occurring more regularly in posts that get users into trouble. These are further classified into; <i>words that indicate wrong intent</i>: e.g. kill, shoot, bang, hate etc, <i>profane words</i>: e.g. sh*t, f**k, b**ch etc, <i>subject words</i>: e.g. god, boss, police, woman etc, <i>situational words</i>: e.g. die, blood, murder etc, and <i>polarising words</i>: e.g. black, nig**r etc.
+									    	</div>
+		  								</div>
+	  								</div>
+								</div>
 
-	  							<p>
-									<img src="../images/project_images/statuscheck/pics/pic1.jpg" class="project-thumb" style="width:50%" alt="An architectural flow of how the user interacts with the application and how the system works in the background">
-	  							</p>
+	  							<div class="full-image-wrapper">
+									<img src="../images/project_images/statuscheck/pics/pic1.jpg" class="project-thumb" alt="An architectural flow of how the user interacts with the application and how the system works in the background">
+	  							</div>
 								
 								<h2 id="section3-2">Functional Prototype</h2>
 
-								<div class="container">
-									<div class="row" style="margin-bottom:1em;">
-										<div class="col-sm-4" style="font-size: small; text-align:center;">
-											<b>Unobtrusive Injection</b><br>
-									    	<img src="../images/project_images/statuscheck/pics/screen1.jpg" class="project-thumb" style="width:70%;">
-									    	<br>
-									    	The extension makes subtle changes at the interface level, so that the user doesn’t need to get readjusted. Unlike the traditional view, the “Post” button is now replaced by a “Check” button.
+								<div class="content-flex">
+									<div class="display-artifact">
+										<div class="details">
+											<div class="description">
+												<b>Unobtrusive Injection</b><br>
+									    		The extension makes subtle changes at the interface level, so that the user doesn’t need to get readjusted. Unlike the traditional view, the “Post” button is now replaced by a “Check” button.
+											</div>
 										</div>
-										<div class="col-sm-4" style="font-size: small; text-align:center;">
-											<b>Timer Module</b><br>
-									    	<img src="../images/project_images/statuscheck/pics/screen2.jpg" class="project-thumb" style="width:70%;">
-									    	<br>
-									    	Defers the publishing of a post by a fixed duration. Along with this a new countdown timer is initiated, during which a user may decide to cancel or edit their post. They might also skip the process entirely by pressing the “Post Now” button.
-										</div>
-										<div class="col-sm-4" style="font-size: small; text-align:center;">
-											<b>Sentiment Module</b><br>
-									    	<img src="../images/project_images/statuscheck/pics/screen3.jpg" class="project-thumb" style="width:70%;">
-									    	<br>
-									    	The polarity of the user’s status is analyses. Apart from the sentiment it provides some more information as well (objective/subjective, ironic/unironic).
+										<div class="evidence">
+											<img src="../images/project_images/statuscheck/pics/screen1.jpg" class="project-thumb">
 										</div>
 									</div>
-									<div class="row" style="margin-bottom:1em;">
-										<div class="col-sm-3" style="font-size: small; text-align:center;">
-											<b>Similar Posts Module</b><br>
-									    	Fetches up to 10 similar posts from Twitter’s public feed. Not only are the similar posts provided but they are also tagged with a general sentiment so that the user can learn about what other people are saying about the topics he/she is talking about.
+									<div class="display-artifact">
+										<div class="details">
+											<div class="description">
+												<b>Timer Module</b><br>
+												Defers the publishing of a post by a fixed duration. Along with this a new countdown timer is initiated, during which a user may decide to cancel or edit their post. They might also skip the process entirely by pressing the “Post Now” button.
+											</div>
 										</div>
-										<div class="col-sm-3" style="font-size: small; text-align:center;">
-									    	<img src="../images/project_images/statuscheck/pics/screen4.jpg" class="project-thumb" style="width:80%;">
-									    	<br>
+										<div class="evidence">
+											<img src="../images/project_images/statuscheck/pics/screen2.jpg" class="project-thumb" style="width:70%;">
 										</div>
-										<div class="col-sm-3" style="font-size: small; text-align:center;">
-											<b>Danger Classification Module</b><br>
-									    	Statuses are classified as dangerous or safe. A post is termed dangerous, if it bares resemblance to previous posts that have gotten users arrested or fired or led to any other mishaps.
+								    </div>
+									<div class="display-artifact">
+										<div class="details">
+											<div class="description">
+												<b>Sentiment Module</b>
+										    	<br>
+										    	The polarity of the user’s status is analyses. Apart from the sentiment it provides some more information as well (objective/subjective, ironic/unironic).
+											</div>
 										</div>
-										<div class="col-sm-3" style="font-size: small; text-align:center;">
-									    	<img src="../images/project_images/statuscheck/pics/screen5.jpg" class="project-thumb" style="width:80%;">
-									    	<br>
+								    	<div class="evidence">
+									    	<img src="../images/project_images/statuscheck/pics/screen3.jpg" class="project-thumb">
+								    	</div>
+									</div>
+									<div class="display-artifact">
+										<div class="details">
+											<div class="description">
+												<b>Similar Posts Module</b><br>
+									    		Fetches up to 10 similar posts from Twitter’s public feed. Not only are the similar posts provided but they are also tagged with a general sentiment so that the user can learn about what other people are saying about the topics he/she is talking about.
+								    		</div>
+										</div>
+										<div class="evidence">
+									    	<img src="../images/project_images/statuscheck/pics/screen4.jpg" class="project-thumb">
 										</div>
 									</div>
-								</div>
-								
-
+									<div class="display-artifact">
+											<div class="details">
+												<div class="description">
+													<b>Danger Classification Module</b><br>
+									    			Statuses are classified as dangerous or safe. A post is termed dangerous, if it bares resemblance to previous posts that have gotten users arrested or fired or led to any other mishaps.
+												</div>
+											</div>
+											<div class="evidence">
+										    	<img src="../images/project_images/statuscheck/pics/screen5.jpg" class="project-thumb">
+											</div>
+									</div>
+								</div>								
 								<h2 id="section4">Future</h2>
 
 								<h3></h3>
