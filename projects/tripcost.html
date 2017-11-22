@@ -158,21 +158,21 @@
 								</p>
 
 								<div class="container">
-									<div class="row" style="margin-bottom:1em">
-										<div class="col-sm-4" style="font-size: small; text-align:center;">
+									<div class="project-role">
+										<div class="label">
 											<b>UX/UI Designer</b><br>
-									    	<img src="../images/common_images/role_designer.png" style="width:4em;">
+									    	<img src="../images/common_images/role_designer.png">
 									    </div>
-									    <div class="col-sm-8" style="font-size: small;">
+									    <div class="description">
 									    	In my earlier projects, I had some experience with working on (and using) personal informatics applications that encourage users to modify their behaviours via subtle persuasion. Revamping the method of intervention for the users was of prime importance to the next steps for this project, and I was strongly involved in this. Another significant influence of mine was on creating interactions for the user that helps them view the information more tangibly. 
 									    </div>
 									</div>
-									<div class="row" style="margin-bottom:1em">
-										<div class="col-sm-4" style="font-size: small; text-align:center;">
+									<div class="project-role">
+										<div class="label">
 											<b>Development Engineer</b><br>
-									    	<img src="../images/common_images/role_developer.png" style="width:4em;">
+									    	<img src="../images/common_images/role_developer.png">
 									    </div>
-									    <div class="col-sm-8" style="font-size: small;">
+									    <div class="description">
 									    	Having significant development experience in my repertoire I was steering the actual construction of the new tools we planned to test. This included Android development for the smartphone utility that provides the post-trip interventions to the user. Along with this I also worked in implementing the systems infrastructure for the primary researchers to execute their study remotely.
 									    </div>
 									</div>
@@ -192,25 +192,29 @@
 								</p>
 								<p>The cost model can be broken down as follows: </p>
 
-								<div class="container">
-									  <div class="row" style="margin-bottom:1em;">
-									    <div class="col-sm-4" style="text-align:center; font-size: small;">
-									    	<b>Fuel Cost</b>
-									    </div>
-									    <div class="col-sm-8" style="text-align:center; font-size: small;">
+								<div class="content-flex">
+								  <div class="display-artifact no-evidence">
+								  	<div class="details">
+								  		<div class="icon">
+								    		<b>Fuel Cost</b>
+								  		</div>
+								        <div class="description">
 									    	<i>= (Fuel Cost per Gallon / Fuel Miles per Gallon) x Trip Length</i><br>
 									    	This is the most "obvious" expense of driving a car. The only variable that is a function of the trip is the length itself. The fuel cost, though not strictly invariant, can still be perceptually considered an average stable value (or one that changes slowly).
 									    </div>
-									  </div>
-  									  <div class="row" style="margin-bottom:1em;">
-									    <div class="col-sm-4" style="text-align:center; font-size: small;">
-									    	<b>Other Costs</b>
-									    </div>
-									    <div class="col-sm-8" style="text-align:center; font-size: small;">
-									    	<i>= Operating Costs + Ownership Costs</i><br>
-									    	This is the invisible value we are trying to draw the user's attention too. The "hidden cost" is also varies as a function of the trip length and generally adds to the expected fuel cost. Most of the persuasive argument suggested by the system hinges on revealing this cost to the car owners.
-									    </div>
-									  </div>
+								    </div>
+								  </div>
+								  	<div class="display-artifact no-evidence">
+								    	<div class="details">
+								    		<div class="icon">	
+								    			<b>Other Costs</b>
+								    		</div>
+								    		<div class="description">
+								    		<i>= Operating Costs + Ownership Costs</i><br>
+								    		This is the invisible value we are trying to draw the user's attention too. The "hidden cost" is also varies as a function of the trip length and generally adds to the expected fuel cost. Most of the persuasive argument suggested by the system hinges on revealing this cost to the car owners.
+								    		</div>
+								  		</div>
+					  				</div>
 								</div>
 
 								<br>
@@ -219,31 +223,26 @@
 								</p>
 								<p>The apparatus that was used to create this solution and study its effectiveness relies on two major components: </p>
 
-								<div class="container">
-								  <div class="row">
-								    <div class="col-sm-6" style="text-align:center; font-size: small;">
-								    	<img src="../images/project_images/tripcost/icons/obd.png" style="height:4em"/>
-								    	<br>
-								    	<b>OBD Interface</b><br>
-								    </div>
-								    <div class="col-sm-6" style="text-align:center; font-size: small;">
-								    	<img src="../images/project_images/tripcost/icons/phone.png" style="height:4em"/>
-								    	<br>
-								    	<b>Smartphone</b><br>
-								    </div>
-								  </div>
-								  <div class="row">
-								    <div class="col-sm-6" style="text-align:center; font-size: small;">
-								    	A Bluetooth- enabled On-Board Diagnostics (OBD) interface was attached to the vehicle. The OBD device is used to indirectly determine the fuel usage and detect the start and stop of each driving trip. This needed to be manually calibrated for each vehicle in the study.
-								    </div>
-								    <div class="col-sm-6" style="text-align:center; font-size: small;">
-								    	The Android application on the user's phone retrieves the data from the OBD (using third-party APIs), takes GPS information for the trip variables and audibly alerts the user to view their trip cost at the end of the car ride.
-								    </div>
-								  </div>
+								<div class="content-flex">
+									<div class="display-insight">
+										<b>OBD Interface</b>
+								    	<img src="../images/project_images/tripcost/icons/obd.png">
+									    <div class="description">
+									    	A Bluetooth- enabled On-Board Diagnostics (OBD) interface was attached to the vehicle. The OBD device is used to indirectly determine the fuel usage and detect the start and stop of each driving trip. This needed to be manually calibrated for each vehicle in the study.
+									    </div>
+									</div>
+									<div class="display-insight">
+										<b>Smartphone</b>
+								    	<img src="../images/project_images/tripcost/icons/phone.png">
+									    <div class="description">
+									    	The Android application on the user's phone retrieves the data from the OBD (using third-party APIs), takes GPS information for the trip variables and audibly alerts the user to view their trip cost at the end of the car ride.
+									    </div>
+									</div>
 								</div>
 
-								<br>
-								<img src="../images/project_images/tripcost/pics/old_ui.png" class="project-thumb" style="width:50%">
+								<div class="full-image-wrapper">
+									<img src="../images/project_images/tripcost/pics/old_ui.png" class="project-thumb">
+								</div>
 								<p style="text-align:center; font-size: small;">A display of the Old Interface nudged a user at the end of the trip</p>
 
 								<h3 id="section2-2">The First Study</h3>
@@ -252,82 +251,66 @@
 									The participants of the study were asked to follow the following protocol:
 								</p>
 
-								<div class="container">
-									  <div class="row">
-									    <div class="col-sm-12" style="font-size: small;">
-									    	Each participant completed an entry survey, where they gave an estimate of the average cost of a one-way trip as well as how confident they are in that answer.
-									    </div>
-									  </div>
-									  <div class="row">
-										<div class="col-sm-1" style="font-size: small;">
-									    	<div style="height: 2px; background-color: #a94f86; margin-top:10px"></div>
-									    </div>
-										<div class="col-sm-11" style="font-size: small;">
-									    	The system is installed on the user vehicle, the model coefficients of the participant’s personal vehicle are adjusted on the application settings based on how that specific vehicle’s OBD protocol reported
-									    </div>
-									</div>
-									<div class="row">
-										<div class="col-sm-2" style="font-size: small;">
-									    	<div style="height: 2px; background-color: #a94f86; margin-top:10px"></div>
-									    </div>
-									    <div class="col-sm-10" style="font-size: small;">
-									    	Immediately after each driving trip, the system allowed participants to see the estimated total cost of that trip. Participants could not review the trip costs later, so our evaluation reflected their memories of a trip cost meter that appeared when they turned on their vehicles.
-									    </div>
-									  </div>
-									<div class="row">
-										<div class="col-sm-3" style="font-size: small;">
-									    	<div style="height: 2px; background-color: #a94f86; margin-top:10px"></div>
-									    </div>
-									    <div class="col-sm-9" style="font-size: small;">
-									    	The participants completed the exit interview with the same questions as the first interview. Apart from this the participants were also asked to discuss their overall impression of the system, additional thoughts and reflections.
-									    </div>
-									  </div>
-  								</div>
-	  								<br>
+								<ol class="display-list">
+								  	<li>
+							    		Each participant completed an entry survey, where they gave an estimate of the average cost of a one-way trip as well as how confident they are in that answer.
+								    </li>
+							  		<li>
+								    	The system is installed on the user vehicle, the model coefficients of the participant’s personal vehicle are adjusted on the application settings based on how that specific vehicle’s OBD protocol reported
+								    </li>
+									<li>
+								    	Immediately after each driving trip, the system allowed participants to see the estimated total cost of that trip. Participants could not review the trip costs later, so our evaluation reflected their memories of a trip cost meter that appeared when they turned on their vehicles.
+								  	</li>
+									<li>
+								    	The participants completed the exit interview with the same questions as the first interview. Apart from this the participants were also asked to discuss their overall impression of the system, additional thoughts and reflections.
+								    </li>
+  								</li>
 
-								<div class="container">
-									  <div class="row" style="margin-bottom:1em;">
-									    <div class="col-sm-4" style="text-align:center; font-size: small;">
-									    	<b style="color: #a94f86; font-size: -webkit-xxx-large;">9</b><br>
-									    	participants (of the 14 enrolled) completed the study
-									    </div>
-									    <div class="col-sm-4" style="text-align:center; font-size: small;">
-									    	<b style="color: #a94f86; font-size: -webkit-xxx-large;">7</b><br>
-									    	days of deployment
-									    </div>
-									    <div class="col-sm-4" style="text-align:center; font-size: small;">
-									    	<b style="color: #a94f86; font-size: -webkit-xxx-large;">145</b><br>
+								<div class="content-flex">
+								  	<div class="display-value">
+								    	<b class="value neutral">9</b>
+								    	<span class="description">
+								    		participants (of the 14 enrolled) completed the study
+								    	</span>
+								    </div>
+								    <div class="display-value">
+								    	<b class="value neutral">7</b>
+								    	<span class="description">
+								    		days of deployment
+								    	</span>
+								    </div>
+								    <div class="display-value">
+								    	<b class="value neutral">145</b>
+								    	<span>
 									    	driving trips were completed during the study
-									    </div>
-									</div>
-									<div class="row" style="margin-bottom:1em;">
-									    <div class="col-sm-12" style="text-align:center; font-size: small;">
-									    	4 of the participants also took part in a follow-up interview four months later
-									    </div>
+								    	</span>
+								    </div>
+									<div class="display-value">
+										<b class="value neutral">4</b>
+										<span>
+											participants took part in a follow-up interview four months later
+										</span>
 									</div>
 								</div>
-								<br>
 
 								<p>
 									It is safe to say that the results for this first study were promising. In general the participants showed an improved accuracy and confidence when compared at the stages before and after the study deployment.
 								</p>
 
-								<div class="row">
-									<div class="col-sm-4" style="text-align:center">
-										<img src="../images/project_images/tripcost/pics/analytics1.png" alt="A representation of how the 9 participants that completed the study saw their trip cost" class="project-thumb" style="height:100px">
-										<i style="font-size: small">Cost Break Down</i><br>
+								<div class="content-flex">
+									<div class="display-img">
+										<img src="../images/project_images/tripcost/pics/analytics1.png" alt="A representation of how the 9 participants that completed the study saw their trip cost" class="project-thumb" >
+										<i>Cost Break Down</i>
 									</div>
-									<div class="col-sm-4" style="text-align:center">
-										<img src="../images/project_images/tripcost/pics/analytics2.png" alt="The accuracy of almost all the participants improves after the study" class="project-thumb" style="height:100px">
-										<i style="font-size: small">Pre-Post Accuracy Analysis</i><br>
+									<div class="display-img">
+										<img src="../images/project_images/tripcost/pics/analytics2.png" alt="The accuracy of almost all the participants improves after the study" class="project-thumb">
+										<i>Pre-Post Accuracy Analysis</i>
 									</div>
-									<div class="col-sm-4" style="text-align:center">
-										<img src="../images/project_images/tripcost/pics/analytics3.png" alt="The confidence of almost all the participants improves after the study" class="project-thumb" style="height:100px">
-										<i style="font-size: small">Pre-Post Confidence Analysis</i><br>
+									<div class="display-img">
+										<img src="../images/project_images/tripcost/pics/analytics3.png" alt="The confidence of almost all the participants improves after the study" class="project-thumb">
+										<i>Pre-Post Confidence Analysis</i>
 									</div>
 								</div>
-
-								<p></p>
 
 								<h2 id="section3">New Requirements</h2>
 								
@@ -337,73 +320,79 @@
 
 	  							<p>
 
-								<div class="container">
-									<div class="row" style="margin-bottom:1em;">
-										<div class="col-sm-4" style="font-size: small; text-align:center;">
-											<b>Misinterpretation</b><br>
-									    	<img src="../images/project_images/tripcost/icons/miss.png" style="width:4em;">
-									    </div>
-									    <div class="col-sm-8" style="font-size: small;">
-									    	Currently users view the breakdown of the per trip cost, via the static segmented gauge that shows the fuel and "other costs". The other costs which one might consider to be "fixed costs" could be interpreted to be static. Due to this, even after becoming aware of the hidden cost, individuals might think of it as "a cost they will incur anyway" - so they might as well try to increase the per-trip cost (and decrease the percentage of the other cost segment) to get maximum value of each trip.
-									    	<br>
-									    	<img src="../images/project_images/tripcost/pics/analytics4.png" class="project-thumb" style="width:80%">
-									    </div>
+								<div class="content-flex">
+									<div class="display-artifact">
+										<div class="details">
+											<div class="icon">
+												<b>Misinterpretation</b>
+										    	<img src="../images/project_images/tripcost/icons/miss.png">
+										    </div>
+										    <div class="description">
+										    	Currently users view the breakdown of the per trip cost, via the static segmented gauge that shows the fuel and "other costs". The other costs which one might consider to be "fixed costs" could be interpreted to be static. Due to this, even after becoming aware of the hidden cost, individuals might think of it as "a cost they will incur anyway" - so they might as well try to increase the per-trip cost (and decrease the percentage of the other cost segment) to get maximum value of each trip.
+										    </div>
+										</div>
+	    								<div class="evidence">
+											<img src="../images/project_images/tripcost/pics/analytics4.png"alt="Rough sketch" class="project-thumb">
+										</div>
 									</div>
-									<div class="row" style="margin-bottom:1em;">
-										<div class="col-sm-4" style="font-size: small; text-align:center;">
-											<b>In-Depth Breakdown</b><br>
-									    	<img src="../images/project_images/tripcost/icons/zoom.png" style="width:4em">
-									    </div>
-									    <div class="col-sm-8" style="font-size: small;">
-									    	Of the 9 participants 7 wanted to understand better what the "Other Costs" are. 4 of them specifically asked for the difference between per trip costs and "fixed costs". Even though they understood that there were extra costs, fundamentally knowing where the values would emerge from could help them learn better and accordingly evaluate their choices better.
-									    </div>
-									</div>
-									<div class="row" style="margin-bottom:1em;">
-										<div class="col-sm-4" style="font-size: small; text-align:center;">
-											<b>Credibility</b><br>
-									    	<img src="../images/project_images/tripcost/icons/belief.png" style="width:4em">
-									    </div>
-									    <div class="col-sm-8" style="font-size: small;">
-									    	The way the previous apparatus was deployed was with a clearly visible OBD and a smartphone that quietly pulled information and performed actions in the background. The point being, the participant was aware that there are some devices with them, in the car that would be calculating these costs correctly. Would the reason they believe the information shown in the smartphone to be true because it was with them through the journey? Or would logging their trip on an online dashboard yield the same result? Or are they just primed to believe the data on the phone because of study biases?<br>
-									    	This connection between the user's interpretation and the actionable information provided to them needs to explored better.
-									    </div>
-									</div>
+									<div class="display-artifact no-evidence">
+								    	<div class="details">
+								    		<div class="icon">	
+								    			<b>In-Depth Breakdown</b>
+								    			<img src="../images/project_images/tripcost/icons/zoom.png">
+								    		</div>
+								    		<div class="description">
+								    			Of the 9 participants 7 wanted to understand better what the "Other Costs" are. 4 of them specifically asked for the difference between per trip costs and "fixed costs". Even though they understood that there were extra costs, fundamentally knowing where the values would emerge from could help them learn better and accordingly evaluate their choices better.
+								    		</div>
+								  		</div>
+					  				</div>
+									<div class="display-artifact no-evidence">
+								    	<div class="details">
+								    		<div class="icon">	
+								    			<b>Credibility</b>
+								    			<img src="../images/project_images/tripcost/icons/belief.png">
+								    		</div>
+								    		<div class="description">
+								    			The way the previous apparatus was deployed was with a clearly visible OBD and a smartphone that quietly pulled information and performed actions in the background. The point being, the participant was aware that there are some devices with them, in the car that would be calculating these costs correctly. Would the reason they believe the information shown in the smartphone to be true because it was with them through the journey? Or would logging their trip on an online dashboard yield the same result? Or are they just primed to believe the data on the phone because of study biases?<br>
+									    		This connection between the user's interpretation and the actionable information provided to them needs to explored better.
+								    		</div>
+								  		</div>
+					  				</div>
 	  							</div>
 
 	  							</p>
 
 								<h2 id="section4">New Improvements</h2>
 
-								<div class="container">
-									<div class="row" style="margin-bottom:1em;">
-										<div class="col-sm-8" style="font-size: small;">
-											<b>Dynamic Story-Telling</b><br>
+								<div class="content-flex">
+									<div class="display-artifact">
+									<div class="details">
+									    <div class="description">
+									    	<b>Dynamic Story-Telling</b><br>
 											Instead of using the static horizontal bar, that immediately pops up at the user at end of each trip, we implemented a narrative method to send the point of the information across more effectively. <br>
 											The first change in this was to use relatable _metaphors_. The first of these is to use a vertical bar to represent the fact that costs "rise". Naturally, we needed to exemplify rising costs better - this was done by showing a animated meter to the user instead of the old static one. <br>
 											Also, to improve the story of the hidden costs to your trips, the cost segments are ordered in a very specific manner. First the fuel cost is shown, then there's a momentary pause, then the meter rises to represent the operating cost, another pause and then finally we see the ownership costs rise on top of that.<br>
 											The motivation of using this method is to always give the user a feeling of increase and stacking over. Such an attempt communicates the aim of the persuasive information far better than the old UI. It is more complex in terms of elements, but also more intuitive for the user to understand and make a sensible inference.
 									    </div>
-        								<div class="col-sm-4" style="text-align:center">
-											<img src="http://i.imgur.com/wWNoU1p.gif" alt="An animated stacked bar graph column tells the story much better" class="project-thumb" style="height:250px;">
-										</div>
 									</div>
-									<div class="row" style="margin-bottom:1em;">
-										<div class="col-sm-8" style="font-size: small;">
-											<b>Drill Down Interactions</b><br>
+    								<div class="evidence">
+										<img src="http://i.imgur.com/wWNoU1p.gif" alt="An animated stacked bar graph column tells the story much better" class="project-thumb" >
+									</div>
+								</div>
+								<div class="display-artifact">
+									<div class="details">
+									    <div class="description">
+									    	<b>Drill Down Interactions</b><br>
 											Many participants voiced that they want the tool to let them be more incisive about the information they are presented. There was a need to get further details when it came to the extra costs in particular. The new interface gets rid of the ambiguous "other costs" and replaces it with the far more explanatory ownership and operating costs.<br>
 											This issue is addressed by allowing the users to engage with the visual elements of the screen. They can now tap on a segment to drill down into how that segment's value is calculated and what it really means.<br>
 											Another possibility could be to show them another vertical meter representing the different elements of a segment when they click on it. Think of it as a recursive set of gauges the participant can keep drilling into based on how inquisitive they are.
 									    </div>
-        								<div class="col-sm-4" style="text-align:center">
-											<img src="http://i.imgur.com/UdO5vgm.gif" alt="Power users can inspect cost segments with a simple tap" class="project-thumb" style="height:250px;">
-										</div>
 									</div>
-	  							</div>
-
-								<p>
-								</p>
-
-	  							<br>
+    								<div class="evidence">
+										<img src="http://i.imgur.com/UdO5vgm.gif" alt="Power users can inspect cost segments with a simple tap" class="project-thumb"  class="project-thumb" >
+									</div>
+								</div>
+  							</div>
 
 								<h2 id="section5">Future</h2>
 
