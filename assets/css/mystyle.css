@@ -283,9 +283,11 @@ a.floating-button {
   /*text-indent: -9999px;*/
   position: fixed;
   z-index: 999;
-  left: 50px;
-  bottom: 50px;
-  /*background: #27AE61 url("up-arrow.png") no-repeat center 43%;*/
+  right: 3.5em;
+  bottom: 3.5em;
+  background-color: #fff;
+  box-shadow: 4px 4px 7px #888888;
+  opacity: 0.8;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;

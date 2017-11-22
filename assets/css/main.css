@@ -1908,7 +1908,7 @@ dl {
 
 .mini-posts {
   margin: 0 0 2em 0; }
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1680px) {
     .mini-posts {
       display: -moz-flex;
       display: -webkit-flex;
@@ -2391,6 +2391,7 @@ body {
     padding-top: 0; }
   @media screen and (max-width: 1280px) {
     #sidebar {
+      position: static;
       border-top: solid 1px rgba(160, 160, 160, 0.3);
       margin: 3em 0 0 0;
       min-width: 0;
