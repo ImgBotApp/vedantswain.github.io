@@ -190,7 +190,8 @@ hr {
     flex: 1; }
     .content-flex .display-img > img {
       object-fit: contain;
-      height: 8em; }
+      height: 8em;
+      cursor: crosshair; }
       @media screen and (max-width: 736px) {
         .content-flex .display-img > img {
           height: 10em; } }
@@ -286,7 +287,7 @@ a.floating-button {
   right: 3.5em;
   bottom: 3.5em;
   background-color: #fff;
-  box-shadow: 4px 4px 7px #888888;
+  box-shadow: 3px 3px 3px #888888;
   opacity: 0.8;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;

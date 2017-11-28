@@ -51,6 +51,7 @@
 		>img {
 			object-fit: contain;
 			height: 8em;
+			cursor: crosshair;
 
 			@include breakpoint(small) {
 				height: 10em;
