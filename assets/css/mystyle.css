@@ -265,6 +265,33 @@ hr {
         cursor: crosshair; }
     .content-flex .display-artifact.no-evidence .description {
       max-width: 40em; }
+  .content-flex .display-about {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    font-size: 10pt;
+    width: 100%;
+    flex-wrap: wrap; }
+    .content-flex .display-about > .description {
+      margin: 0 1em 0.5em 1em;
+      min-width: 24em;
+      max-width: 48em; }
+      @media screen and (max-width: 736px) {
+        .content-flex .display-about > .description {
+          min-width: unset;
+          max-width: unset; } }
+    .content-flex .display-about > .media {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1em;
+      flex: 1;
+      min-width: 24em; }
+      .content-flex .display-about > .media > img {
+        object-fit: contain;
+        width: 10em;
+        max-height: 20em;
+        margin-right: 0.5em;
+        flex: 1; }
 
 .cover-thumb {
   cursor: pointer;

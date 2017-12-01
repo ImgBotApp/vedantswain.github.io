@@ -159,4 +159,39 @@
 			}
 		}
 	}
+
+	.display-about {
+		display: flex;
+		align-items: center;
+		margin-bottom: 2em;
+		font-size: 10pt;
+		width: 100%;
+		flex-wrap: wrap;
+
+		>.description {
+			margin: 0 1em 0.5em 1em;
+			min-width: 24em;
+			max-width: 48em;
+
+			@include breakpoint(small) {
+				min-width: unset;
+				max-width: unset;
+			}
+		}
+		>.media {
+			display: flex;
+			align-items: center;
+			margin-bottom: 1em;
+		    flex: 1;
+		    min-width: 24em;
+
+			>img {
+				object-fit: contain;
+				width: 10em;
+    			max-height: 20em;
+    			margin-right: 0.5em;
+				flex: 1;
+			}
+		}
+	}
 }
